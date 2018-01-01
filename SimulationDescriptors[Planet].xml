@@ -22,7 +22,7 @@
         <Property Name="PlanetCount"            BaseValue="1"/>
 
         <!-- Defined by size, type -->
-        <Property Name="RawMaximumPopulation"   BaseValue="0" MinValue="0" MaxValue="14" RoundingFunction="Floor"/>
+        <Property Name="RawMaximumPopulation"   BaseValue="2" MinValue="3" MaxValue="14" RoundingFunction="Floor"/>
         <!-- Raw + improvements & stuff -->
         <Property Name="BaseMaximumPopulation"  BaseValue="0" MaxValue="14" RoundingFunction="Floor"/>
         <!-- Default = Base. Can be overriden by motherships for example -->
