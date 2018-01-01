@@ -80,8 +80,8 @@
 									 ScoreProvider="StarSystemImprovementBuilt">
 		<SupervisorGain Name="Military"/>
 		<QueuedSimulationDescriptorReference Name="StarSystemImprovementUniqueCuriosity3"/>
-		<Cost ResourceName="SystemProduction">3120</Cost>
-		<Cost ResourceName="Strategic1" Instant="true">10</Cost>
+		<Cost ResourceName="SystemProduction">2700</Cost>
+		<Cost ResourceName="Strategic1" Instant="true">8</Cost>
 		<PathPrerequisite Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementStarSystemImprovementUniqueCuriosity3</PathPrerequisite>
 		<PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
 		<PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueCuriosity3,!FastForwardedImprovement</PathPrerequisite>
@@ -89,7 +89,7 @@
 		<InterpreterPrerequisite Inverted="true"    Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,StarSystemImprovementUniqueCuriosity3') 
 			and not(Path(Context,@'ClassStarSystem,StarSystemImprovementUniqueCuriosity3'))</InterpreterPrerequisite>
 		<SimulationDescriptorReference Name="StarSystemImprovementUniqueCuriosity3" />
-		<SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3High" />
+		<SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3Normal" />
 		<SimulationDescriptorReference Name="StarSystemImprovementOncePerEmpire" />
 		<PopulationEvent Name="PopulationPoliticalEventBuildingConstructionUniqueDefense1"/>
 		<UniqueTags>StarSystemImprovementUniqueCuriosity3</UniqueTags>

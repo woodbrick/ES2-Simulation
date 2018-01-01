@@ -1266,8 +1266,8 @@
 
 	<!-- THE REJUVENATION MAZE -->
 	<SimulationDescriptor Name="StarSystemImprovementUniqueCuriosity3" Type="StarSystemImprovement"> <!--Feedback is done by GuiElement EffectOverride-->
-		<Modifier TargetProperty="HealthRegenerationRatio" Operation="Addition" Value="0.2" Path="./ClassColonizedStarSystem/ClassGarrison/ClassShip" TooltipHidden="true"/>
-		<Modifier TargetProperty="DockedFleetsHealthRegenerationRatio" Operation="Addition" Value="0.2" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+		<Modifier TargetProperty="HealthRegenerationRatio" Operation="Addition" Value="0.8" Path="./ClassColonizedStarSystem/ClassGarrison/ClassShip" TooltipHidden="true"/>
+		<Modifier TargetProperty="DockedFleetsHealthRegenerationRatio" Operation="Addition" Value="0.8" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
 	</SimulationDescriptor>
 	
 	<!-- NANOHAZE DEFENSES -->
