@@ -22,7 +22,7 @@
         <Property Name="PlanetCount"            BaseValue="1"/>
 
         <!-- Defined by size, type -->
-        <Property Name="RawMaximumPopulation"   BaseValue="1" MinValue="3" MaxValue="14" RoundingFunction="Floor"/>
+        <Property Name="RawMaximumPopulation"   BaseValue="1" MinValue="2" MaxValue="14" RoundingFunction="Floor"/>
         <!-- Raw + improvements & stuff -->
         <Property Name="BaseMaximumPopulation"  BaseValue="0" MaxValue="14" RoundingFunction="Floor"/>
         <!-- Default = Base. Can be overriden by motherships for example -->
@@ -695,7 +695,7 @@
 
     <SimulationDescriptor Name="PlanetGameplayTypeGas"         Type="PlanetGameplayType" >
         <Property Name="OwnedGasPlanets"                           BaseValue="1" />
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="ClassPlanet,PlanetGameplayTypeGas"         TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="ClassPlanet,PlanetGameplayTypeGas"         TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!-- Planet resources effects -->
