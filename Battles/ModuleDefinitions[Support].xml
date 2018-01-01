@@ -475,7 +475,7 @@
     <!-- Fleet Engine Level 1 -->
     <SupportModule Name="ModuleSupportFleetEngine1Strategic2" Family="FleetEngineStrategic2" Level="1">
         <Cost ResourceName="SystemProduction">60</Cost>
-        <Cost ResourceName="Strategic2" Instant="true">3</Cost>
+        <Cost ResourceName="Strategic2" Instant="true">2</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyModuleSupportFleetEngine1Strategic2</TechnologyPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
 		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->

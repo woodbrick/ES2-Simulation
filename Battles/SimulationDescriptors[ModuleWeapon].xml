@@ -207,7 +207,7 @@
         <Modifier TargetProperty="Damage"                    Operation="Addition" Value="125"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"         Operation="Addition"  Value="0.08"  TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                  Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
-        <Modifier TargetProperty="ShipManpowerKillPerHit"    Operation="Addition" Value="1"      TooltipHidden="true"/>
+        <Modifier TargetProperty="ShipManpowerKillPerHit"    Operation="Addition" Value="2"      TooltipHidden="true"/>
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
