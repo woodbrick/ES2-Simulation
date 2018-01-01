@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+    <!--<SquadronModule Name="FighterTest" Type="Fighter" Family="FighterBase">
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeFighter"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <StanceSelectorReference Name="FighterStanceSelector"/>
+        <DefaultFormationReference Name="FightersFormationDefault"/>
+    </SquadronModule>
+
+    <SquadronModule Name="BomberTest" Type="Bomber" Family="BomberBase">
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeBomber"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <StanceSelectorReference Name="BomberStanceSelector"/>
+        <DefaultFormationReference Name="BomberFormationDefault"/>
+    </SquadronModule>-->
+
+
+    <!-- BOMBERS -->
+    <SquadronModule Name="ModuleSquadronBomber1" Type="Bomber" Family="BomberBase" Level="1">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <TechnologyPrerequisite Flags="Edition">false</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeBomber"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <StanceSelectorReference Name="BomberStanceSelector"/>
+        <DefaultFormationReference Name="BomberFormationDefault"/>
+    </SquadronModule>
+
+    <SquadronModule Name="ModuleSquadronBomber2" Type="Bomber" Family="BomberBase" Level="1">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <TechnologyPrerequisite Flags="Edition">false</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeBomber"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <StanceSelectorReference Name="BomberStanceSelector"/>
+        <DefaultFormationReference Name="BomberFormationDefault"/>
+    </SquadronModule>
+
+
+    <!-- FIGHTERS -->
+    <SquadronModule Name="ModuleSquadronFighter1" Type="Fighter" Family="FighterBase">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <TechnologyPrerequisite Flags="Edition">false</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeFighter"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <StanceSelectorReference Name="FighterStanceSelector"/>
+        <DefaultFormationReference Name="FightersFormationDefault"/>
+    </SquadronModule>
+
+    <SquadronModule Name="ModuleSquadronFighter2" Type="Fighter" Family="FighterBase">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <TechnologyPrerequisite Flags="Edition">false</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeFighter"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <StanceSelectorReference Name="FighterStanceSelector"/>
+        <DefaultFormationReference Name="FightersFormationDefault"/>
+    </SquadronModule>
+    
+</Datatable>

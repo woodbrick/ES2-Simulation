@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../../Schemas/SquadronMetaFormationDefinition.xsd">
+
+    <SquadronMetaFormationDefinition Name="MetaFormationAroundBomber">
+        <SubFormationPattern>
+            <SubFormation Role="Escort">
+                <Offset X="0" Y="0" Z="0"/>
+                <FormationReference Name="FightersFormationBomberFirstEscort"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="0" Y="0.2" Z="0"/>
+                <FormationReference Name="FightersFormationBomberFirstEscort"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="0" Y="-0.2" Z="0"/>
+                <FormationReference Name="FightersFormationBomberFirstEscort"/>
+            </SubFormation>
+            <SubFormation Role="Chaser">
+                <Offset X="0" Y="0" Z="-0.6"/>
+                <FormationReference Name="FightersFormationBomberFirstChaser"/>
+            </SubFormation>
+            <SubFormation Role="Chaser">
+                <Offset X="0" Y="0.2" Z="-0.6"/>
+                <FormationReference Name="FightersFormationBomberFirstChaser"/>
+            </SubFormation>
+            <SubFormation Role="Chaser">
+                <Offset X="0" Y="-0.2" Z="-0.6"/>
+                <FormationReference Name="FightersFormationBomberFirstChaser"/>
+            </SubFormation>
+        </SubFormationPattern>
+    </SquadronMetaFormationDefinition>
+    
+</Datatable>

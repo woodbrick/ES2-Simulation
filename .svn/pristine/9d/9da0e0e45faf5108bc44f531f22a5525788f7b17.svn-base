@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!-- PressureWar -->
+    
+    <SimulationDescriptor Name="PressureWarInitiator" Type="Pressure">
+        <Modifier TargetProperty="PressureOn" Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PressureFrom" Operation="Force" Value="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="PressureWarTarget" Type="Pressure">
+        <Modifier TargetProperty="PressureOn" Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PressureFrom" Operation="Force" Value="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    
+    <!-- PressureUnknown -->
+    
+    <SimulationDescriptor Name="PressureUnknownInitiator" Type="Pressure">
+        <Modifier TargetProperty="PressureOn" Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PressureFrom" Operation="Force" Value="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="PressureUnknownTarget" Type="Pressure">
+        <Modifier TargetProperty="PressureOn" Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PressureFrom" Operation="Force" Value="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    
+    <!-- PressurePeace -->
+    
+    <SimulationDescriptor Name="PressurePeaceInitiator" Type="Pressure">
+        <Modifier TargetProperty="PressureOn" Operation="Percent" Value="-0.25" />
+        <!--<Modifier TargetProperty="PressureFrom" Operation="Percent" Value="-0.25" />-->
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="PressurePeaceTarget" Type="Pressure">
+        <!--<Modifier TargetProperty="PressureOn" Operation="Percent" Value="-0.25" />-->
+        <Modifier TargetProperty="PressureFrom" Operation="Percent" Value="-0.25" />
+    </SimulationDescriptor>
+    
+    <!-- PressureAlliance -->
+    
+    <SimulationDescriptor Name="PressureAllianceInitiator" Type="Pressure">  
+        <Modifier TargetProperty="PressureOn" Operation="Percent" Value="-0.5" />
+        <!--<Modifier TargetProperty="PressureFrom" Operation="Percent" Value="-0.5" />-->
+    </SimulationDescriptor>
+        
+    <SimulationDescriptor Name="PressureAllianceTarget" Type="Pressure">
+        <!--<Modifier TargetProperty="PressureOn" Operation="Percent" Value="-0.5" />-->
+        <Modifier TargetProperty="PressureFrom" Operation="Percent" Value="-0.5" />
+    </SimulationDescriptor>    
+    
+    <!-- PressureOpenBorders -->
+    
+    <SimulationDescriptor Name="PressureOpenBordersInitiator" Type="Pressure">
+        <Modifier TargetProperty="PressureFrom" Operation="Percent" Value="0.5" />
+    </SimulationDescriptor>
+      
+    <SimulationDescriptor Name="PressureOpenBordersTarget" Type="Pressure">
+
+    </SimulationDescriptor>
+
+</Datatable>

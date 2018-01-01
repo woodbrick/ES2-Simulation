@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="ClassModuleSquadron"  Type="ClassModule">
+        <ProportionalProperty Name="Health"     BaseValue="0" IsSealed="true" Maximum="$(MaximumHealth)" StartingRatio="1"/>
+        <Property Name="MaximumHealth"          BaseValue="0"/>
+        <Property Name="Speed"                  BaseValue="0"/>
+        <Property Name="Damage"                 BaseValue="0"/>
+
+        <Property Name="BaseUnitsCount"         BaseValue="0"/>
+        
+        <Property Name="CriticalAttackChance"   BaseValue="0" MaxValue="1"/>
+        <Property Name="DodgeChance"            BaseValue="0" MaxValue="1"/>
+        
+        <Modifier TargetProperty="OffensiveMilitaryPower"    Operation="Addition" Value="10"      Path="ClassModule" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SquadronTypeFighter" Type="SquadronType">
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="100" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="Speed" Operation="Addition" Value="10" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="Damage" Operation="Addition" Value="25" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="BaseUnitsCount" Operation="Addition" Value="5" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.5" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="DodgeChance" Operation="Addition" Value="0.2" Path="ClassModuleSquadron"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SquadronTypeBomber" Type="SquadronType">
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="300" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="Speed" Operation="Addition" Value="5" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="Damage" Operation="Addition" Value="55" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="BaseUnitsCount" Operation="Addition" Value="1" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.3" Path="ClassModuleSquadron"/>
+        <Modifier TargetProperty="DodgeChance" Operation="Addition" Value="0.4" Path="ClassModuleSquadron"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SquadronStanceOffensive" Type="SquadronStance">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SquadronStanceDefensive" Type="SquadronStance">
+    </SimulationDescriptor>
+
+</Datatable>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../../Schemas/SquadronFormationDefinition.xsd">
+
+    <SquadronFormationDefinition Name="FightersFormationDefault">
+        <Pattern>
+            <Slot>
+                <Offset X="0" Y="0" Z="0"/>
+            </Slot>
+            <Slot>
+                <Offset X="-0.15" Y="0" Z="-0.15"/>
+            </Slot>
+            <Slot>
+                <Offset X="0.15" Y="0" Z="-0.15"/>
+            </Slot>
+            <Slot>
+                <Offset X="-0.3" Y="0" Z="-0.3"/>
+            </Slot>
+            <Slot>
+                <Offset X="0.3" Y="0" Z="-0.3"/>
+            </Slot>
+        </Pattern>
+    </SquadronFormationDefinition>
+
+    <SquadronFormationDefinition Name="BomberFormationDefault">
+        <Pattern>
+            <Slot>
+                <Offset X="0" Y="0" Z="0"/>
+            </Slot>
+        </Pattern>
+    </SquadronFormationDefinition>
+
+    <SquadronFormationDefinition Name="FightersFormationBomberFirstEscort">
+        <Pattern>
+            <Slot>
+                <Offset X="0" Y="0" Z="-0.4"/>
+            </Slot>
+            <Slot>
+                <Offset X="-0.4" Y="0" Z="-0.2"/>
+            </Slot>
+            <Slot>
+                <Offset X="0.4" Y="0" Z="-0.2"/>
+            </Slot>
+            <Slot>
+                <Offset X="-0.4" Y="0" Z="0.2"/>
+            </Slot>
+            <Slot>
+                <Offset X="0.4" Y="0" Z="0.2"/>
+            </Slot>
+        </Pattern>
+    </SquadronFormationDefinition>
+
+    <SquadronFormationDefinition Name="FightersFormationBomberFirstChaser">
+        <Pattern>
+            <Slot>
+                <Offset X="0" Y="0" Z="-0.2"/>
+            </Slot>
+            <Slot>
+                <Offset X="-0.15" Y="0" Z="0"/>
+            </Slot>
+            <Slot>
+                <Offset X="0.15" Y="0" Z="0"/>
+            </Slot>
+            <Slot>
+                <Offset X="-0.3" Y="0" Z="-0.1"/>
+            </Slot>
+            <Slot>
+                <Offset X="0.3" Y="0" Z="-0.1"/>
+            </Slot>
+        </Pattern>
+    </SquadronFormationDefinition>
+    
+</Datatable>

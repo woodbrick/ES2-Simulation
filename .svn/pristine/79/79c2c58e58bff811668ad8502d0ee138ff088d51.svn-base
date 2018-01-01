@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ShipDesignDefinition.xsd">
+
+    <!-- Old naming: ShipDesignSmallMinorFactionPirates01 -->
+    <!-- Naming: MF[FactionName][HullSize][ExpectedRole][ShipStrength]-->
+    
+    <!-- With: -->
+    <!-- o [FactionName] = Pirates | Advanced | Insectoid | Primitive -->
+    <!-- o [HullSize] = Small | Medium | Large -->
+    <!-- o [ExpectedRole] = Attacker | Defender | Support | Carrier -->
+    <!-- o [ShipStrength] = Weak | Avg | Strong -->
+    <!-- Examples: -->
+    <!-- o MFPrimitiveMediumDefenderAvg-->
+    <!-- o MFPiratesSmallAttackWeak -->
+
+    
+    
+    <!-- **************************** -->
+    <!-- **   SCAVENGERS/PIRATES   ** -->
+    <!-- **************************** -->
+    <!-- ############# SMALL ########## -->
+    <!-- Weak-->
+    <ShipDesignDefinition Name="MFPiratesSmallAttackWeak" Editable="false">
+        <HullReference Name="HullSmall01MinorFactionPirates"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!-- S -->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>     
+    </ShipDesignDefinition>
+    <!--Average-->
+    <ShipDesignDefinition Name="MFPiratesSmallAttackAvg" Editable="false">
+        <HullReference Name="HullSmall01MinorFactionPirates"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+		<!--E-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!--Strong-->
+    <ShipDesignDefinition Name="MFPiratesSmallAttackStrong" Editable="false">
+        <HullReference Name="HullSmall01MinorFactionPirates"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!-- NE -->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+		<!-- SE -->
+        <SlotBinding SlotName="SectionSE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!-- S -->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!--############# MEDIUM  ##########-->
+    <!--Average-->
+    <ShipDesignDefinition Name="MFPiratesMediumAttackAvg" Editable="false">
+        <HullReference Name="HullMedium01MinorFactionPirates"/>
+        <ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!-- S -->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+        <!-- NE -->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!-- SE -->
+        <SlotBinding SlotName="SectionSE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!--Strong-->
+    <ShipDesignDefinition Name="MFPiratesMediumAttackStrong" Editable="false">
+        <HullReference Name="HullMedium01MinorFactionPirates"/>
+        <ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!--N-->
+        <SlotBinding SlotName="SectionN.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+		<SlotBinding SlotName="SectionNE.Weapon01">
+			<ModuleReference Name="ModuleWeaponLaser1"/>
+		</SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+		<SlotBinding SlotName="SectionE.Weapon01">
+			<ModuleReference Name="ModuleWeaponKinetic1"/>
+		</SlotBinding>
+        <!--SE-->
+        <SlotBinding SlotName="SectionSE.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    
+    <!--Strong for Metaplot-->
+    <ShipDesignDefinition Name="MFPiratesMediumAttackStrongMetaplot" Editable="false">
+        <HullReference Name="HullMedium01MinorFactionPirates"/>
+        <ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponLaser3Strategic4"/>
+        </SlotBinding>
+        <!--N-->
+        <SlotBinding SlotName="SectionN.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic3"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating3"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic3"/>
+        </SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseShield3"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic3"/>
+        </SlotBinding>
+        <!--SE-->
+        <SlotBinding SlotName="SectionSE.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponLaser3Strategic4"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    
+    
+    <!-- ******************** -->
+    <!-- **    ADVANCED    ** -->
+    <!-- ******************** -->
+    <!-- ############# SMALL  ########## -->
+    <!--Weak-->
+	<ShipDesignDefinition Name="MFAdvancedSmallAttackWeak" Editable="false">
+		<HullReference Name="HullSmall01MinorFactionAdvanced"/>
+		<ShipRoleReference Name="ShipRoleSmallAttacker"/>
+		<!--CORE SECTION-->
+		<SlotBinding SlotName="CoreSection.Weapon01">
+			<ModuleReference Name="ModuleWeaponLaser1"/>
+		</SlotBinding>
+		<!--S-->
+		<SlotBinding SlotName="SectionS.Support01">
+			<ModuleReference Name="ModuleSupportEngine1"/>
+		</SlotBinding>
+	</ShipDesignDefinition>
+    <!--Average-->
+	<ShipDesignDefinition Name="MFAdvancedSmallAttackAvg" Editable="false">
+		<HullReference Name="HullSmall01MinorFactionAdvanced"/>
+		<ShipRoleReference Name="ShipRoleSmallAttacker"/>
+		<!--CORE SECTION-->
+		<SlotBinding SlotName="CoreSection.Weapon01">
+			<ModuleReference Name="ModuleWeaponLaser1"/>
+		</SlotBinding>
+		<!--N-->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+        <!--E-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponBeam1"/>
+        </SlotBinding>
+		<!--S-->
+		<SlotBinding SlotName="SectionS.Support01">
+			<ModuleReference Name="ModuleSupportEngine1"/>
+		</SlotBinding>
+	</ShipDesignDefinition>
+    <!--Strong-->
+	<ShipDesignDefinition Name="MFAdvancedSmallAttackStrong"    Editable="false">
+		<HullReference Name="HullSmall01MinorFactionAdvanced"/>
+		<ShipRoleReference Name="ShipRoleSmallAttacker"/>
+		<!--CORE SECTION-->
+		<SlotBinding SlotName="CoreSection.Weapon01">
+			<ModuleReference Name="ModuleWeaponLaser1"/>
+		</SlotBinding>
+		<!--N-->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+		<!--SE-->
+		<SlotBinding SlotName="SectionSE.Weapon01">
+			<ModuleReference Name="ModuleWeaponBeam1"/>
+		</SlotBinding>
+		<!--E-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+		<!--S-->
+		<SlotBinding SlotName="SectionS.Support01">
+			<ModuleReference Name="ModuleSupportEngine2"/>
+		</SlotBinding>
+	</ShipDesignDefinition>
+    <!-- ############# MEDIUM  ########## -->
+    <!-- Average -->
+	<ShipDesignDefinition Name="MFAdvancedMediumAttackAvg"  Editable="false">
+		<HullReference Name="HullMedium01MinorFactionAdvanced"/>
+		<ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!-- N -->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+        <!-- S -->
+        <SlotBinding SlotName="SectionS.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+        <!-- NE -->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+	</ShipDesignDefinition>
+    <!--Strong-->
+	<ShipDesignDefinition Name="MFAdvancedMediumAttackStrong"   Editable="false">
+		<HullReference Name="HullMedium01MinorFactionAdvanced"/>
+		<ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+        <!--N-->
+        <SlotBinding SlotName="SectionN.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponBeam1"/>
+        </SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseShield1"/>
+        </SlotBinding>
+        <!--SE-->
+        <SlotBinding SlotName="SectionSE.Weapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+		<SlotBinding SlotName="SectionSE.Defense01">
+			<ModuleReference Name="ModuleDefenseShield1"/>
+		</SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+        </SlotBinding>
+	</ShipDesignDefinition>
+
+
+    <!-- ******************** -->
+    <!-- **   INSECTOID    ** -->
+    <!-- ******************** -->
+    <!-- ############# SMALL  ########## -->
+    <!--Weak-->
+	<ShipDesignDefinition Name="MFInsectoidSmallAttackWeak" Editable="false">
+		<HullReference Name="HullSmall01MinorFactionInsectoid"/>
+		<ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+	</ShipDesignDefinition>
+    <!--Average-->
+    <ShipDesignDefinition Name="MFInsectoidSmallAttackAvg"  Editable="false">
+        <HullReference Name="HullSmall01MinorFactionInsectoid"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+		<!--SE-->
+		<SlotBinding SlotName="SectionSE.Defense01">
+			<ModuleReference Name="ModuleDefenseHullPlating1"/>
+		</SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!--Strong-->
+    <ShipDesignDefinition Name="MFInsectoidSmallAttackStrong"   Editable="false">
+        <HullReference Name="HullSmall01MinorFactionInsectoid"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--E-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponBeam1"/>
+        </SlotBinding>
+        <!--SE-->
+        <SlotBinding SlotName="SectionSE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!-- ############# MEDIUM  ########## -->
+    <!-- Average -->
+	<ShipDesignDefinition Name="MFInsectoidMediumAttackAvg" Editable="false">
+		<HullReference Name="HullMedium01MinorFactionInsectoid"/>
+		<ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!-- S -->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!-- NE -->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponBeam1"/>
+        </SlotBinding>
+	</ShipDesignDefinition>
+    <!--Strong-->
+    <ShipDesignDefinition Name="MFInsectoidMediumAttackStrong"  Editable="false">
+        <HullReference Name="HullMedium01MinorFactionInsectoid"/>
+        <ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--N-->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPLating1"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--E-->
+        <SlotBinding SlotName="SectionE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponBeam1"/>
+        </SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+
+
+    <!-- ******************** -->
+    <!-- **   PRIMITIVE    ** -->
+    <!-- ******************** -->
+    <!--Weak-->
+    <ShipDesignDefinition Name="MFPrimitiveSmallAttackWeak" Editable="false">
+        <HullReference Name="HullSmall01MinorFactionPrimitive"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+		<!--NE-->
+		<SlotBinding SlotName="SectionNE.Weapon01">
+			<ModuleReference Name="ModuleWeaponKinetic1"/>
+		</SlotBinding>
+    </ShipDesignDefinition>
+    <!--Average-->
+    <ShipDesignDefinition Name="MFPrimitiveSmallAttackAvg"  Editable="false">
+        <HullReference Name="HullSmall01MinorFactionPrimitive"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!--N-->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+		<!--NE-->
+		<SlotBinding SlotName="SectionNE.Weapon01">
+			<ModuleReference Name="ModuleWeaponKinetic1"/>
+		</SlotBinding>
+        <!--S-->
+        <SlotBinding SlotName="SectionS.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!--Strong-->
+    <ShipDesignDefinition Name="MFPrimitiveSmallAttackStrong"   Editable="false">
+        <HullReference Name="HullSmall01MinorFactionPrimitive"/>
+        <ShipRoleReference Name="ShipRoleSmallAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+        <SlotBinding SlotName="CoreSection.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!--N-->
+        <SlotBinding SlotName="SectionN.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!--E-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!-- ############# MEDIUM  ########## -->
+    <!-- Average -->
+    <ShipDesignDefinition Name="MFPrimitiveMediumAttackAvg" Editable="false">
+        <HullReference Name="HullMedium01MinorFactionPrimitive"/>
+        <ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!-- Core -->
+        <SlotBinding SlotName="CoreSection.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!-- N -->
+        <SlotBinding SlotName="SectionN.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!-- S -->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <!-- NE -->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!-- E -->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+    <!--Strong-->
+    <ShipDesignDefinition Name="MFPrimitiveMediumAttackStrong"  Editable="false">
+        <HullReference Name="HullMedium01MinorFactionPrimitive"/>
+        <ShipRoleReference Name="ShipRoleMediumAttacker"/>
+        <!--CORE SECTION-->
+        <SlotBinding SlotName="CoreSection.LargeWeapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!--N-->
+        <SlotBinding SlotName="SectionN.Weapon01">
+            <ModuleReference Name="ModuleWeaponKinetic1"/>
+        </SlotBinding>
+        <!--E-->
+        <SlotBinding SlotName="SectionE.Weapon01">
+            <ModuleReference Name="ModuleWeaponMissile1"/>
+        </SlotBinding>
+        <!--NE-->
+        <SlotBinding SlotName="SectionNE.Defense01">
+            <ModuleReference Name="ModuleDefenseHullPlating1"/>
+        </SlotBinding>
+        <!-- S -->
+        <SlotBinding SlotName="SectionS.Support01">
+            <ModuleReference Name="ModuleSupportEngine2"/>
+        </SlotBinding>
+    </ShipDesignDefinition>
+   
+</Datatable>

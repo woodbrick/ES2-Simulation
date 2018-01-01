@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../../Schemas/SquadronMissionDefinition.xsd">
+
+    <SquadronMissionDefinition Name="Roaming">
+        <Task_Roaming>
+            <MotionDuration_Unlimited/>
+        </Task_Roaming>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="EscortBomber">
+        <TargetSelectionMethod_Scan TargetTags="Alive SameGroup">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Squadron">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion Name="Size">
+                <ScoreModifier Name="SquadronTypeBomber">1</ScoreModifier>
+            </TargetSortingCriterion>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachTarget>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachTarget>
+        <Task_EscortTarget>
+            <MotionDuration_Unlimited/>
+        </Task_EscortTarget>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="EscortShip">
+        <TargetSelectionMethod_Scan TargetTags="Alive SameGroup">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Ship">1</ScoreModifier>
+            </TargetSortingCriterion>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachTarget>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachTarget>
+        <Task_EscortTarget>
+            <MotionDuration_Unlimited/>
+        </Task_EscortTarget>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="EscortMyShip">
+        <TargetSelectionMethod_Scan TargetTags="SameShip">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Ship">1</ScoreModifier>
+            </TargetSortingCriterion>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachTarget>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachTarget>
+        <Task_EscortTarget>
+            <MotionDuration_Unlimited/>
+        </Task_EscortTarget>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="AttackFighter" AssociatedMatchType="Duel">
+        <TargetSelectionMethod_Scan TargetTags="Alive OtherGroup">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Squadron">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion Name="Size">
+                <ScoreModifier Name="SquadronTypeFighter">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+                <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            </TargetSortingCriterion_PropertyMultiplier>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="AttackFighterInSight" AssociatedMatchType="Duel">
+        <TargetSelectionMethod_Scan TargetTags="Alive OtherGroup" TargetingAggroDistance="10">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Squadron">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion Name="Size">
+                <ScoreModifier Name="SquadronTypeFighter">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+                <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            </TargetSortingCriterion_PropertyMultiplier>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="ChaseBomber" AssociatedMatchType="Chase">
+        <TargetSelectionMethod_Scan TargetTags="Alive OtherGroup">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Squadron">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion Name="Size">
+                <ScoreModifier Name="SquadronTypeBomber">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+                <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            </TargetSortingCriterion_PropertyMultiplier>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="ChaseBomberInSight" AssociatedMatchType="Chase">
+        <TargetSelectionMethod_Scan TargetTags="Alive OtherGroup" TargetingAggroDistance="10">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Squadron">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion Name="Size">
+                <ScoreModifier Name="SquadronTypeBomber">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+                <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            </TargetSortingCriterion_PropertyMultiplier>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="AssaultShip" AssociatedMatchType="Assault">
+        <TargetSelectionMethod_Scan TargetTags="Alive OtherGroup">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Ship">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+                <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            </TargetSortingCriterion_PropertyMultiplier>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="RespondToFighterDuel" AssociatedMatchType="Duel" ForbidInterruption="true">
+        <ActivationEventPrerequisite EventType="Squadron_MatchCreated_Duel">
+            <EventTargetFilter EntityTags="Me"/>
+        </ActivationEventPrerequisite>
+        <TargetSelectionMethod_EventContext TargetRole="EventInitiator"/>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+
+    <SquadronMissionDefinition Name="DefendChasedBomber" AssociatedMatchType="Duel">
+        <ActivationEventPrerequisite EventType="Squadron_MatchCreated_Chase">
+            <EventTargetFilter EntityTags="SameGroup"/>
+        </ActivationEventPrerequisite>
+        <TargetSelectionMethod_EventContext TargetingAggroDistance="10" TargetRole="EventInitiator"/>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+
+</Datatable>

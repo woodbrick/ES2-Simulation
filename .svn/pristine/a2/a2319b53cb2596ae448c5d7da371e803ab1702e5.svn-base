@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+   
+    <SimulationDescriptor Name="ModuleDefenseHullPlatingQuest1"  Type="ModuleDefense">
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="240"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="75"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="ShipManpowerKillAbsorption"       Operation="Addition" Value="0.1"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="DefensiveMilitaryPower"           Operation="Addition" Value="30"   Path="ClassModule"                   TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+</Datatable>

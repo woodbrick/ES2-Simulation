@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!--================-->
+    <!-- ClassDiplomacy -->
+    <!--================-->
+    
+    <SimulationDescriptor Name="ClassDiplomacy" Type="ClassDiplomacy">
+    
+        <Property Name="BasePressure" MinValue="0"/>
+       
+        <Modifier TargetProperty="MyBasePressure" Operation="Addition" Value="$(BasePressure)" Path="ClassDiplomacy/ClassDiplomaticEmpire" />
+         
+    </SimulationDescriptor>
+
+    <!--=======================-->
+    <!-- ClassDiplomaticEmpire -->
+    <!--=======================-->
+    
+    <SimulationDescriptor Name="ClassDiplomaticEmpire" Type="ClassDiplomaticEmpire">
+    
+        <Property Name="PressureValue"      MinValue="-100" MaxValue="100"  IsSealed="true"/>
+        <Property Name="TheirBasePressure"  MinValue="0"                    IsSealed="true"/>
+        <Property Name="MyBasePressure"     MinValue="0"/> 
+        <Property Name="PressureOn"         MinValue="0"/>
+        <Property Name="PressureFrom"       MinValue="0"/>
+        <Property Name="PressureTrend"      MinValue="-6.5" MaxValue="6.5" />
+        
+        <Modifier TargetProperty="PressureOn"       Operation="Addition"    Value="$(MyBasePressure)" />
+        <Modifier TargetProperty="PressureFrom"     Operation="Addition"    Value="$(TheirBasePressure)" />
+        
+        <Modifier TargetProperty="PressureTrend"    Operation="Addition"    Value="$(PressureOn)" />
+        <Modifier TargetProperty="PressureTrend"    Operation="Subtraction" Value="$(PressureFrom)" />
+        
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="DiplomaticAbilityEffectScienceAgreement" Type="DiplomaticAbilityEffect">
+        
+        <Property Name="ScienceAgreementDuration" BaseValue="0" IsSealed="true"/>
+        <Property Name="CurrentTurn"/>
+
+        <Property Name="ResearchBonusBasedOnDuration" BaseValue="0" MaxValue="100"/>
+        
+        <!-- 10 -->
+        <Property Name="ResearchBonus" BaseValue="10"/>
+        
+        <!-- + 5 / turn, capped at +100 after 20 turns -->
+        <BinaryModifier TargetProperty="ResearchBonusBasedOnDuration" Operation="Addition" Left="$(ScienceAgreementDuration)" BinaryOperation="Multiplication" Right="5"/>
+        <Modifier TargetProperty="ResearchBonus" Operation="Addition" Value="$(ResearchBonusBasedOnDuration)" />
+        
+        <!-- x (gameTurn / 5) -->
+        <BinaryModifier TargetProperty="ResearchBonus" Operation="Addition" Left="$(CurrentTurn)" BinaryOperation="Division" Right="5"/>
+
+        <Modifier TargetProperty="ResearchScienceAgreementBonus" Operation="Addition" Value="$(ResearchBonus)" Path="../ClassEmpire"/>
+        
+    </SimulationDescriptor>
+    
+</Datatable>
