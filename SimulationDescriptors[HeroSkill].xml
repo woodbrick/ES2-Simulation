@@ -261,13 +261,13 @@
 		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.10"			Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip29_FleetDefense_Percent_1" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.20"			Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.10"			Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip29_FleetDefense_Percent_2" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.40"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.20"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip29_FleetDefense_Percent_3" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.60"			Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.40"			Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip29_FleetDefense_Percent_4" Type="HeroSkillShip" IsSerializable="false">
 		<Modifier TargetProperty="ShipShieldAbsorptionPercent"									Operation="Addition"			Value="0.80"	Path="./ClassGarrisonFleet" />
@@ -1208,12 +1208,12 @@
 	
 	<!--HeroSkill107-->
 	<SimulationDescriptor Name="HeroSkillShip107_FleetDefense_Percent_2" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumHealth"								Operation="Addition"			Value="0.8"		Path="./ClassGarrisonFleet" />
-		<Modifier TargetProperty="ShipHullPlatingAbsorptionPercent"					Operation="Addition"			Value="0.8"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumHealth"								Operation="Addition"			Value="0.10"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="ShipHullPlatingAbsorptionPercent"					Operation="Addition"			Value="0.10"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip107_FleetDefense_Percent_3" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumHealth"								Operation="Addition"			Value="0.16"		Path="./ClassGarrisonFleet" />
-		<Modifier TargetProperty="ShipHullPlatingAbsorptionPercent"					Operation="Addition"			Value="0.16"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumHealth"								Operation="Addition"			Value="0.20"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="ShipHullPlatingAbsorptionPercent"					Operation="Addition"			Value="0.20"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 
 	<!-- ########################################## -->
