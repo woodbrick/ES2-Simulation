@@ -89,11 +89,13 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportBait1Strategic4"      Type="ModuleSupportBait">
-		<Modifier TargetProperty="TargetingWeightBonus" Operation="Addition" Value="10" Path="ModuleSupportBait"/>
+		<Modifier TargetProperty="TargetingWeightBonus" Operation="Addition" Value="15" Path="ModuleSupportBait"/>
+		<Modifier TargetProperty="LocalManpower"        Operation="Addition"  Value="80"    Path="ModuleSupportCrew"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportBait2Strategic6"      Type="ModuleSupportBait">
-		<Modifier TargetProperty="TargetingWeightBonus" Operation="Addition" Value="20" Path="ModuleSupportBait"/>
+		<Modifier TargetProperty="TargetingWeightBonus" Operation="Addition" Value="25" Path="ModuleSupportBait"/>
+		<Modifier TargetProperty="LocalManpower"        Operation="Addition"  Value="120"    Path="ModuleSupportCrew"/>
 	</SimulationDescriptor>
 
 	<!-- ********************* -->
@@ -377,11 +379,13 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportJammer1Strategic3"      Type="ModuleSupportJammer">
-		<Modifier TargetProperty="TargetingWeightPenalty" Operation="Addition" Value="10" Path="ModuleSupportJammer"/>
+		<Modifier TargetProperty="TargetingWeightPenalty" Operation="Addition" Value="15" Path="ModuleSupportJammer"/>
+		<Modifier TargetProperty="LocalManpower"        Operation="Addition"  Value="80"    Path="ModuleSupportCrew"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportJammer2Strategic5"      Type="ModuleSupportJammer">
-		<Modifier TargetProperty="TargetingWeightPenalty" Operation="Addition" Value="20" Path="ModuleSupportJammer"/>
+		<Modifier TargetProperty="TargetingWeightPenalty" Operation="Addition" Value="25" Path="ModuleSupportJammer"/>
+		<Modifier TargetProperty="LocalManpower"        Operation="Addition"  Value="120"    Path="ModuleSupportCrew"/>
 	</SimulationDescriptor>
 
 	<!-- ********************* -->

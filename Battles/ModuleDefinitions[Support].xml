@@ -116,7 +116,7 @@
     <!-- ** BAIT MODULES ** -->
     <!-- ********************* -->
     <SupportModule Name="ModuleSupportBait1Strategic4" Family="BaitStrategic4" Level="1">
-        <Cost ResourceName="SystemProduction">40</Cost>
+        <Cost ResourceName="SystemProduction">45</Cost>
         <Cost ResourceName="Strategic4" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyHull4</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -128,7 +128,7 @@
     </SupportModule>
 
     <SupportModule Name="ModuleSupportBait2Strategic6" Family="BaitStrategic6" Level="2">
-        <Cost ResourceName="SystemProduction">55</Cost>
+        <Cost ResourceName="SystemProduction">60</Cost>
         <Cost ResourceName="Strategic6" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportBait2Strategic6</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -642,7 +642,7 @@
     <!-- ** JAMMER MODULES ** -->
     <!-- ********************* -->
     <SupportModule Name="ModuleSupportJammer1Strategic3" Family="JammerStrategic3" Level="1">
-        <Cost ResourceName="SystemProduction">40</Cost>
+        <Cost ResourceName="SystemProduction">45</Cost>
         <Cost ResourceName="Strategic3" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyHull5</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -654,7 +654,7 @@
     </SupportModule>
 
     <SupportModule Name="ModuleSupportJammer2Strategic5" Family="JammerStrategic5" Level="2">
-        <Cost ResourceName="SystemProduction">55</Cost>
+        <Cost ResourceName="SystemProduction">60</Cost>
         <Cost ResourceName="Strategic5" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportJammer2Strategic5</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
