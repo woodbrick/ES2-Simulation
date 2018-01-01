@@ -311,7 +311,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponKinetic3Strategic1" Type="Kinetic" Family="KineticStrategic1" Level="4">
-        <Cost ResourceName="SystemProduction">52</Cost>
+        <Cost ResourceName="SystemProduction">56</Cost>
         <Cost ResourceName="Strategic1" Instant="true">2</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->

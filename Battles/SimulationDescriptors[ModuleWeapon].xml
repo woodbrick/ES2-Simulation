@@ -192,7 +192,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponKinetic3Strategic1"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="122"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="115"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"         Operation="Addition"  Value="0.06"  TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                  Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
@@ -204,7 +204,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponKinetic3Strategic3"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="122"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="125"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"         Operation="Addition"  Value="0.08"  TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                  Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"    Operation="Addition" Value="1"      TooltipHidden="true"/>
