@@ -57,17 +57,17 @@
     <!-- DUST PLANETARY IMPROVEMENT -->
 
     <SimulationDescriptor Name="PlanetImprovementDust1" Type="PlanetImprovement">
-        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="1"         Path="./ClassColonizedPlanet"/>
+        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="2"         Path="./ClassColonizedPlanet"/>
         <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="1"         Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementDust2" Type="PlanetImprovement">
-        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="2"         Path="./ClassColonizedPlanet"/>
+        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="4"         Path="./ClassColonizedPlanet"/>
         <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="2"         Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementDust3" Type="PlanetImprovement">
-        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="3"         Path="./ClassColonizedPlanet"/>
+        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="6"         Path="./ClassColonizedPlanet"/>
         <Modifier TargetProperty="PlanetRawDust"       Operation="Addition" Value="3"         Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager"/>
     </SimulationDescriptor>
 
