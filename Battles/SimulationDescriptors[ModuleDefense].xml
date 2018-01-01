@@ -95,77 +95,77 @@
 
     <!-- ERA 1 -->
     <SimulationDescriptor Name="ModuleDefenseHullPlating1"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="80"   Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="10"    Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="100"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="15"    Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <!-- ERA 2-->
     <SimulationDescriptor Name="ModuleDefenseHullPlating2"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="136"   Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="20"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="156"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="25"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullPlating2Strategic1"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="204"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="35"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="224"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="40"   Path="ClassModuleDefense"/>
         <Modifier TargetProperty="FleetXPPerDamageAbsorbedByHullPlating"    Operation="Addition" Value="0.01"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <!-- ERA 3-->
     <SimulationDescriptor Name="ModuleDefenseHullPlating3"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="204"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="35"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="224"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="40"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullPlating3Strategic1"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="328"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="53"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="348"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="58"   Path="ClassModuleDefense"/>
         <Modifier TargetProperty="FleetXPPerDamageAbsorbedByHullPlating"    Operation="Addition" Value="0.01"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
     
     <SimulationDescriptor Name="ModuleDefenseHullPlating3Strategic3"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="328"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="53"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="348"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="58"   Path="ClassModuleDefense"/>
         <Modifier TargetProperty="ShipManpowerKillAbsorption"       Operation="Addition" Value="0.1"  Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <!-- ERA 4 -->
     <SimulationDescriptor Name="ModuleDefenseHullPlating4"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="284"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="48"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="304"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="53"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullPlating4Terrans"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="340"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="58"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="360"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="63"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullPlating4Unfallen"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="340"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="58"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="360"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="63"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullPlating4Strategic3"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="456"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="75"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="476"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="80"   Path="ClassModuleDefense"/>
         <Modifier TargetProperty="ShipManpowerKillAbsorption"       Operation="Addition" Value="0.1"  Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullPlating4Strategic5"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="456"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="75"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="476"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="80"   Path="ClassModuleDefense"/>
         <Modifier TargetProperty="RepairFlatPerDamageAbsorbedByHullPlating"         Operation="Addition" Value="0.5"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <!-- ERA 5 -->
     <SimulationDescriptor Name="ModuleDefenseHullPlating5"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="376"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="68"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="396"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="73"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullPlating5Strategic5"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="480"  Path="ClassModuleDefense"/>
-        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="100"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="500"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="110"  Path="ClassModuleDefense"/>
         <Modifier TargetProperty="RepairFlatPerDamageAbsorbedByHullPlating"         Operation="Addition" Value="0.5"   Path="ClassModuleDefense"/>
     </SimulationDescriptor>
 
