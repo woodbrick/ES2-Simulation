@@ -171,7 +171,7 @@
         <Property Name="AllowStrategicDeposit6" BaseValue="0" MaxValue="1" MinValue="0"/>
 
         <Property Name="MinimumStrategicStock" BaseValue="0"/>
-        <Property Name="MaximumStrategicStock" BaseValue="999"/>
+        <Property Name="MaximumStrategicStock" BaseValue="9999"/>
 
         <Property Name="Strategic1Stock"       IsSealed="true"/>
         <Property Name="Strategic2Stock"       IsSealed="true"/>
@@ -190,7 +190,7 @@
 
 
         <Property Name="MinimumLuxuryStock"    BaseValue="0"/>
-        <Property Name="MaximumLuxuryStock"    BaseValue="999"/>
+        <Property Name="MaximumLuxuryStock"    BaseValue="9999"/>
 
         <Property Name="Luxury1Stock"          IsSealed="true"/>
         <Property Name="Luxury2Stock"          IsSealed="true"/>

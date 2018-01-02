@@ -191,7 +191,8 @@
 
     <!-- INDUSTRY -->
     <SimulationDescriptor Name="StarSystemImprovementIndustry3" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="SystemProduction"		        Operation="Addition"		Left="20"   BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="20" BinaryOperation="Multiplication" Right="$(OwnedPlanets)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <Modifier       TargetProperty="SystemProduction"           Operation="Percent" Value="0.1" Path="./ClassColonizedStarSystem"/>
     </SimulationDescriptor>
 
     <!-- MOON EXPLOITATION -->
@@ -212,6 +213,7 @@
 
     <!-- SCIENCE -->
 	<SimulationDescriptor Name="StarSystemImprovementScience3" Type="StarSystemImprovement">
+		<Modifier TargetProperty="SystemResearch"       Operation="Addition" Value="20"  Path="./ClassColonizedStarSystem"/>
 		<Modifier TargetProperty="SystemResearch"       Operation="Percent" Value="0.25" Path="./HappinessStatusStarSystem3"/>
 		<Modifier TargetProperty="SystemResearch"       Operation="Percent" Value="0.25" Path="./HappinessStatusStarSystem4" TooltipHidden="true"/>
 	</SimulationDescriptor>
@@ -475,7 +477,7 @@
 
     <SimulationDescriptor  Name="StarSystemImprovementIndustry6"  Type="StarSystemImprovement">
         <Modifier       TargetProperty="PlanetRawIndustry"          Operation="Addition" Value="4" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <Modifier       TargetProperty="SystemProduction"           Operation="Percent" Value="0.1" Path="./ClassColonizedStarSystem"/>
+        <Modifier       TargetProperty="SystemProduction"           Operation="Percent" Value="0.15" Path="./ClassColonizedStarSystem"/>
     </SimulationDescriptor>
     
 	<SimulationDescriptor Name="BuildingStarSystemImprovementUniqueIndustry1"      Type="BuildingStarSystemImprovement"/>
@@ -638,11 +640,11 @@
 	<!-- ########################################################################### -->
 	<!-- APPROVAL -->
 	<SimulationDescriptor Name="StarSystemImprovementApproval2" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness" Operation="Addition" Right="5" BinaryOperation="Multiplication" Left="$(SystemLevel)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem" />
+        <BinaryModifier TargetProperty="Happiness" Operation="Addition" Right="7" BinaryOperation="Multiplication" Left="$(SystemLevel)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementApproval5" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness"	       Operation="Addition"     Left="8"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="Happiness"	       Operation="Addition"     Left="9"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementApproval5Horatio" Type="StarSystemImprovement">
@@ -1246,17 +1248,17 @@
 	
 	<!-- THE ANALYTICAL ENGINE -->
 	<SimulationDescriptor Name="StarSystemImprovementUniqueCuriosity1" Type="StarSystemImprovement"><!--Feedback is done by GuiElement EffectOverride-->
-		<BinaryModifier TargetProperty="SystemMoney" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(CuriositiesDiscovered)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
+		<BinaryModifier TargetProperty="SystemMoney" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(CuriositiesDiscovered)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
 	</SimulationDescriptor>
 	
 	<!-- SIM CAMP -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity2" Type="StarSystemImprovement">
-		<BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="0.1" BinaryOperation="Multiplication" Right="$(SystemManpowerStock)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+		<BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="0.15" BinaryOperation="Multiplication" Right="$(SystemManpowerStock)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
 	</SimulationDescriptor>
 	
 	<!-- STIM CITY -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity3" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness"	  Operation="Addition"     Left="5"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true" />
+        <BinaryModifier TargetProperty="Happiness"	  Operation="Addition"     Left="7"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true" />
 	</SimulationDescriptor>
 
 	<!-- THE VAULT OF GOVERNANCE -->
@@ -1277,12 +1279,13 @@
 
 	<!-- LUNAR SURVEILLANCE STATION -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity5" Type="StarSystemImprovement">
+		<Modifier       TargetProperty="SystemResearch"       Operation="Percent" Value="0.1"  Path="./ClassColonizedStarSystem"/>
         <BinaryModifier TargetProperty="SystemResearch"	  Operation="Addition"     Left="15"     BinaryOperation="Multiplication" Right="$(OwnedMoons)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true" />
 	</SimulationDescriptor>
 	
 	<!-- LUNAR SURVEILLANCE STATION -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity6" Type="StarSystemImprovement">
-		<Modifier TargetProperty="InfluenceConversionMultiplier" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem"/>
+		<Modifier TargetProperty="InfluenceConversionMultiplier" Operation="Addition" Value="2" Path="./ClassColonizedStarSystem"/>
 	</SimulationDescriptor>
 
     <SimulationDescriptor Name="IncreaseTimeBubbleBeingBuiltCount" Type="IncreaseTimeBubbleBeingBuiltCount">
