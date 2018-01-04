@@ -493,21 +493,21 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap1"      Type="EmpireImprovement">
-        <Modifier TargetProperty="MaximumCommandPoints"               Operation="Addition" Value="3"  Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints"               Operation="Addition" Value="4"  Path="ClassEmpire" />
         <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="100"  Path="ClassEmpire" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementPlayDeck1"      Type="EmpireImprovement"/>
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap2"      Type="EmpireImprovement">
-        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="3"  Path="ClassEmpire" />
-        <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="100"  Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="4"  Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="150"  Path="ClassEmpire" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap2Cravers"      Type="EmpireImprovement">
-        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="3"  Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="4"  Path="ClassEmpire" />
         <Modifier TargetProperty="GarrisonMoneyUpkeep" Operation="Percent"   Value="-0.25"  Path="ClassEmpire/ClassGarrison" />
-        <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="150"  Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="200"  Path="ClassEmpire" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementPlayDeck2"      Type="EmpireImprovement"/>
@@ -530,14 +530,14 @@
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap4"      Type="EmpireImprovement">
         <Modifier TargetProperty="PlayDeckUnlockedSlotsCount"   Value="1" Operation="Addition"   Path="ClassEmpire"    />
-        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="4"  Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="5"  Path="ClassEmpire" />
         <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="300"  Path="ClassEmpire" />
     </SimulationDescriptor>
 
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap4Cravers"      Type="EmpireImprovement">
         <Modifier TargetProperty="PlayDeckUnlockedSlotsCount"   Value="1" Operation="Addition"   Path="ClassEmpire"    />
-        <Modifier TargetProperty="MaximumCommandPoints"     Operation="Addition" Value="4"  Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints"     Operation="Addition" Value="5"  Path="ClassEmpire" />
         <BinaryModifier TargetProperty="SystemProduction"   Operation="Addition" Left="50"  BinaryOperation="Multiplication" Right="$(WarCount)" Path="ClassEmpire/ClassColonizedStarSystem" />
         <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="400"  Path="ClassEmpire" />
     </SimulationDescriptor>
@@ -567,11 +567,11 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap5"      Type="EmpireImprovement">
-        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="3" Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="4" Path="ClassEmpire" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap6"      Type="EmpireImprovement">
-        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="2" Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="3" Path="ClassEmpire" />
     </SimulationDescriptor>
 
 
