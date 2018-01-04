@@ -91,7 +91,7 @@
 
     <!-- FIGHTERS -->
     <SquadronModule Name="ModuleSquadronFighter1" Type="Fighter" Family="FighterBase" Level="1">
-        <Cost ResourceName="SystemProduction">30</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
 		<!--AI DATA START-->
 		<AIBattleSituations Situation="Fighter" Mode="Use" Value="1"/>
 		<AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.5"/>
@@ -122,7 +122,7 @@
     </SquadronModule>
 
     <SquadronModule Name="ModuleSquadronFighter2" Type="Fighter" Family="FighterBase" Level="2">
-		<Cost ResourceName="SystemProduction">35</Cost>
+		<Cost ResourceName="SystemProduction">50</Cost>
 		<!--AI DATA START-->
 		<AIBattleSituations Situation="Fighter" Mode="Use" Value="1"/>
 		<AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.5"/>
@@ -153,7 +153,7 @@
     </SquadronModule>
 
 	<SquadronModule Name="ModuleSquadronFighter3Strategic3" Type="Fighter" Family="FighterStrategic3" Level="2">
-		<Cost ResourceName="SystemProduction">20</Cost>
+		<Cost ResourceName="SystemProduction">30</Cost>
 		<Cost ResourceName="Strategic3" Instant="true">1</Cost>
 		<!--AI DATA START-->
 		<AIBattleSituations Situation="Fighter" Mode="Use" Value="1"/>

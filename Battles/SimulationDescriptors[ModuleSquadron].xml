@@ -78,7 +78,7 @@
         <Modifier TargetProperty="ProjectilesCount" Operation="Addition" Value="2"/>
         <Modifier TargetProperty="ShootingDuration" Operation="Addition" Value="0.2"/>
 
-        <Modifier TargetProperty="AssaultSequenceDuration" Operation="Addition" Value="4"/>
+        <Modifier TargetProperty="AssaultSequenceDuration" Operation="Addition" Value="3"/>
         <Modifier TargetProperty="AssaultAttackDuration" Operation="Addition" Value="1.8"/>
 
         <Modifier TargetProperty="DuelSequenceDuration" Operation="Addition" Value="4"/>
@@ -86,9 +86,9 @@
 
         <Modifier TargetProperty="ChaseSequenceDuration" Operation="Addition" Value="4"/>
 
-        <Modifier TargetProperty="DamageAgainstSmallShipsModifier"  Operation="Addition" Value="0.4"/>
-        <Modifier TargetProperty="DamageAgainstMediumShipsModifier" Operation="Addition" Value="0.25"/>
-        <Modifier TargetProperty="DamageAgainstLargeShipsModifier"  Operation="Addition" Value="0.1"/>
+        <Modifier TargetProperty="DamageAgainstSmallShipsModifier"  Operation="Addition" Value="0.6"/>
+        <Modifier TargetProperty="DamageAgainstMediumShipsModifier" Operation="Addition" Value="0.4"/>
+        <Modifier TargetProperty="DamageAgainstLargeShipsModifier"  Operation="Addition" Value="0.2"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="SquadronTypeBomber" Type="SquadronType">
@@ -105,7 +105,7 @@
         <Modifier TargetProperty="ProjectilesCount" Operation="Addition" Value="1"/>
         <Modifier TargetProperty="ShootingDuration" Operation="Addition" Value="0.4"/>
 
-        <Modifier TargetProperty="AssaultSequenceDuration" Operation="Addition" Value="6"/>
+        <Modifier TargetProperty="AssaultSequenceDuration" Operation="Addition" Value="5"/>
         <Modifier TargetProperty="AssaultAttackDuration" Operation="Addition" Value="2.7"/>
 
         <Modifier TargetProperty="DamageAgainstSmallShipsModifier"  Operation="Addition" Value="0.5"/>
