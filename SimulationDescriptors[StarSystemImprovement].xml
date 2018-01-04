@@ -813,7 +813,7 @@
             <!-- Trading v2 -->
     <SimulationDescriptor Name="StarSystemImprovementTradingCompanyHeadquarters" Type="StarSystemImprovement">
         <Modifier TargetProperty="TradingCompanyHeaquarterCount"                Operation="Addition"        Value="1"         Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
-        <Modifier TargetProperty="TradingRouteSystemBaseIncome"                 Operation="Addition"        Value="5"                               Priority="3" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="TradingRouteSystemBaseIncome"                 Operation="Addition"        Value="5"         Priority="3" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
         <!-- Default 10 -->
       <!-- target property is sealed, updated by code, because the star system improvement might not always be linked to the simulation -->
       <!--<Modifier TargetProperty="NumberOfTradingCompanyHeadquarters" Operation="Addition" Value="1" Path="../ClassEmpire,EmpireTypeMajor"/>-->
@@ -1274,12 +1274,12 @@
 	
 	<!-- NANOHAZE DEFENSES -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity4" Type="StarSystemImprovement">
-		<Modifier TargetProperty="GroundBattleDefenderTroopsMaxHealthMultiplier" Operation="Addition" Value="0.25" Path="./ClassColonizedStarSystem"/>
+		<Modifier TargetProperty="GroundBattleDefenderTroopsMaxHealthMultiplier" Operation="Addition" Value="0.33" Path="./ClassColonizedStarSystem"/>
 	</SimulationDescriptor>
 
 	<!-- LUNAR SURVEILLANCE STATION -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity5" Type="StarSystemImprovement">
-		<Modifier       TargetProperty="SystemResearch"       Operation="Percent" Value="0.1"  Path="./ClassColonizedStarSystem"/>
+		<Modifier       TargetProperty="SystemResearch"       Operation="Percent" Value="0.15"  Path="./ClassColonizedStarSystem"/>
         <BinaryModifier TargetProperty="SystemResearch"	  Operation="Addition"     Left="15"     BinaryOperation="Multiplication" Right="$(OwnedMoons)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true" />
 	</SimulationDescriptor>
 	
