@@ -582,7 +582,7 @@
 
 	<!-- Squadron defense enhancer-->
 	<SimulationDescriptor Name="ModuleSupportSquadronDefenseEnhancer"              Type="ModuleSupportSquadronDefenseEnhancer">
-		<Property Name="SquadronMaximumHealth" BaseValue="0"/>
+		<Property Name="SquadronMaximumHealth" BaseValue="50"/>
 		<Property Name="SquadronDodgeChance" BaseValue="0"/>
 
 		<Modifier TargetProperty="SquadronMaximumHealth"		Operation="Multiplication" Value="$(Multiplier)" />
@@ -592,8 +592,8 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportSquadronDefenseEnhancer1Strategic3"              Type="ModuleSupportSquadronDefenseEnhancer">
-		<Modifier TargetProperty="SquadronMaximumHealth"    Operation="Addition"	Value="100"		Path="ModuleSupportSquadronDefenseEnhancer"/>
-		<Modifier TargetProperty="SquadronDodgeChance"		Operation="Addition"	Value="0.15"		Path="ModuleSupportSquadronDefenseEnhancer"/>
+		<Modifier TargetProperty="SquadronMaximumHealth"    Operation="Addition"	Value="150"		Path="ModuleSupportSquadronDefenseEnhancer"/>
+		<Modifier TargetProperty="SquadronDodgeChance"		Operation="Addition"	Value="0.2"		Path="ModuleSupportSquadronDefenseEnhancer"/>
 	</SimulationDescriptor>
 
 	<!-- Flak enhancer-->

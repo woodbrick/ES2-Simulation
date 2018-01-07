@@ -281,7 +281,7 @@
 
     <!-- TRADE -->
 	<SimulationDescriptor Name="StarSystemImprovementTrade1" Type="StarSystemImprovement">
-		<Modifier TargetProperty="TradingRouteIncomeModifier" Operation="Percent"  Value="0.25" Path="./ClassColonizedStarSystem"/>
+		<Modifier TargetProperty="TradingRouteIncomeModifier" Operation="Percent"  Value="0.33" Path="./ClassColonizedStarSystem"/>
 	</SimulationDescriptor>
     
     <!-- FOOD -->
@@ -1253,7 +1253,7 @@
 	
 	<!-- SIM CAMP -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity2" Type="StarSystemImprovement">
-		<BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="0.15" BinaryOperation="Multiplication" Right="$(SystemManpowerStock)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+		<BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="0.1" BinaryOperation="Multiplication" Right="$(SystemManpowerStock)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
 	</SimulationDescriptor>
 	
 	<!-- STIM CITY -->

@@ -728,7 +728,7 @@
         <Property Name="MaximumNumberOfTradingCompanyHeadquarters" BaseValue="0"/>
         <Property Name="NumberOfTradingCompanyHeadquarters" IsSealed="true" IsSerializable="true"/>
 
-        <Property Name="MaximumNumberOfTradingCompanySubsidiaries" BaseValue="0"/>
+        <Property Name="MaximumNumberOfTradingCompanySubsidiaries" BaseValue="1"/>
         <Property Name="NumberOfTradingCompanySubsidiaries" IsSealed="true" IsSerializable="true"/>
 
         <Property Name="TradingRoutesIncomeAccumulator" IsSealed="true" IsSerializable="true"/>    
