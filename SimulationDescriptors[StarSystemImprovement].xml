@@ -165,7 +165,7 @@
     
     <!-- Resource Factory -->
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory1" Type="StarSystemImprovement">
-        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1.5" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
     </SimulationDescriptor>
 
 
