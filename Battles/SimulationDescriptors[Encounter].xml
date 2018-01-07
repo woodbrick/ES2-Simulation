@@ -109,8 +109,8 @@
     <SimulationDescriptor Name="MoraleBonusDescriptor" Type="MoraleBonus">
         <!-- Compute Morale Bonus Effect -->
         <BinaryModifier TargetProperty="MoraleBonus" Operation="Addition" Left="$(EffectiveFlotillasCount)" BinaryOperation="Subtraction" Right="$(OpponentEffectiveFlotillasCount)" TooltipHidden="true"/>
-        <Modifier       TargetProperty="MoraleBonusDamage" Operation="Addition" Value="0.1" Path="ClassGroup"/>
-        <Modifier       TargetProperty="MoraleBonusAccuracy" Operation="Addition" Value="0.05" Path="ClassGroup"/>
+        <Modifier       TargetProperty="MoraleBonusDamage" Operation="Addition" Value="0.15" Path="ClassGroup"/>
+        <Modifier       TargetProperty="MoraleBonusAccuracy" Operation="Addition" Value="0.1" Path="ClassGroup"/>
         <BinaryModifier TargetProperty="Damage"     Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusDamage)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleWeapon" TooltipHidden="true" />
         <BinaryModifier TargetProperty="Accuracy"   Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusAccuracy)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleWeapon" TooltipHidden="true" />
 		<BinaryModifier TargetProperty="Damage"     Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusDamage)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleSquadron" TooltipHidden="true" />
@@ -563,7 +563,7 @@
     <!-- PLAY EFFECTS -->
 
     <SimulationDescriptor Name="PlayEffectShortRangeDefense"   Type="PlayEffect">
-        <Modifier TargetProperty="DefenseBonusAtShortRange"    Operation="Addition"   Value="0.25"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="DefenseBonusAtShortRange"    Operation="Addition"   Value="0.33"  Path="ClassGroup//ClassShip"/>
 		
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.3" Path="ClassGroup" TooltipHidden="true"/>
@@ -571,7 +571,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectLongRangeDefense"   Type="PlayEffect">
-        <Modifier TargetProperty="DefenseBonusAtLongRange"    Operation="Addition"   Value="0.25"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="DefenseBonusAtLongRange"    Operation="Addition"   Value="0.33"  Path="ClassGroup//ClassShip"/>
 		
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.3" Path="ClassGroup" TooltipHidden="true"/>
@@ -579,7 +579,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectShieldIncrease"   Type="PlayEffect">
-        <Modifier TargetProperty="ShieldAbsorptionPercent"  Operation="Percent"   Value="0.75"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="ShieldAbsorptionPercent"  Operation="Percent"   Value="0.7"  Path="ClassGroup//ClassShip"/>
         <Modifier TargetProperty="Damage"                   Operation="Percent"   Value="-0.1" Path="ClassGroup//ClassModuleWeapon"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
@@ -588,7 +588,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectHullPlatingIncrease"   Type="PlayEffect">
-        <Modifier TargetProperty="HullPlatingAbsorptionPercent"  Operation="Percent"   Value="0.55"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="HullPlatingAbsorptionPercent"  Operation="Percent"   Value="0.5"  Path="ClassGroup//ClassShip"/>
 		
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.3" Path="ClassGroup" TooltipHidden="true"/>
@@ -650,7 +650,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectDamageIncreasePerShipAtLongRange"   Type="PlayEffect">
-        <Modifier TargetProperty="DamageBonusPerOpponentShipAtLongRange"      Operation="Addition"   Value="0.02"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="DamageBonusPerOpponentShipAtLongRange"      Operation="Addition"   Value="0.04"  Path="ClassGroup//ClassShip"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.7" Path="ClassGroup" TooltipHidden="true"/>
@@ -674,7 +674,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectPlayerRecycling"   Type="PlayEffect">
-        <Modifier TargetProperty="PlayerRecyclingDustPerCP"      Operation="Addition"   Value="15"  Path="ClassGroup"/>
+        <Modifier TargetProperty="PlayerRecyclingDustPerCP"      Operation="Addition"   Value="50"  Path="ClassGroup"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.5" Path="ClassGroup" TooltipHidden="true"/>
@@ -682,7 +682,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectOpponentRecycling"   Type="PlayEffect">
-        <Modifier TargetProperty="OpponentRecyclingDustPerCP"      Operation="Addition"   Value="15"  Path="ClassGroup"/>
+        <Modifier TargetProperty="OpponentRecyclingDustPerCP"      Operation="Addition"   Value="50"  Path="ClassGroup"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.5" Path="ClassGroup" TooltipHidden="true"/>
@@ -733,7 +733,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectInfluenceGain"   Type="PlayEffect">
-        <Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP"      Operation="Addition"   Value="3"  Path="ClassGroup"/>
+        <Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP"      Operation="Addition"   Value="30"  Path="ClassGroup"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.5" Path="ClassGroup" TooltipHidden="true"/>
@@ -741,7 +741,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectScienceGain"   Type="PlayEffect">
-        <Modifier TargetProperty="OpponentRecyclingSciencePerCP"      Operation="Addition"   Value="5"  Path="ClassGroup"/>
+        <Modifier TargetProperty="OpponentRecyclingSciencePerCP"      Operation="Addition"   Value="40"  Path="ClassGroup"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.5" Path="ClassGroup" TooltipHidden="true"/>
@@ -749,7 +749,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectEnergyManpowerKillIncrease"   Type="PlayEffect">
-        <Modifier TargetProperty="AdditionalShipManpowerKillPerHitEnergy"      Operation="Addition"   Value="2"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="AdditionalShipManpowerKillPerHitEnergy"      Operation="Addition"   Value="4"  Path="ClassGroup//ClassShip"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.7" Path="ClassGroup" TooltipHidden="true"/>
@@ -757,7 +757,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectProjectileManpowerKillIncrease"   Type="PlayEffect">
-        <Modifier TargetProperty="AdditionalShipManpowerKillPerHitProjectile" Operation="Addition" Value="2" Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="AdditionalShipManpowerKillPerHitProjectile" Operation="Addition" Value="4" Path="ClassGroup//ClassShip"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.7" Path="ClassGroup" TooltipHidden="true"/>
@@ -798,7 +798,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectLostShipRepair"   Type="PlayEffect">
-        <Modifier TargetProperty="RepairAfterBattlePerLostShip"      Operation="Addition"   Value="0.05"  Path="ClassGroup"/>
+        <Modifier TargetProperty="RepairAfterBattlePerLostShip"      Operation="Addition"   Value="0.08"  Path="ClassGroup"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.3" Path="ClassGroup" TooltipHidden="true"/>
