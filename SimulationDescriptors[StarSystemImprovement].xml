@@ -176,11 +176,11 @@
     <!-- ENROLLMENT -->
     <SimulationDescriptor Name="StarSystemImprovementEnrollment1" Type="StarSystemImprovement">
         <Modifier TargetProperty="MaximumSystemManpower"        Operation="Addition" Value="300" Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="PassiveEnrollmentRate"        Operation="Addition" Value="0.2" Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="PassiveEnrollmentRate"        Operation="Addition" Value="0.15" Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementEnrollment2" Type="StarSystemImprovement">
-        <Modifier TargetProperty="PassiveEnrollmentRate"        Operation="Addition" Value="0.2" Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="PassiveEnrollmentRate"        Operation="Addition" Value="0.25" Path="./ColonizedStarSystemStateColony,ClassColonizedStarSystem"/>
     </SimulationDescriptor>
 
 	<!-- INFLUENCE -->
@@ -1261,7 +1261,7 @@
 	
 	<!-- STIM CITY -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity3" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness"	  Operation="Addition"     Left="7"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true" />
+        <BinaryModifier TargetProperty="Happiness"	  Operation="Addition"     Left="6"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true" />
 	</SimulationDescriptor>
 
 	<!-- THE VAULT OF GOVERNANCE -->
