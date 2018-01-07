@@ -643,11 +643,11 @@
 	<!-- ########################################################################### -->
 	<!-- APPROVAL -->
 	<SimulationDescriptor Name="StarSystemImprovementApproval2" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness" Operation="Addition" Right="7" BinaryOperation="Multiplication" Left="$(SystemLevel)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem" />
+        <BinaryModifier TargetProperty="Happiness" Operation="Addition" Right="6" BinaryOperation="Multiplication" Left="$(SystemLevel)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementApproval5" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness"	       Operation="Addition"     Left="9"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="Happiness"	       Operation="Addition"     Left="8"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementApproval5Horatio" Type="StarSystemImprovement">
@@ -1036,11 +1036,11 @@
 
     <!-- ######## TIMELORDS ######## -->
     <SimulationDescriptor Name="StarSystemImprovementQuestTimeLords01" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness"          Operation="Addition" Left="5"      BinaryOperation="Multiplication" Right="$(HasNonMajorPopulation)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipOverride="%StarSystemImprovementQuestTimeLords01TooltipsEffect"/>
+        <BinaryModifier TargetProperty="Happiness"          Operation="Addition" Left="6"      BinaryOperation="Multiplication" Right="$(HasNonMajorPopulation)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipOverride="%StarSystemImprovementQuestTimeLords01TooltipsEffect"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementQuestTimeLords02" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness"          Operation="Addition" Left="5"      BinaryOperation="Multiplication" Right="$(HasMajorPopulation)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipOverride="%StarSystemImprovementQuestTimeLords02TooltipsEffect"/>
+        <BinaryModifier TargetProperty="Happiness"          Operation="Addition" Left="6"      BinaryOperation="Multiplication" Right="$(HasMajorPopulation)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipOverride="%StarSystemImprovementQuestTimeLords02TooltipsEffect"/>
     </SimulationDescriptor>
 
     <!-- ######## UNFALLEN ######## -->
