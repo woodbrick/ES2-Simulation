@@ -909,7 +909,7 @@
 
 	<!--Wing Coordination: +1% Damage on Squadrons per Squadron in Fleet-->
 	<SimulationDescriptor Name="PlayEffectSquadronDamageIncreasePerSquadron"   Type="PlayEffect">
-		<BinaryModifier TargetProperty="Damage" Operation="Percent" Left="0.01" BinaryOperation="Multiplication" Right="$(SquadronAmount)" Path="ClassGroup//ClassModuleSquadron"/>
+		<BinaryModifier TargetProperty="Damage" Operation="Percent" Left="0.02" BinaryOperation="Multiplication" Right="$(SquadronAmount)" Path="ClassGroup//ClassModuleSquadron"/>
 		<Modifier TargetProperty="HasEffectSquadronDamageIncreasePerSquadron" Operation="Addition" Value="1" Path="ClassGroup" TooltipHidden="true"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
