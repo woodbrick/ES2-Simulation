@@ -326,21 +326,21 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportFlotillaRepair1Strategic3"            Type="ModuleSupportFlotillaRepair">
-		<Modifier TargetProperty="FlotillaRepairAfterBattle" Operation="Addition" Value="0.05" Path="ClassModule"/>
-		<Modifier TargetProperty="FlotillaRepairAfterPhase" Operation="Addition" Value="0.05" Path="ClassModule"/>
+		<Modifier TargetProperty="FlotillaRepairAfterBattle" Operation="Addition" Value="0.08" Path="ClassModule"/>
+		<Modifier TargetProperty="FlotillaRepairAfterPhase" Operation="Addition" Value="0.08" Path="ClassModule"/>
 		<Modifier TargetProperty="DefensiveMilitaryPower"  Operation="Percent" Value="0.8" Path="../ClassShip"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportFlotillaRepair1Strategic3TimeLords"            Type="ModuleSupportFlotillaRepair">
-		<Modifier TargetProperty="FlotillaRepairAfterBattle" Operation="Addition" Value="0.1" Path="ClassModule"/>
-		<Modifier TargetProperty="FlotillaRepairAfterPhase" Operation="Addition" Value="0.1" Path="ClassModule"/>
-		<Modifier TargetProperty="DefensiveMilitaryPower"  Operation="Percent" Value="1" Path="../ClassShip"/>
+		<Modifier TargetProperty="FlotillaRepairAfterBattle" Operation="Addition" Value="0.12" Path="ClassModule"/>
+		<Modifier TargetProperty="FlotillaRepairAfterPhase" Operation="Addition" Value="0.12" Path="ClassModule"/>
+		<Modifier TargetProperty="DefensiveMilitaryPower"  Operation="Percent" Value="1.2" Path="../ClassShip"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportFlotillaRepair2Strategic5"            Type="ModuleSupportFlotillaRepair">
 		<Modifier TargetProperty="FlotillaRepairAfterBattle" Operation="Addition" Value="0.15" Path="ClassModule"/>
 		<Modifier TargetProperty="FlotillaRepairAfterPhase" Operation="Addition" Value="0.15" Path="ClassModule"/>
-		<Modifier TargetProperty="DefensiveMilitaryPower"  Operation="Percent" Value="1.2" Path="../ClassShip"/>
+		<Modifier TargetProperty="DefensiveMilitaryPower"  Operation="Percent" Value="1.5" Path="../ClassShip"/>
 	</SimulationDescriptor>
 
 	<!-- ********************************** -->
