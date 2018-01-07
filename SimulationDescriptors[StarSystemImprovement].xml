@@ -427,9 +427,9 @@
 
 	<!-- BUYOUT -->
 	<SimulationDescriptor Name="StarSystemImprovementBuyout2" Type="StarSystemImprovement">
-		<Modifier TargetProperty="SystemMoney"                             Operation="Percent"   Value="0.1"    Path="./ClassColonizedStarSystem"/>
-		<Modifier TargetProperty="BuildingBuyoutReduction"                 Operation="Addition"  Value="0.1"    Path="./ClassColonizedStarSystem"   />
-		<Modifier TargetProperty="ShipBuyoutReduction"                     Operation="Addition"  Value="0.1"    Path="./ClassColonizedStarSystem"   />
+		<Modifier TargetProperty="SystemMoney"                             Operation="Percent"   Value="0.15"    Path="./ClassColonizedStarSystem"/>
+		<Modifier TargetProperty="BuildingBuyoutReduction"                 Operation="Addition"  Value="0.15"    Path="./ClassColonizedStarSystem"   />
+		<Modifier TargetProperty="ShipBuyoutReduction"                     Operation="Addition"  Value="0.15"    Path="./ClassColonizedStarSystem"   />
 	</SimulationDescriptor>
 
 	<!-- SCIENCE -->
