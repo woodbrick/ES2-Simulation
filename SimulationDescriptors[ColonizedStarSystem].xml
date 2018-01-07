@@ -222,7 +222,7 @@
         <Property Name="TradingCompanyHeaquarterCount" BaseValue="0" MaxValue="1"/>
         <Property Name="NumberOfTradingCompanies" BaseValue="0"/>
         <!-- Multiplies the resources produced for the trade routes -->
-        <Property Name="TradingRouteIncomeModifier"         BaseValue="1.5"/>
+        <Property Name="TradingRouteIncomeModifier"         BaseValue="1"/>
 
         <!-- Base resources produced for the trade routes -->
         <Property Name="TradingRoutesBonus_Growth" BaseValue="1"/>
