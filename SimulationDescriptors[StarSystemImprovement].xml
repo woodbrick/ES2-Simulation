@@ -122,7 +122,7 @@
     
     <!-- SCIENCE -->
     <SimulationDescriptor Name="StarSystemImprovementScience1" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="SystemResearch"		        Operation="Addition"		Left="10"   BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemResearch"		        Operation="Addition"		Left="15"   BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
         <BinaryModifier TargetProperty="SystemResearch"		        Operation="Addition"		Left="10"   BinaryOperation="Multiplication" Right="$(OwnedTeemingPlanets)"     Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
         <BinaryModifier TargetProperty="SystemResearch"		        Operation="Addition"		Left="10"   BinaryOperation="Multiplication" Right="$(OwnedTemperatePlanets)"   Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>
@@ -198,7 +198,7 @@
     <!-- MOON EXPLOITATION -->
     <SimulationDescriptor Name="StarSystemImprovementMoonExploitation1" Type="StarSystemImprovement">
         <BinaryModifier TargetProperty="SystemMoney"		        Operation="Addition"		Left="40"   BinaryOperation="Multiplication" Right="$(OwnedMoons)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
-        <BinaryModifier TargetProperty="SystemResearch"		        Operation="Addition"		Left="50"   BinaryOperation="Multiplication" Right="$(OwnedMoons)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemResearch"		        Operation="Addition"		Left="60"   BinaryOperation="Multiplication" Right="$(OwnedMoons)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>
     
     <!-- POPULATION -->
@@ -213,18 +213,18 @@
 
     <!-- SCIENCE -->
 	<SimulationDescriptor Name="StarSystemImprovementScience3" Type="StarSystemImprovement">
-		<Modifier TargetProperty="SystemResearch"       Operation="Addition" Value="20"  Path="./ClassColonizedStarSystem"/>
-		<Modifier TargetProperty="SystemResearch"       Operation="Percent" Value="0.25" Path="./HappinessStatusStarSystem3"/>
-		<Modifier TargetProperty="SystemResearch"       Operation="Percent" Value="0.25" Path="./HappinessStatusStarSystem4" TooltipHidden="true"/>
+		<Modifier TargetProperty="SystemResearch"       Operation="Addition" Value="30"  Path="./ClassColonizedStarSystem"/>
+		<Modifier TargetProperty="SystemResearch"       Operation="Percent" Value="0.20" Path="./HappinessStatusStarSystem3"/>
+		<Modifier TargetProperty="SystemResearch"       Operation="Percent" Value="0.20" Path="./HappinessStatusStarSystem4" TooltipHidden="true"/>
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="StarSystemImprovementScience4" Type="StarSystemImprovement">
 		<Modifier TargetProperty="SystemResearch" Operation="Addition" Value="30" Path="./ClassColonizedStarSystem"/>
-		<Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="2"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+		<Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="3"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
 	</SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementScience4Sophons" Type="StarSystemImprovement">
 		<Modifier TargetProperty="SystemResearch" Operation="Addition" Value="50" Path="./ClassColonizedStarSystem"/>
-		<Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="3"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+		<Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="4"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
     </SimulationDescriptor>
 	
 	<!--CONVERTER-->
@@ -311,22 +311,23 @@
     </SimulationDescriptor>
     
     <SimulationDescriptor Name="StarSystemImprovementScience2" Type="StarSystemImprovement">
-        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
         <BinaryModifier TargetProperty="PlanetRawScience"        Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(PlanetHasAnomaly)" Path="./ClassColonizedStarSystem/ClassColonizedPlanet" SearchValueFromPath="true" />
     </SimulationDescriptor>
 	<SimulationDescriptor Name="BuildingStarSystemImprovementUniqueScience1"    Type="BuildingStarSystemImprovement"/>
 	<SimulationDescriptor Name="StarSystemImprovementUniqueScience1" Type="StarSystemImprovement">
-		<BinaryModifier TargetProperty="SystemResearch"     Operation="Addition"      Left="50" BinaryOperation="Multiplication" Right="$(SystemLevel)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
-        <BinaryModifier TargetProperty="SystemResearch"		Operation="Addition"		Left="10"   BinaryOperation="Multiplication" Right="$(OwnedAnomalies)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+		<BinaryModifier TargetProperty="SystemResearch"     Operation="Addition"      Left="60" BinaryOperation="Multiplication" Right="$(SystemLevel)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemResearch"		Operation="Addition"		Left="20"   BinaryOperation="Multiplication" Right="$(OwnedAnomalies)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
 	</SimulationDescriptor>
     
     <SimulationDescriptor Name="StarSystemImprovementScience6" Type="StarSystemImprovement">
-        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeCold"/>
+        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="3" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeCold"/>
         <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="4" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementScience7" Type="StarSystemImprovement">
-        <Modifier       TargetProperty="SystemResearch"     Operation="Percent"     Value="0.4"  Path="./ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"   Operation="Percent"  Value="0.4"  Path="./ClassColonizedStarSystem"/>
+		<Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="2"    Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
     </SimulationDescriptor>
 
     <!-- APPROVAL -->
@@ -435,7 +436,7 @@
 
 	<!-- SCIENCE -->
 	<SimulationDescriptor Name="StarSystemImprovementScience5" Type="StarSystemImprovement">
-		<Modifier       TargetProperty="SystemResearch"     Operation="Percent"     Value="0.1"  Path="./ClassColonizedStarSystem"/>
+		<Modifier       TargetProperty="SystemResearch"     Operation="Percent"     Value="0.2"  Path="./ClassColonizedStarSystem"/>
 		<BinaryModifier TargetProperty="SystemResearch"     Operation="Percent"     Left="0.2"  BinaryOperation="Multiplication"    Right="$(WarCount)"       SearchValueFromPath="true"  Path="./ClassColonizedStarSystem"/>
 	</SimulationDescriptor>
 	
@@ -1044,7 +1045,7 @@
 
     <!-- ######## UNFALLEN ######## -->
     <SimulationDescriptor Name="StarSystemImprovementQuestUnfallen04" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="SystemResearch"	  Operation="Addition"     Left="10"     BinaryOperation="Multiplication" Right="$(PopulationType)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"  TooltipOverride="%StarSystemImprovementQuestUnfallen04TooltipsEffect"/>
+        <BinaryModifier TargetProperty="SystemResearch"	  Operation="Addition"     Left="20"     BinaryOperation="Multiplication" Right="$(PopulationType)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"  TooltipOverride="%StarSystemImprovementQuestUnfallen04TooltipsEffect"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="StarSystemImprovementQuestUnfallen05" Type="StarSystemImprovement">
         <BinaryModifier TargetProperty="Happiness"	  Operation="Addition"     Left="5"     BinaryOperation="Multiplication" Right="$(PopulationType)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipOverride="%StarSystemImprovementQuestUnfallen05TooltipsEffect"/>
@@ -1053,9 +1054,9 @@
     <!-- ######## GLOBAL QUEST 05 ######## -->
 
     <SimulationDescriptor Name="StarSystemImprovementQuestGlobalCompet05" Type="StarSystemImprovementQuest">
-        <Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="2"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="5"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetSizeHuge"/>
+        <Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="3"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
         <Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="4"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetSizeLarge"/>
+        <Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="5"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetSizeHuge"/>
     </SimulationDescriptor>
 
 
