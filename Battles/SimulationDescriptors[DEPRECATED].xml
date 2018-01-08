@@ -774,7 +774,7 @@
 	<!-- ******************** -->
 	<SimulationDescriptor Name="ClassHullVampirilisMothership" Type="ClassHull">
 		<Modifier TargetProperty="MothershipCount" Operation="Addition" Value="1" Path="../ClassEmpire,AffinityGameplayVampirilis" />
-		<Modifier TargetProperty="MaximumEmpireLifeforceStock" Operation="Addition" Value="500" Path="../ClassEmpire,AffinityGameplayVampirilis" />
+		<Modifier TargetProperty="MaximumEmpireLifeforceStock" Operation="Addition" Value="400" Path="../ClassEmpire,AffinityGameplayVampirilis" />
 		<Modifier TargetProperty="MaximumShipManpower" Operation="Addition" Value="220"     Path="ClassShip"/>
 	</SimulationDescriptor>
 
