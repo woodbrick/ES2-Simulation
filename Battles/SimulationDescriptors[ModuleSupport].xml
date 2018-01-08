@@ -490,7 +490,7 @@
 
 	<SimulationDescriptor Name="ModuleSupportRepair2Strategic2" Type="ModuleSupportRepair">
 		<Modifier TargetProperty="SectionHealthBonus"       Operation="Addition" Value="200"    Path="ClassModule"/>
-		<Modifier TargetProperty="RepairAfterBattle" Operation="Addition" Value="0.25" Path="ModuleSupportRepair"/>
+		<Modifier TargetProperty="RepairAfterBattle" Operation="Addition" Value="0.3" Path="ModuleSupportRepair"/>
 		<Modifier TargetProperty="HealthRegenerationRatio" Operation="Addition" Value="0.05" Path="ModuleSupportRepair"/>
 		<Modifier TargetProperty="DefensiveMilitaryPower"   Operation="Percent" Value="0.8" Path="../ClassShip"/>
 	</SimulationDescriptor>

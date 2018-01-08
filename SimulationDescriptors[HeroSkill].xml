@@ -230,13 +230,13 @@
 	
 	<!--HeroSkill25-->
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_0" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.05"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.8"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_2" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.10"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.16"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_3" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.25"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.32"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_4" Type="HeroSkillShip" IsSerializable="false">
 		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.50"		Path="./ClassGarrisonFleet" />
