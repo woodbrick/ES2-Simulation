@@ -41,6 +41,7 @@
         <Property Name="EmpirePointGainPerCP" BaseValue="0" MinValue="Negative"/>
         
         <Property Name="EarnedExperience" BaseValue="0" IsSealed="true"/>
+        <Property Name="EarnedExperienceForHero" BaseValue="0" IsSealed="true"/>
         <Property Name="ExperienceBonusPercent" BaseValue="0"/>
         <Property Name="ExperiencePerLostCP" BaseValue="0"/>
         <Property Name="DestroyedCP" BaseValue="0" IsSealed="true"/>
@@ -109,7 +110,7 @@
     <SimulationDescriptor Name="MoraleBonusDescriptor" Type="MoraleBonus">
         <!-- Compute Morale Bonus Effect -->
         <BinaryModifier TargetProperty="MoraleBonus" Operation="Addition" Left="$(EffectiveFlotillasCount)" BinaryOperation="Subtraction" Right="$(OpponentEffectiveFlotillasCount)" TooltipHidden="true"/>
-        <Modifier       TargetProperty="MoraleBonusDamage" Operation="Addition" Value="0.15" Path="ClassGroup"/>
+        <Modifier       TargetProperty="MoraleBonusDamage" Operation="Addition" Value="0.1" Path="ClassGroup"/>
         <Modifier       TargetProperty="MoraleBonusAccuracy" Operation="Addition" Value="0.1" Path="ClassGroup"/>
         <BinaryModifier TargetProperty="Damage"     Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusDamage)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleWeapon" TooltipHidden="true" />
         <BinaryModifier TargetProperty="Accuracy"   Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusAccuracy)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleWeapon" TooltipHidden="true" />
@@ -211,6 +212,7 @@
         <Property Name="DamageAppliedPhase3" BaseValue="0" IsSealed="true"/>
         
         <Property Name="DamageAppliedByKinetic" BaseValue="0" IsSealed="true"/>
+        <Property Name="DamageAppliedByRailgun" BaseValue="0" IsSealed="true"/>
         <Property Name="DamageAppliedByMissile" BaseValue="0" IsSealed="true"/>
         <Property Name="DamageAppliedByLaser" BaseValue="0" IsSealed="true"/>
         <Property Name="DamageAppliedByBeam" BaseValue="0" IsSealed="true"/>
@@ -650,7 +652,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlayEffectDamageIncreasePerShipAtLongRange"   Type="PlayEffect">
-        <Modifier TargetProperty="DamageBonusPerOpponentShipAtLongRange"      Operation="Addition"   Value="0.04"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="DamageBonusPerOpponentShipAtLongRange"      Operation="Addition"   Value="0.03"  Path="ClassGroup//ClassShip"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.7" Path="ClassGroup" TooltipHidden="true"/>
