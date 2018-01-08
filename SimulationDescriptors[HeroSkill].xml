@@ -36,8 +36,8 @@
 		<Modifier TargetProperty="Upkeep"											Operation="Multiplication"	Value="0"	Path="../ClassGarrisonFleet/ClassHero,HeroAssignedToFleet" TooltipOverride="%TooltipOverrideHeroSkillNoAdmiralUpkeep"/>
 	</SimulationDescriptor>
     <SimulationDescriptor Name="HeroSkill15_HeroesUpkeepReduction" Type="HeroSkill" IsSerializable="false">
-        <Modifier TargetProperty="Upkeep" Operation="Percent" Value="-0.1" Path="../ClassEmpire/ClassColonizedStarSystem/ClassHero"  />
-        <Modifier TargetProperty="Upkeep" Operation="Percent" Value="-0.1" Path="../ClassEmpire/ClassGarrisonFleet/ClassHero" TooltipHidden="true" />
+        <Modifier TargetProperty="Upkeep" Operation="Percent" Value="-0.1" Path="ClassHero"  />
+        <Modifier TargetProperty="Upkeep" Operation="Percent" Value="-0.1" Path="ClassHero" TooltipHidden="true" />
     </SimulationDescriptor>
 	
 	<!--HeroSkill17-->
@@ -139,18 +139,19 @@
 
 	<!--HeroSkill8-->
 	<SimulationDescriptor Name="HeroSkillShip8_SystemManpower_Percent_0" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="MaximumShipManpower"									Operation="Percent"				Value="0.10"		Path="./ClassGarrisonFleet/ClassShip" />
-	</SimulationDescriptor>
-	<SimulationDescriptor Name="HeroSkillShip8_SystemManpower_Percent_3" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="MaximumShipManpower"									Operation="Percent"				Value="0.25"		Path="./ClassGarrisonFleet/ClassShip" />
-		<Modifier TargetProperty="SiegePower"											Operation="Percent"				Value="0.1"		Path="./ClassGarrisonFleet" />
-	</SimulationDescriptor>
-	<SimulationDescriptor Name="HeroSkillShip8_SystemManpower_Percent_4" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="MaximumShipManpower"									Operation="Percent"				Value="0.5"		Path="./ClassGarrisonFleet/ClassShip" />
-		<Modifier TargetProperty="SiegePower"											Operation="Percent"				Value="0.2"		Path="./ClassGarrisonFleet" />
-	</SimulationDescriptor>
+		<Modifier TargetProperty="MaximumShipManpower"									Operation="Percent"				Value="0.10"		Path="./ClassGarrisonFleet/ClassShip" Priority="1" />
+        <Modifier TargetProperty="SiegePower"											Operation="Percent"				Value="0.025"		Path="./ClassGarrisonFleet" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="HeroSkillShip8_SystemManpower_Percent_3" Type="HeroSkillShip" IsSerializable="false">
+        <Modifier TargetProperty="MaximumShipManpower"									Operation="Percent"				Value="0.25"		Path="./ClassGarrisonFleet/ClassShip" Priority="1"/>
+        <Modifier TargetProperty="SiegePower"											Operation="Percent"				Value="0.1"		Path="./ClassGarrisonFleet" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="HeroSkillShip8_SystemManpower_Percent_4" Type="HeroSkillShip" IsSerializable="false">
+        <Modifier TargetProperty="MaximumShipManpower"									Operation="Percent"				Value="0.5"		Path="./ClassGarrisonFleet/ClassShip" Priority="1"/>
+        <Modifier TargetProperty="SiegePower"											Operation="Percent"				Value="0.2"		Path="./ClassGarrisonFleet" />
+    </SimulationDescriptor>
 
-	<!--HeroSkill9-->
+    <!--HeroSkill9-->
 	<SimulationDescriptor Name="HeroSkillShip9_SystemManpower_Percent_4" Type="HeroSkillShip" IsSerializable="false">
 		<Modifier TargetProperty="MaximumShipManpower"								Operation="Percent"			Value="0.4"		Path="./ClassGarrisonFleet/ClassShip" /> 
 		<Modifier TargetProperty="FleetManpowerRefillRateModifier"					Operation="Addition"		Value="0.4"		Path="./ClassGarrisonFleet" />
@@ -230,13 +231,13 @@
 	
 	<!--HeroSkill25-->
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_0" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.8"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.05"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_2" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.16"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.10"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_3" Type="HeroSkillShip" IsSerializable="false">
-		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.32"		Path="./ClassGarrisonFleet" />
+		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.25"		Path="./ClassGarrisonFleet" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillShip25_FleetDefense_Percent_4" Type="HeroSkillShip" IsSerializable="false">
 		<Modifier TargetProperty="FleetMaximumShield"								Operation="Addition"		Value="0.50"		Path="./ClassGarrisonFleet" />

@@ -684,7 +684,7 @@
         <Prerequisites>!AffinityMappingSophons</Prerequisites>
     </FactionTrait>
     
-    <FactionTrait Name="FactionTraitTechnologyDefinitionEconomyAndTrade1Sophons" SubCategory="FactionTrait" TraitCategory="TraitCategoryStartingTechnology" TraitSubCategory="FactionTraitTechnologyDefinitionEconomyAndTrade1Sophons" Family="FactionTraitFamilyStartingTechnologies" Custom="true" Hidden="true" Cost="0" HiddenOnFailPrerequisites="true">
+    <FactionTrait Name="FactionTraitTechnologyDefinitionEconomyAndTrade1Sophons" SubCategory="FactionTrait" TraitCategory="TraitCategoryStartingTechnology" TraitSubCategory="FactionTraitTechnologyDefinitionEconomyAndTrade1Sophons" Family="FactionTraitFamilyStartingTechnologies" Custom="true" Hidden="false" Cost="10" HiddenOnFailPrerequisites="true">
         <Command Name="UnlockTechnology"                Arguments="TechnologyDefinitionEconomyAndTrade1Sophons"/>        
         <Prerequisites>AffinityMappingSophons</Prerequisites>
     </FactionTrait>

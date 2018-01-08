@@ -116,7 +116,7 @@
     <!-- ** BAIT MODULES ** -->
     <!-- ********************* -->
     <SupportModule Name="ModuleSupportBait1Strategic4" Family="BaitStrategic4" Level="1">
-        <Cost ResourceName="SystemProduction">45</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
         <Cost ResourceName="Strategic4" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyHull4</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -128,7 +128,7 @@
     </SupportModule>
 
     <SupportModule Name="ModuleSupportBait2Strategic6" Family="BaitStrategic6" Level="2">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">55</Cost>
         <Cost ResourceName="Strategic6" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportBait2Strategic6</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -146,6 +146,7 @@
 
     <SupportModule Name="ModuleSupportColonization1" Family="ColonizationBase" Level="1">
         <Cost ResourceName="SystemProduction">50</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration1</TechnologyPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleColonizer</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
@@ -336,7 +337,7 @@
     <SupportModule Name="ModuleSupportEnergyEnhancer3Strategic4" Family="EnergyEnhancerStrategic4" Level="3">
         <Cost ResourceName="SystemProduction">70</Cost>
         <Cost ResourceName="Strategic4" Instant="true">2</Cost>
-        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule2</TechnologyPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleSupport2</TechnologyPrerequisite>
         <!--Descriptor used to apply effect-->
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <SimulationDescriptorReference Name="ModuleTypeStrategic" />
@@ -369,6 +370,7 @@
     <!-- Engine Level 1 -->
     <SupportModule Name="ModuleSupportEngine1" Family="EngineBase" Level="1">
         <Cost ResourceName="SystemProduction">20</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration1</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <CategorizedSimulationDescriptors Category="CategoryEngine">
             <SimulationDescriptorReference Name="ModuleSupportEngine1"/>
@@ -388,7 +390,7 @@
     </SupportModule>
     
     <!--Engine Level 4-->
-    <SupportModule Name="ModuleSupportEngine4" Family="EngineBase" Level="2">
+    <SupportModule Name="ModuleSupportEngine4" Family="EngineBase" Level="3">
         <Cost ResourceName="SystemProduction">60</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyEngine4</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -430,6 +432,7 @@
 
     <SupportModule Name="ModuleSupportExploration1" Family="ExplorationBase" Level="1">
         <Cost ResourceName="SystemProduction">30</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration1</TechnologyPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleExploration) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <SimulationDescriptorReference Name="ClassModuleExplorerAndHeroShipOnly"/>
@@ -475,7 +478,7 @@
     <!-- Fleet Engine Level 1 -->
     <SupportModule Name="ModuleSupportFleetEngine1Strategic2" Family="FleetEngineStrategic2" Level="1">
         <Cost ResourceName="SystemProduction">60</Cost>
-        <Cost ResourceName="Strategic2" Instant="true">2</Cost>
+        <Cost ResourceName="Strategic2" Instant="true">3</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyModuleSupportFleetEngine1Strategic2</TechnologyPrerequisite>
         <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
 		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
@@ -642,7 +645,7 @@
     <!-- ** JAMMER MODULES ** -->
     <!-- ********************* -->
     <SupportModule Name="ModuleSupportJammer1Strategic3" Family="JammerStrategic3" Level="1">
-        <Cost ResourceName="SystemProduction">45</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
         <Cost ResourceName="Strategic3" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyHull5</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -654,7 +657,7 @@
     </SupportModule>
 
     <SupportModule Name="ModuleSupportJammer2Strategic5" Family="JammerStrategic5" Level="2">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">55</Cost>
         <Cost ResourceName="Strategic5" Instant="true">2</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportJammer2Strategic5</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>

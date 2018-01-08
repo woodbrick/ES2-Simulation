@@ -25,7 +25,7 @@
     </Salvo>
     <Salvo Name="SalvoKinetic5">
         <SimulationDescriptorReference Name="SalvoKinetic5"/>
-        <ProjectilePrefabFallback>Prefabs/Game/Weapons/Projectiles/KineticCommon01</ProjectilePrefabFallback>
+        <ProjectilePrefabFallback>Prefabs/Game/Weapons/Projectiles/KineticCommon05</ProjectilePrefabFallback>
     </Salvo>
     
     <!-- Kinetics Strategics -->
@@ -73,7 +73,7 @@
     </Salvo>
     <Salvo Name="SalvoMissile5" AvailableAsTarget="true">
         <SimulationDescriptorReference Name="SalvoMissile5"/>
-        <ProjectilePrefabFallback>Prefabs/Game/Weapons/Projectiles/MissileCommon01</ProjectilePrefabFallback>
+        <ProjectilePrefabFallback>Prefabs/Game/Weapons/Projectiles/MissileCommon05</ProjectilePrefabFallback>
     </Salvo>
     
     <!-- Missile Strategics -->
@@ -169,7 +169,7 @@
     </Salvo>
     <Salvo Name="SalvoLaser5">
         <SimulationDescriptorReference Name="SalvoLaser5"/>
-        <ProjectilePrefabFallback>Prefabs/Game/Weapons/Projectiles/LaserCommon01</ProjectilePrefabFallback>
+        <ProjectilePrefabFallback>Prefabs/Game/Weapons/Projectiles/LaserCommon05</ProjectilePrefabFallback>
     </Salvo>
     
     <!-- Laser Strategics -->

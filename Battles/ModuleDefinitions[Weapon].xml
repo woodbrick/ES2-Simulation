@@ -58,14 +58,15 @@
 		<AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
 		<AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
 		<!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-		<AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-		<AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+		<AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+		<AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
 		<AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-		<AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-		<AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+		<AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+		<AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary1</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <SimulationDescriptorReference Name="ClassModuleFlakExplication"/>
@@ -129,12 +130,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <TechnologyPrerequisite Flags="Edition" >TechnologyDefenseModule1Kinetic2</TechnologyPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
@@ -194,12 +195,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleWeaponKinetic2Strategic1</TechnologyPrerequisite>
@@ -262,12 +263,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleWeaponKinetic3</TechnologyPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
@@ -311,7 +312,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponKinetic3Strategic1" Type="Kinetic" Family="KineticStrategic1" Level="4">
-        <Cost ResourceName="SystemProduction">56</Cost>
+        <Cost ResourceName="SystemProduction">52</Cost>
         <Cost ResourceName="Strategic1" Instant="true">2</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
@@ -327,12 +328,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModuleStrategic1</TechnologyPrerequisite>
@@ -396,12 +397,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleWeaponKinetic3Strategic3</TechnologyPrerequisite>
@@ -464,13 +465,15 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="true">AffinityGameplayTerrans</PathPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">../ClassEmpire,AffinityGameplayTerrans</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule4Common</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
@@ -528,13 +531,15 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="false">AffinityGameplayTerrans</PathPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire,AffinityGameplayTerrans</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule4Terrans</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
@@ -593,12 +598,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModuleStrategic3</TechnologyPrerequisite>
@@ -662,12 +667,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleWeaponKinetic4Strategic5</TechnologyPrerequisite>
@@ -730,12 +735,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleWeaponKinetic5</TechnologyPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
@@ -795,12 +800,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModuleStrategic5</TechnologyPrerequisite>
@@ -872,12 +877,12 @@
 			<ScoreModifier Name="Squadron">1</ScoreModifier>
 		</TargetSortingCriterion>
 		<TargetSortingCriterion Name="Size">
-			<ScoreModifier Name="Salvo">3</ScoreModifier>
-			<ScoreModifier Name="SquadronTypeBomber">2</ScoreModifier>
+			<ScoreModifier Name="Salvo">1</ScoreModifier>
+			<ScoreModifier Name="SquadronTypeBomber">1</ScoreModifier>
 			<ScoreModifier Name="SquadronTypeFighter">1</ScoreModifier>
 		</TargetSortingCriterion>
         <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
-            <ScoreModifier Name="TargetersCount">2</ScoreModifier>
+            <ScoreModifier Name="TargetersCount">-3</ScoreModifier>
         </TargetSortingCriterion_PropertyMultiplier>
         <TargetSortingCriterion Name="Role" ScoreModifiersDefaultValue="1" IgnoredWhenCheckingTargetValidity="true"/>
     </WeaponModule>
@@ -1096,7 +1101,7 @@
 		<AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
 		<AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
 		<!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
 		<AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
 		<AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
 		<AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1104,6 +1109,7 @@
 		<AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary1</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseWeapon">
@@ -1155,7 +1161,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1216,7 +1222,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1281,7 +1287,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1342,7 +1348,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1408,7 +1414,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1472,7 +1478,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1533,7 +1539,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1598,7 +1604,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1662,15 +1668,15 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
 		<!-- ** END AI DATA ** -->
-        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5</TechnologyPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseWeapon">
@@ -1723,7 +1729,7 @@
         <AIBattleSituations Situation="Laser" Mode="Against" Value="0.75"/>
         <AIBattleSituations Situation="Beam" Mode="Against" Value="1"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
         <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
         <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
@@ -1801,6 +1807,7 @@
 		<AIBattleSituations Situation="Long" Mode="Against" Value="0.75"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary1</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseWeapon">
@@ -1859,6 +1866,8 @@
         <AIBattleSituations Situation="Medium" Mode="Against" Value="1.25"/>
         <AIBattleSituations Situation="Long" Mode="Against" Value="0.75"/>
 		<!-- ** END AI DATA ** -->
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule1Common</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
@@ -1919,6 +1928,8 @@
         <AIBattleSituations Situation="Medium" Mode="Against" Value="1.25"/>
         <AIBattleSituations Situation="Long" Mode="Against" Value="0.75"/>
 		<!-- ** END AI DATA ** -->
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule1Vampirilis</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
@@ -2555,6 +2566,7 @@
 		<AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary1</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseWeapon">
@@ -3118,8 +3130,10 @@
         <AIBattleSituations Situation="Medium" Mode="Against" Value="1.125"/>
         <AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
 		<!-- ** END AI DATA ** -->
-        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5Common</TechnologyPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="true">AffinityGameplayTimeLords</PathPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">../ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5Common</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseWeapon">
@@ -3178,8 +3192,10 @@
         <AIBattleSituations Situation="Medium" Mode="Against" Value="1.125"/>
         <AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
 		<!-- ** END AI DATA ** -->
-        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5TimeLords</TechnologyPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="false">AffinityGameplayTimeLords</PathPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5TimeLords</TechnologyPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseWeapon">

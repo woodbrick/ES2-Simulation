@@ -408,7 +408,6 @@
         <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyWeaponModuleStrategic4</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="TechnologyLinkExclusionMilitary20Military21"/>
     </TechnologyLinkDefinition>
-    
 
     <!-- STAGE 5 -->
     <TechnologyLinkDefinition Name="TechnologyLinkDefinitionMilitary22Military23" Category="TechnologyLinkTypeExclusion" PrerequisiteResolution="OR">

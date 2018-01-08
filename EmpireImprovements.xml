@@ -295,7 +295,7 @@
     <!-- Increase movement of automated ships -->
     <EmpireImprovementDefinition Name="EmpireImprovementAutomatedShipMovement1" Category="CategoryMovementBonus" SubCategory="SubCategoryEmpire">
         <TechnologyPrerequisite>TechnologyStageEmpireDevelopment3</TechnologyPrerequisite>
-        <PathPrerequisite Flags="FactionTechnology" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementAutomatedShipMovement1" />
     </EmpireImprovementDefinition>
   
@@ -344,7 +344,7 @@
     <!-- Increase movement of automated ships -->
     <EmpireImprovementDefinition Name="EmpireImprovementAutomatedShipMovement2" Category="CategoryMovementBonus" SubCategory="SubCategoryEmpire">
         <TechnologyPrerequisite>TechnologyStageEmpireDevelopment4</TechnologyPrerequisite>
-        <PathPrerequisite Flags="FactionTechnology" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementAutomatedShipMovement2" />
     </EmpireImprovementDefinition>
   
@@ -437,7 +437,7 @@
     <!-- Increase movement of automated ships -->
     <EmpireImprovementDefinition Name="EmpireImprovementAutomatedShipMovement3" Category="CategoryMovementBonus" SubCategory="SubCategoryEmpire">
         <TechnologyPrerequisite>TechnologyStageEmpireDevelopment5</TechnologyPrerequisite>
-        <PathPrerequisite Flags="FactionTechnology" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementAutomatedShipMovement3" />
     </EmpireImprovementDefinition>
   
@@ -561,7 +561,7 @@
     <!-- Additional slots for Ark -->
     <EmpireImprovementDefinition Name="EmpireImprovementImprovedArk2" Category="CategoryHullUpgrade" SubCategory="SubCategoryMilitary">
         <TechnologyPrerequisite>TechnologyStageEconomyAndTrade3</TechnologyPrerequisite>
-        <PathPrerequisite Flags="FactionTechnology" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementImprovedArk2" />
     </EmpireImprovementDefinition>    
 
@@ -600,7 +600,7 @@
     <!-- Additional slots for Ark -->
     <EmpireImprovementDefinition Name="EmpireImprovementImprovedArk3" Category="CategoryHullUpgrade" SubCategory="SubCategoryMilitary">
         <TechnologyPrerequisite>TechnologyStageEconomyAndTrade4</TechnologyPrerequisite>
-        <PathPrerequisite Flags="FactionTechnology" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementImprovedArk3" />
     </EmpireImprovementDefinition>
     
@@ -624,7 +624,7 @@
     <!-- Additional slots for Ark -->
     <EmpireImprovementDefinition Name="EmpireImprovementImprovedArk4" Category="CategoryHullUpgrade" SubCategory="SubCategoryMilitary">
         <TechnologyPrerequisite>TechnologyStageEconomyAndTrade5</TechnologyPrerequisite>
-        <PathPrerequisite Flags="FactionTechnology" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementImprovedArk4" />
     </EmpireImprovementDefinition>
 
@@ -674,7 +674,7 @@
     <!-- Additional slots for Ark -->
     <EmpireImprovementDefinition Name="EmpireImprovementImprovedArk1" Category="CategoryHullUpgrade" SubCategory="SubCategoryMilitary">
         <TechnologyPrerequisite>TechnologyStageMilitary2</TechnologyPrerequisite>
-        <PathPrerequisite Flags="FactionTechnology" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="UnlockAvailability" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementImprovedArk1" />
     </EmpireImprovementDefinition>
     
@@ -743,7 +743,7 @@
     </EmpireImprovementDefinition>
 
     <EmpireImprovementDefinition Name="EmpireImprovementArmyCap3" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
-        <TechnologyPrerequisite>TechnologyPlaneUnlock</TechnologyPrerequisite>
+        <TechnologyPrerequisite>TechnologyArmyCap3</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="EmpireImprovementArmyCap3" />
     </EmpireImprovementDefinition>
 

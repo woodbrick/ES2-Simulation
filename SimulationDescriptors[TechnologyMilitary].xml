@@ -125,7 +125,10 @@
     <SimulationDescriptor Name="TechnologyWeaponModule4"                    Type="Technology"/>
     <SimulationDescriptor Name="TechnologyWeaponModule4Common"              Type="Technology"/>
     <SimulationDescriptor Name="TechnologyWeaponModule4Terrans"             Type="Technology"/>
+    <SimulationDescriptor Name="TechnologyDefenseModule1Common"             Type="Technology"/>
+    <SimulationDescriptor Name="TechnologyDefenseModule1Vampirilis"         Type="Technology"/>
     <SimulationDescriptor Name="TechnologyDefenseModule2"                   Type="Technology"/>
+    <SimulationDescriptor Name="TechnologyDefenseModuleSupport2"            Type="Technology"/>
     <SimulationDescriptor Name="TechnologyDefenseModule2CommonHullPlating"  Type="Technology"/>
     <SimulationDescriptor Name="TechnologyDefenseModule2CommonShield"       Type="Technology"/>
     <SimulationDescriptor Name="TechnologyDefenseModule2Vampirilis"         Type="Technology"/>

@@ -120,7 +120,7 @@
         <PathPrerequisite Inverted="true"   Flags="Prerequisite,Discard">BlockadedColonizedStarSystem</PathPrerequisite>
         <PathPrerequisite Inverted="true"   Flags="Prerequisite,Discard">BesiegedColonizedStarSystem</PathPrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,Discard">Property(Context,@../ClassEmpire, SystemCount) gt 1</InterpreterPrerequisite>
-        <InterpreterPrerequisite Flags="Prerequisite,Disable">Property(Context,@ClassColonizedStarSystem, Ownership) ge 1</InterpreterPrerequisite>
+        <InterpreterPrerequisite Flags="Prerequisite,Disable,NotOwnerSystem">Property(Context,@ClassColonizedStarSystem, Ownership) ge 1</InterpreterPrerequisite>
 		<InterpreterPrerequisite Flags="Prerequisite,Discard">Property(Context,@ClassColonizedStarSystem, HasNativeHomeSystemOwner) eq 0</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="StarSystemDecolonizeImprovementRaze"/>
         <NextUpgradeName>StarSystemDecolonizeImprovementPillage</NextUpgradeName>
@@ -229,7 +229,7 @@
         <!-- Check growth stock instead of population count (must have equivalent to 2 pop). Also, uses flag Enqueue instead of Prerequisite so that it doesn't block construction queue once queued -->
         <InterpreterPrerequisite Flags="Enqueue">Property(Context, @ClassColonizedStarSystem, SystemGrowthStock) ge (2 * 300 * Property(Context, @../ClassEmpire, GameSpeedMultiplier, true)) and Property(Context, @ClassColonizedStarSystem, PopulationWithGrowth) ge 1</InterpreterPrerequisite>
         <!-- if flag Cancel is raised on a queued construction, it will be cancelled (and refund its cost) -->
-        <InterpreterPrerequisite Flags="Prerequisite,Cancel">Property(Context,@../ClassEmpire, EmpireManpowerStock) lt Property(Context,@../ClassEmpire, MaximumEmpireManpowerStock)</InterpreterPrerequisite>
+        <InterpreterPrerequisite Flags="Prerequisite,ManpowerMaxed,Cancel">Property(Context,@../ClassEmpire, EmpireManpowerStock) lt Property(Context,@../ClassEmpire, MaximumEmpireManpowerStock)</InterpreterPrerequisite>
         <Resource Name="EmpireManpower">300</Resource>
     </StarSystemResourceImprovementDefinition>
 
@@ -721,6 +721,7 @@
         <InProgressSimulationDescriptorReference Name="StarSystemImprovementInfinite"/>
         <InfiniteCost ResourceName="SystemTurnBased"/>
         <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+        <PathPrerequisite                           Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassQuests,CompletedQuest_Venetians13</PathPrerequisite>
         <PathPrerequisite                           Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToDust2</PathPrerequisite>
         <PathPrerequisite                           Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/ClassResearch,TechnologyIndToDust2Venetians</PathPrerequisite>
         <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyIndToDust</TechnologyPrerequisite>
@@ -1842,7 +1843,7 @@
         <PathPrerequisite Inverted="false"   Flags="Prerequisite,Discard">../ClassEmpire/PopulationMajor,ClassPopulationEmpireAffinityTimeLords</PathPrerequisite>
         <PathPrerequisite Inverted="true"   Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementQuestTimeLords05</PathPrerequisite>
         <PathPrerequisite Inverted="true"   Flags="Prerequisite,Discard">../ClassEmpire,EmpireImprovementQuestTimeLords07</PathPrerequisite>
-        <InterpreterPrerequisite Flags="Enqueue">(Property(Context,@ClassColonizedStarSystem, MaximumPopulation) ge (1 + Property(Context,@ClassColonizedStarSystem, Population) + Property(Context,@ClassColonizedStarSystem, VirtualPopulation)))</InterpreterPrerequisite>
+        <InterpreterPrerequisite Flags="MaximumPopulationSystem,Enqueue">(Property(Context,@ClassColonizedStarSystem, MaximumPopulation) ge (1 + Property(Context,@ClassColonizedStarSystem, Population) + Property(Context,@ClassColonizedStarSystem, VirtualPopulation)))</InterpreterPrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite">(Property(Context,@ClassColonizedStarSystem, MaximumPopulation) ge (Property(Context,@ClassColonizedStarSystem, Population) + Property(Context,@ClassColonizedStarSystem, VirtualPopulation)))</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="StarSystemImprovementCreateMajorPopulation"/>
         <NextUpgradeName>StarSystemImprovementQuestTimeLords05</NextUpgradeName>

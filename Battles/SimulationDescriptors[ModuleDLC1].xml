@@ -3,7 +3,7 @@
    
     
     <SimulationDescriptor Name="ModuleDefenseHullPlatingQuest1"  Type="ModuleDefense">
-        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="480"  Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="625"  Path="ClassModuleDefense"/>
         <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="75"  Path="ClassModuleDefense"/>
         <Modifier TargetProperty="ShipManpowerKillAbsorption"       Operation="Addition" Value="0.1"  Path="ClassModuleDefense"/>
     </SimulationDescriptor>
@@ -20,22 +20,24 @@
         <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="4"      Path="ModuleSupportEngine"/>
         <Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.2"    Path="ModuleSupportEngine"/>
     </SimulationDescriptor>
-      
+    
+
     <!--##### DEEDS ####-->
     <SimulationDescriptor Name="ModuleWeaponKineticFlackQuest01"  Type="ModuleWeapon">
         <Modifier TargetProperty="Damage"                    Operation="Addition"  Value="21"    TooltipHidden="true"/>
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
 
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="100" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="1"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="50" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.875"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 06 -->
     <SimulationDescriptor Name="ModuleWeaponFlackQuest01"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="100" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="1" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="50" TooltipHidden="true"/>
+        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.875"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseHullQuest01"  Type="ModuleDefense"> 
@@ -60,14 +62,13 @@
     <SimulationDescriptor Name="ClassModuleShootsOncePerPhase" Type="ClassModuleShootsOncePerPhase"/>
     <SimulationDescriptor Name="ClassModuleIgnoresDefenses" Type="ClassModuleIgnoresDefenses"/>
 
-
+  
     <!--################################-->
     <!--###             TAGS         ###-->
     <!--################################-->
     <!-- Tags -->
     <SimulationDescriptor Name="ClassModuleCanOnlyBeFittedOnSmallSlots" Type="ClassModuleCanOnlyBeFittedOnSmallSlots"/>
     <SimulationDescriptor Name="ClassModuleCanOnlyBeFittedOnLargeSlots" Type="ClassModuleCanOnlyBeFittedOnLargeSlots"/>
-
     
     <!--#################
         ##### DEEDS #####

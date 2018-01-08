@@ -57,9 +57,23 @@
         <PlanetDefinition>
             <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
             <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
-            <SimulationDescriptorReference Name="PlanetSizeTiny"/>
-            <SimulationDescriptorReference Name="PlanetTypeBoreal"/>           
-        </PlanetDefinition>       
+            <SimulationDescriptorReference Name="PlanetSizeMedium"/>
+            <SimulationDescriptorReference Name="PlanetTypeBoreal"/>
+            <AnomalyReference Name="PlanetAnomaly42"/>
+        </PlanetDefinition>
+        <PlanetDefinition>
+            <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>           
+            <SimulationDescriptorReference Name="PlanetSizeHuge"/>
+            <SimulationDescriptorReference Name="PlanetTypeSteppes"/>
+            <AnomalyReference Name="PlanetAnomaly07"/>
+        </PlanetDefinition>
+        <PlanetDefinition>
+            <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+            <SimulationDescriptorReference Name="PlanetSizeSmall"/>
+            <SimulationDescriptorReference Name="PlanetTypeMonsoon"/>
+            <AnomalyReference Name="PlanetAnomaly11"/>
+            <AnomalyReference Name="PlanetAnomaly06"/>
+        </PlanetDefinition>
     </StarSystemNodeDefinition>
 
     <!--CRAVERS EMPIRE-->

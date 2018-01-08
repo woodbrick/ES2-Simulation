@@ -96,6 +96,8 @@
         <Property Name="SystemInfluenceRadiusDivider"                   BaseValue="0"/>
         <Property Name="SystemNextInfluenceRadiusEstimationDivider"     BaseValue="0"/>
         <Property Name="SystemNextInfluenceRadiusEstimation"            BaseValue="10"/>
+
+        <Property Name="NeighbourRadius"  	                            BaseValue="5" />
         
 
         <Property Name="MaximumSystemGrowthStock"       BaseValue="0" IsSealed="true" />
@@ -469,6 +471,8 @@
         <Modifier       TargetProperty="SystemInfluenceRadius"  Operation="Power"           Value="0.4"/>
         <Modifier       TargetProperty="SystemInfluenceRadius"  Operation="Division"        Value="$(SystemInfluenceRadiusDivider)" Priority="1" />
         <Modifier       TargetProperty="SystemInfluenceRadius"  Operation="Addition"        Value="3" Priority="2"/>
+
+        <Modifier       TargetProperty="NeighbourRadius"        Operation="Addition"        Value="$(SystemInfluenceRadius)"/>
 
 
         <Modifier       TargetProperty="SystemNextInfluenceRadiusEstimationDivider"         Operation="Addition"        Value="50" Priority="-1"/>

@@ -560,6 +560,24 @@
         </BattleEffectApplicationContext>
     </BattleAction>
 
+    <BattleAction Name="WeaponRailgun_SalvoPostHitTarget_StatisticsRecording">
+        <EventPrerequisite EventType="Attack_PostHitTarget">
+            <EventInitiatorFilter EntityType="Salvo" EntityTags="SameModule">
+                <PathPrerequisite Flags="">../ClassModuleWeaponKineticRailgun</PathPrerequisite>
+            </EventInitiatorFilter>
+        </EventPrerequisite>
+        <!-- Add the effective railgun damage to the attacking ship for statistics -->
+        <BattleEffectApplicationContext>
+            <TargetFilter>
+                <EntityFilter EntityRole="Owner">
+                </EntityFilter>
+                <ParentEntityFilter EntityType="Flotilla">
+                </ParentEntityFilter>
+            </TargetFilter>
+            <BattleEffectReference Name="AttackingFlotilla_UpdateDamageAppliedByRailgunFromSalvo"/>
+        </BattleEffectApplicationContext>
+    </BattleAction>
+
     <BattleAction Name="WeaponMissile_SalvoPostHitTarget_StatisticsRecording">
         <EventPrerequisite EventType="Attack_PostHitTarget">
             <EventInitiatorFilter EntityType="Salvo" EntityTags="SameModule">
@@ -1033,7 +1051,15 @@
             <BattleEffectReference Name="Group_OpponentRecyclingDustGainReward"/>
             <BattleEffectReference Name="Group_OpponentRecyclingScienceGainReward"/>
             <BattleEffectReference Name="Group_OpponentRecyclingEmpirePointGainReward"/>
-            <BattleEffectReference Name="Group_ManpowerLostTransfer"/> 
+            <BattleEffectReference Name="Group_ManpowerLostTransfer"/>
+        </BattleEffectApplicationContext>
+        <BattleEffectApplicationContext>
+            <TargetFilter>
+                <EntityFilter EntityRole="Owner" EntityType="Group">
+                    <PathPrerequisite Flags="Prerequisite, Discard">ClassGroup//ClassShip,ShipRoleHero</PathPrerequisite>
+                </EntityFilter>
+            </TargetFilter>
+            <BattleEffectReference Name="Group_SetEarnedExperienceForHero"/>
         </BattleEffectApplicationContext>
         <BattleEffectApplicationContext>
             <TargetFilter>

@@ -848,6 +848,42 @@
 			<SubFormation Role="Escort">
 				<Offset X="-1" Y="0" Z="0"/>
 			</SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="1" Y="1" Z="1"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="-1" Y="1" Z="1"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="1" Y="1" Z="0.5"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="-1" Y="1" Z="0.5"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="1" Y="1" Z="0"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="-1" Y="1" Z="0"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="1" Y="-1" Z="1"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="-1" Y="-1" Z="1"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="1" Y="-1" Z="0.5"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="-1" Y="-1" Z="0.5"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="1" Y="-1" Z="0"/>
+            </SubFormation>
+            <SubFormation Role="Escort">
+                <Offset X="-1" Y="-1" Z="0"/>
+            </SubFormation>
 		</SubFormationPattern>
 	</SquadronMetaFormationDefinition>
 	

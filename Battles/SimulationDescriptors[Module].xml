@@ -130,7 +130,7 @@
 
     <!--##### UNFALLEN ####-->
     <SimulationDescriptor Name="ModuleSupportJournalistQuest1"                  Type="ModuleSupportJournalist">
-        <Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP" Operation="Addition" Value="7" Path="ModuleSupportJournalist"/>
+        <Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP" Operation="Addition" Value="15" Path="ModuleSupportJournalist"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleDefenseShieldQuest3"  Type="ModuleDefense">
@@ -153,9 +153,9 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
 
         <!--DPS against Missile / Squadrons-->
-        <Modifier TargetProperty="FlakDPSMissile"            Operation="Addition" Value="24"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
-        <BinaryModifier TargetProperty="FlakDPSquadron"      Operation="Addition" Left="24" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="90" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponLaserQuestExploration01"  Type="ModuleWeapon">

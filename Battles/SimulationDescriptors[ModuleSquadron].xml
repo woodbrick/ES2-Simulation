@@ -14,9 +14,9 @@
         <Property Name="DamageAgainstMediumShipsModifier"   BaseValue="0"/>
         <Property Name="DamageAgainstLargeShipsModifier"    BaseValue="0"/>
 
-		<Property Name="BaseUnitsCount"         BaseValue="0"/>
-        <Property Name="FighterUnitsCount"      BaseValue="0"/>
-        <Property Name="BomberUnitsCount"       BaseValue="0"/>
+		<Property Name="BaseUnitsCount"         BaseValue="0" MinValue="1" RoundingFunction="Ceil"/>
+        <Property Name="FighterUnitsCount"      BaseValue="0" MinValue="1" RoundingFunction="Ceil"/>
+        <Property Name="BomberUnitsCount"       BaseValue="0" MinValue="1" RoundingFunction="Ceil"/>
 
 		<Property Name="CriticalAttackChance"   BaseValue="0" MaxValue="1"/>
 		<Property Name="DodgeChance"            BaseValue="0" MaxValue="1"/>
@@ -30,7 +30,8 @@
 
 		<!--GUI PROPERTIES-->
 		<Property Name="DamagePerSecond"			BaseValue="0"/>
-		<Property Name="WeaponTypePhysical"			BaseValue="1" MinValue="0" MaxValue="1"/>
+		<Property Name="WeaponTypePhysical"			BaseValue="0" MinValue="0" MaxValue="1"/>
+        <Property Name="WeaponTypeEnergy"			BaseValue="0" MinValue="0" MaxValue="1"/>
 
 		<Property Name="ProjectilesFlyingDuration" BaseValue="0"/>
 		<Property Name="ProjectilesCount" BaseValue="0"/>
@@ -48,14 +49,13 @@
         <Modifier TargetProperty="Damage" Operation="Multiplication" Value="$(Multiplier)" Path="ClassModuleSquadron" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="BaseUnitsCount" Operation="Multiplication" Left="$(Multiplier)" BinaryOperation="Division" Right="2" Path="ClassModuleSquadron" TooltipHidden="true"/>
 
-        <BinaryModifier TargetProperty="FighterUnitsCount" Operation="Multiplication" Left="$(Multiplier)" BinaryOperation="Division" Right="2" Path="ClassModuleSquadron" TooltipHidden="true"/>
-        <BinaryModifier TargetProperty="BomberUnitsCount" Operation="Multiplication" Left="$(Multiplier)" BinaryOperation="Division" Right="2" Path="ClassModuleSquadron" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FighterUnitsCount" Operation="Multiplication" Left="$(Multiplier)" BinaryOperation="Division" Right="2" Path="ClassModuleSquadron,ModuleTypeSquadronFighter" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="BomberUnitsCount" Operation="Multiplication" Left="$(Multiplier)" BinaryOperation="Division" Right="2" Path="ClassModuleSquadron,ModuleTypeSquadronBomber" TooltipHidden="true"/>
 
-        <Modifier TargetProperty="FighterUnitsCount" Operation="Addition" Value="$(FighterUnitsCount)" Path="../ClassShip"/>
-        <Modifier TargetProperty="BomberUnitsCount" Operation="Addition" Value="$(BomberUnitsCount)" Path="../ClassShip"/>
+        <Modifier TargetProperty="FighterUnitsCount" Operation="Addition" Value="$(FighterUnitsCount)" Path="ClassModuleSquadron,ModuleTypeSquadronFighter/../ClassShip"/>
+        <Modifier TargetProperty="BomberUnitsCount" Operation="Addition" Value="$(BomberUnitsCount)" Path="ClassModuleSquadron,ModuleTypeSquadronBomber/../ClassShip"/>
 
 		<!--GUI PROPERTY MODIFIER-->
-		<Modifier TargetProperty="WeaponTypePhysical"           Operation="Addition"        Value="1"        Path="ClassModuleWeapon" TooltipHidden="true"/>
 
 		<!--Always update with latest cooldown-->
 		<BinaryModifier TargetProperty="DamagePerSecond"	Operation="Addition" Left="$(Damage)"			BinaryOperation="Division" Right="$(AssaultSequenceDuration)"		Path="ClassModuleSquadron" TooltipHidden="true" Priority="2"/>
@@ -65,6 +65,8 @@
 	</SimulationDescriptor>
 
     <SimulationDescriptor Name="SquadronTypeFighter" Type="SquadronType">
+        <Modifier TargetProperty="WeaponTypePhysical"           Operation="Addition"        Value="1"        Path="ClassModuleSquadron" TooltipHidden="true"/>
+        
 		<Modifier TargetProperty="Speed" Operation="Addition" Value="20" Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="HullPlatingPenetrationFactor" Operation="Addition" Value="0.1"/>
 		<Modifier TargetProperty="ShieldPenetrationFactor"		Operation="Addition" Value="0.3"/>
@@ -86,12 +88,14 @@
 
         <Modifier TargetProperty="ChaseSequenceDuration" Operation="Addition" Value="4"/>
 
-        <Modifier TargetProperty="DamageAgainstSmallShipsModifier"  Operation="Addition" Value="0.6"/>
-        <Modifier TargetProperty="DamageAgainstMediumShipsModifier" Operation="Addition" Value="0.4"/>
-        <Modifier TargetProperty="DamageAgainstLargeShipsModifier"  Operation="Addition" Value="0.2"/>
+        <Modifier TargetProperty="DamageAgainstSmallShipsModifier"  Operation="Addition" Value="0.4"/>
+        <Modifier TargetProperty="DamageAgainstMediumShipsModifier" Operation="Addition" Value="0.25"/>
+        <Modifier TargetProperty="DamageAgainstLargeShipsModifier"  Operation="Addition" Value="0.1"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="SquadronTypeBomber" Type="SquadronType">
+        <Modifier TargetProperty="WeaponTypePhysical"           Operation="Addition"        Value="1"        Path="ClassModuleSquadron" TooltipHidden="true"/>
+        
 		<Modifier TargetProperty="Speed" Operation="Addition" Value="10" Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="HullPlatingPenetrationFactor" Operation="Addition" Value="0.5"/>
 		<Modifier TargetProperty="ShieldPenetrationFactor"		Operation="Addition" Value="0.9"/>
@@ -121,7 +125,7 @@
 	
 	<!--CONTENT-->
 	<SimulationDescriptor Name="ModuleSquadronFighter1" Type="ModuleSquadron">
-		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="300"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="250"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="BaseUnitsCount"		Operation="Addition" Value="2"		Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="Damage"				Operation="Addition" Value="100"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.05"	Path="ClassModuleSquadron"/>
@@ -131,7 +135,7 @@
 	</SimulationDescriptor>
 	
 	<SimulationDescriptor Name="ModuleSquadronFighter2" Type="ModuleSquadron">
-		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="450"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="400"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="BaseUnitsCount"		Operation="Addition" Value="2"		Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="Damage"				Operation="Addition" Value="130"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.1"	Path="ClassModuleSquadron"/>
@@ -151,7 +155,7 @@
 	</SimulationDescriptor>
 	
 	<SimulationDescriptor Name="ModuleSquadronBomber1" Type="ModuleSquadron">
-		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="225"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="200"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="BaseUnitsCount"		Operation="Addition" Value="1"		Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="Damage"				Operation="Addition" Value="300"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.05"	Path="ClassModuleSquadron"/>
@@ -161,11 +165,11 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSquadronBomber2" Type="ModuleSquadron">
-		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="375"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="350"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="BaseUnitsCount"		Operation="Addition" Value="1"		Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="Damage"				Operation="Addition" Value="390"	Path="ClassModuleSquadron"/>
-		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.05"	Path="ClassModuleSquadron"/>
-		<Modifier TargetProperty="DodgeChance"			Operation="Addition" Value="0.1"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.1"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="DodgeChance"			Operation="Addition" Value="0.05"	Path="ClassModuleSquadron"/>
         <Modifier TargetProperty="BomberUnitsCount"     Operation="Addition" Value="1"      Path="ClassModuleSquadron"/>
         <Modifier TargetProperty="SquadronTypeDamageMultiplier" Operation="Addition" Value="1" Path="ClassModuleSquadron"/>
 	</SimulationDescriptor>
@@ -174,10 +178,13 @@
 		<Modifier TargetProperty="MaximumHealth"		Operation="Addition" Value="150"	Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="BaseUnitsCount"		Operation="Addition" Value="1"		Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="Damage"				Operation="Addition" Value="660"	Path="ClassModuleSquadron"/>
-		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.05"	Path="ClassModuleSquadron"/>
-		<Modifier TargetProperty="DodgeChance"			Operation="Addition" Value="0.5"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.5"	Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="DodgeChance"			Operation="Addition" Value="0.05"	Path="ClassModuleSquadron"/>
         <Modifier TargetProperty="BomberUnitsCount"     Operation="Addition" Value="1"      Path="ClassModuleSquadron"/>
         <Modifier TargetProperty="SquadronTypeDamageMultiplier" Operation="Addition" Value="1" Path="ClassModuleSquadron"/>
 	</SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleTypeSquadronBomber" Type="ModuleTypeSquadronBomber"/>
+    <SimulationDescriptor Name="ModuleTypeSquadronFighter" Type="ModuleTypeSquadronFighter"/>
 
 </Datatable>

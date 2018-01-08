@@ -12,7 +12,7 @@
     <EncounterTargetingRangeDefinition Name="Short" MinValue="0" MaxValue="10">
         <SimulationDescriptorReference Name="ShortRange"/>
     </EncounterTargetingRangeDefinition>
-    <EncounterTargetingRangeDefinition Name="Flak" MinValue="1" MaxValue="2.5" Hidden="true">
+    <EncounterTargetingRangeDefinition Name="Flak" MinValue="0" MaxValue="2.5" Hidden="true">
         <SimulationDescriptorReference Name="FlakRange"/>
     </EncounterTargetingRangeDefinition>
 

@@ -71,6 +71,7 @@
     <BattleEffect_SetPropertyValue Name="AttackingFlotilla_RecordDamageAppliedPhase2"     PropertyName="DamageAppliedPhase2"        Operation="Set"    InterpreterFormula="Property(Target, @ClassFlotilla, DamageAppliedCurrentPhase)" />
     <BattleEffect_SetPropertyValue Name="AttackingFlotilla_RecordDamageAppliedPhase3"     PropertyName="DamageAppliedPhase3"        Operation="Set"    InterpreterFormula="Property(Target, @ClassFlotilla, DamageAppliedCurrentPhase)" />
 
+    <BattleEffect_SetPropertyValue Name="AttackingFlotilla_UpdateDamageAppliedByRailgunFromSalvo"  PropertyName="DamageAppliedByRailgun"     Operation="Addition"    InterpreterFormula="Property(Initiator, @ClassSalvo, EffectiveDamage)" />
     <BattleEffect_SetPropertyValue Name="AttackingFlotilla_UpdateDamageAppliedByKineticFromSalvo"  PropertyName="DamageAppliedByKinetic"     Operation="Addition"    InterpreterFormula="Property(Initiator, @ClassSalvo, EffectiveDamage)" />
     <BattleEffect_SetPropertyValue Name="AttackingFlotilla_UpdateDamageAppliedByMissileFromSalvo"  PropertyName="DamageAppliedByMissile"     Operation="Addition"    InterpreterFormula="Property(Initiator, @ClassSalvo, EffectiveDamage)" />
     <BattleEffect_SetPropertyValue Name="AttackingFlotilla_UpdateDamageAppliedByLaserFromSalvo"    PropertyName="DamageAppliedByLaser"       Operation="Addition"    InterpreterFormula="Property(Initiator, @ClassSalvo, EffectiveDamage)" />
@@ -236,6 +237,7 @@
     <!-- Placeholders used to test the rewards calculations process... -->
     <BattleEffect_SetPropertyValue Name="Group_ApplyShipExperienceBonus" PropertyName="EarnedExperience" Operation="Set" InterpreterFormula="(Property(Owner, @ClassGroup, EarnedExperience) + (Property(Target, @ClassGroup, LostCP) * Property(Target, @ClassGroup, ExperiencePerLostCP)) ) * (1 + Property(Owner, @ClassGroup, ExperienceBonusPercent))" />
     <BattleEffect_SetPropertyValue Name="Ship_SetShipExperienceDefault" PropertyName="Experience" Operation="Addition" InterpreterFormula="Property(Owner, @ClassGroup, EarnedExperience) / Property(Owner, @ClassGroup, InitialShipsCount) * (1 + Property(Target, @ClassShip, ExperienceBonusFromBattle))" />
+    <BattleEffect_SetPropertyValue Name="Group_SetEarnedExperienceForHero" PropertyName="EarnedExperienceForHero" Operation="Set" InterpreterFormula="Property(Owner, @ClassGroup, EarnedExperience) / Property(Owner, @ClassGroup, InitialShipsCount) * (1 + Property(Owner, @'ClassGroup//ClassShip,ShipRoleHero', ExperienceBonusFromBattle))" />
 
     <BattleEffect_EmpireReward_Resource Name="Ship_TestResource" ResourceName="EmpireMoney" InterpreterFormula="Property(Owner, @ClassGroup, EarnedExperience)" />
     <BattleEffect_EmpireReward_SpawnShips Name="Group_TestSpawnShip" ShipDesignName="ShipDesignAttack01Sophons" InterpreterFormula="3" />

@@ -3,7 +3,7 @@
 
 	<SquadronStanceDefinition Name="BomberDefault" InitialMainMissionIndex="1" InitialMainMissionTaskIndex="1">
 		<MainMission Priority="0">
-			<MissionReference Name="AssaultShip"/>
+			<MissionReference Name="AssaultShipAsBomber"/>
 		</MainMission>
 		<MainMission Priority="1">
 			<MissionReference Name="EscortMyShip"/>
@@ -81,7 +81,7 @@
             </SideMission>
         </MainMission>
 		<MainMission Priority="2">
-			<MissionReference Name="AssaultShip"/>
+			<MissionReference Name="AssaultShipAsFighter"/>
 		</MainMission>
 		<MainMission Priority="3">
 			<MissionReference Name="EscortMyShip"/>

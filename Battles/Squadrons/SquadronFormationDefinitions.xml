@@ -7,7 +7,7 @@
 	<SquadronFormationDefinition Name="FightersFormationDefault">
 		<!-- Sophons, UE, Cravers, Vodya, Unfallen, Horatio, Lumeris fighters (Standard Fighters)-->
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeFighter</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeFighter) or Path(Context, @SquadronTypeFighterEnergy)</InterpreterPrerequisite>
 			<PathPrerequisite Flags="Prerequisite" Inverted="true">../ShipFactionTimeLords</PathPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">(Property(Context, @ClassModuleSquadronEncounter, RemainingUnitsCount) % 2) eq 0</InterpreterPrerequisite> <!--Pair-->
             <Slot>
@@ -24,7 +24,7 @@
 			</Slot>
 		</Pattern>
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeFighter</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeFighter) or Path(Context, @SquadronTypeFighterEnergy)</InterpreterPrerequisite>
 			<PathPrerequisite Flags="Prerequisite" Inverted="true">../ShipFactionTimeLords</PathPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">(Property(Context, @ClassModuleSquadronEncounter, RemainingUnitsCount) % 2) eq 1</InterpreterPrerequisite>  <!--Odd-->
 			<Slot>
@@ -39,7 +39,7 @@
 		</Pattern>
 		<!-- Riftborn fighters (Large Fighters)-->
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeFighter</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeFighter) or Path(Context, @SquadronTypeFighterEnergy)</InterpreterPrerequisite>
 			<PathPrerequisite Flags="Prerequisite" Inverted="false">../ShipFactionTimeLords</PathPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">(Property(Context, @ClassModuleSquadronEncounter, RemainingUnitsCount) % 2) eq 0</InterpreterPrerequisite> <!--Pair-->
             <Slot>
@@ -56,7 +56,7 @@
             </Slot>
 		</Pattern>
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeFighter</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeFighter) or Path(Context, @SquadronTypeFighterEnergy)</InterpreterPrerequisite>
 			<PathPrerequisite Flags="Prerequisite" Inverted="false">../ShipFactionTimeLords</PathPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">(Property(Context, @ClassModuleSquadronEncounter, RemainingUnitsCount) % 2) eq 1</InterpreterPrerequisite> <!--Odd-->
             <Slot>
@@ -78,7 +78,7 @@
 	<SquadronFormationDefinition Name="BomberFormationDefault">
 		<!-- Sophons, UE, Riftborn & Lumeris bombers & Scavengers (Standard Bombers)-->
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
 				Path(Context, @'../ShipFactionSophons') or Path(Context, @'../ShipFactionTerrans') or Path(Context, @'../ShipFactionTimeLords')
 				or Path(Context, @'../ShipFactionVenetians') or Path(Context, @'../ShipFactionMinorFactionPirates')
@@ -92,7 +92,7 @@
 			</Slot>
 		</Pattern>
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
                 Path(Context, @'../ShipFactionSophons') or Path(Context, @'../ShipFactionTerrans') or Path(Context, @'../ShipFactionTimeLords')
                 or Path(Context, @'../ShipFactionVenetians') or Path(Context, @'../ShipFactionMinorFactionPirates')
@@ -104,7 +104,7 @@
 		</Pattern>
 		<!-- Primitive & Advanced Bombers (Semi-Large Bombers)-->
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
 				Path(Context, @'../ShipFactionMinorFactionAdvanced') or Path(Context, @'../ShipFactionMinorFactionPrimitive')
 			</InterpreterPrerequisite>
@@ -118,7 +118,7 @@
 			</Slot>
 		</Pattern>
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
 				Path(Context, @'../ShipFactionMinorFactionAdvanced') or Path(Context, @'../ShipFactionMinorFactionPrimitive')
 			</InterpreterPrerequisite>
@@ -130,7 +130,7 @@
 		</Pattern>
 		<!-- Vodyani & Eusocial Bombers (Large Bombers)-->
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
 				Path(Context, @'../ShipFactionVampirilis') or Path(Context, @'../ShipFactionMinorFactionInsectoid')
 			</InterpreterPrerequisite>
@@ -143,7 +143,7 @@
 			</Slot>
 		</Pattern>
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
 				Path(Context, @'../ShipFactionVampirilis') or Path(Context, @'../ShipFactionMinorFactionInsectoid')
 			</InterpreterPrerequisite>
@@ -154,7 +154,7 @@
 		</Pattern>
 		<!-- Craver, Unfallen & Horatio bomber (Tall Bombers)-->
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
 				Path(Context, @'../ShipFactionCravers') or Path(Context, @'../ShipFactionUnfallen') or Path(Context, @'../ShipFactionHoratio')
 			</InterpreterPrerequisite>
@@ -167,7 +167,7 @@
 			</Slot>
 		</Pattern>
 		<Pattern>
-			<PathPrerequisite Flags="Prerequisite">SquadronTypeBomber</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite">Path(Context, @SquadronTypeBomber) or Path(Context, @SquadronTypeBomberEnergy)</InterpreterPrerequisite>
 			<InterpreterPrerequisite Flags="Prerequisite">
 				Path(Context, @'../ShipFactionCravers') or Path(Context, @'../ShipFactionUnfallen') or Path(Context, @'../ShipFactionHoratio')
 			</InterpreterPrerequisite>

@@ -7,6 +7,11 @@
       <GeneratorInfo ExcludeFromRandomPlacement="true"/>
     </AnomalyDefinition>
     
+    <AnomalyDefinition Name="PlanetAnomalyAcademyRestored" Quality="Positive" Indestructible="true">
+        <SimulationDescriptorReference Name="PlanetAnomalyAcademyRestored"/>
+        <GeneratorInfo ExcludeFromRandomPlacement="true"/>
+    </AnomalyDefinition>
+    
     <!-- Auriga's Anomaly -->
     <AnomalyDefinition Name="PlanetAnomalyEndlessWonder1" Quality="Positive"  Indestructible="true">
         <SimulationDescriptorReference Name="PlanetAnomalyEndlessWonder1"/>

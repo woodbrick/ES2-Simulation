@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
 
+    
+    <DefenseModule Name="ModuleDefenseHullPlatingQuest1" Family="HullPlatingStrategic4" Level="4">
+        <Cost ResourceName="SystemProduction">40</Cost>
+        <Cost ResourceName="Strategic4" Instant="true">2</Cost>
+        <AIBattleSituations Situation="ProjectileDefense" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="ProjectileWeapon" Mode="Against" Value="1"/>
+        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,ExplorationQuest04-Reward</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleDefense"/>
+        <CategorizedSimulationDescriptors Category="CategoryBaseDefense">
+            <SimulationDescriptorReference Name="ModuleDefenseHullPlatingQuest1"/>
+        </CategorizedSimulationDescriptors>
+        <CategorizedSimulationDescriptors Category="CategoryDefenseHull">
+        </CategorizedSimulationDescriptors>
+        <CategorizedSimulationDescriptors Category="CategoryDefenseStrategic4">
+            <SimulationDescriptorReference Name="ModuleDefenseStrategic4"/>
+        </CategorizedSimulationDescriptors>
+    </DefenseModule>
+
+
 
 
     <!--#########################
@@ -50,7 +69,6 @@
         <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,CompletedQuestMilitary_Stage4A</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
         <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
-        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,CompletedQuestMilitary_Stage4A</PathPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleWeapon"/>
         <SimulationDescriptorReference Name="ClassModuleShootsOncePerPhase"/>
         <SimulationDescriptorReference Name="ModuleTypeStrategic" />

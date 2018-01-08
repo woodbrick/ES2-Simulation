@@ -332,6 +332,13 @@
         </EntityFilter>
         <!--<BattleActionReference Name="EffectArea_Test01"/>-->
     </EncounterEffectArea>
+
+    <EncounterEffectArea Name="PlanetAnomaly48"> <!--UPDATE5-->
+        <SimulationDescriptorReference Name="EffectAreaTypeNebula"/>
+        <EntityFilter EntityType="Ship" EntityTags="Alive">
+        </EntityFilter>
+        <!--<BattleActionReference Name="EffectArea_Test01"/>-->
+    </EncounterEffectArea>
     
     <EncounterEffectArea Name="PlanetAnomalyNaturalWonder1">
         <SimulationDescriptorReference Name="EffectAreaTypeNebula"/>

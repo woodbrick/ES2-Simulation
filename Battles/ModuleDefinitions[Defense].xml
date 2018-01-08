@@ -47,6 +47,7 @@
         <Cost ResourceName="SystemProduction">13</Cost>
         <AIBattleSituations Situation="ProjectileDefense" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="ProjectileWeapon" Mode="Against" Value="1"/>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary1</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleDefense"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseDefense">
             <SimulationDescriptorReference Name="ModuleDefenseHullPlating1"/>
@@ -260,6 +261,7 @@
         <Cost ResourceName="SystemProduction">13</Cost>
         <AIBattleSituations Situation="EnergyDefense" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="EnergyWeapon" Mode="Against" Value="1"/>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary1</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleDefense"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseDefense">
             <SimulationDescriptorReference Name="ModuleDefenseShield1"/>
@@ -272,7 +274,7 @@
         <Cost ResourceName="SystemProduction">22</Cost>
         <AIBattleSituations Situation="EnergyDefense" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="EnergyWeapon" Mode="Against" Value="1"/>
-        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule1Common</TechnologyPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule1Common</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleDefense"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseDefense">
             <SimulationDescriptorReference Name="ModuleDefenseShield2"/>
@@ -285,7 +287,7 @@
         <Cost ResourceName="SystemProduction">22</Cost>
         <AIBattleSituations Situation="EnergyDefense" Mode="Use" Value="1"/>
         <AIBattleSituations Situation="EnergyWeapon" Mode="Against" Value="1"/>
-        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule1Vampirilis</TechnologyPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule1Vampirilis</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleDefense"/>
         <CategorizedSimulationDescriptors Category="CategoryBaseDefense">
             <SimulationDescriptorReference Name="ModuleDefenseShield2Vampirilis"/>

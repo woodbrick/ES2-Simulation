@@ -17,11 +17,11 @@
         </ToConverter>
         <ToConverter To="ScrapShip">
             <!-- ((x -> money) ^ 1.2) * modifier * health ratio --> <!--Sale is another formula-->
-            <InterpreterModifier>($(Input)) * 0.01</InterpreterModifier>
+            <InterpreterModifier>($(Input)) * 0.15 * Property(StockLocation, @../ClassEmpire, DustInflation)</InterpreterModifier>
         </ToConverter>
         <ToConverter To="ScrapImprovement">
             <!-- ((x -> money) ^ 1.2) * modifier -->
-            <InterpreterModifier>Property(ScrappedElement, @../ClassEmpire, CanSellImprovements) * (0.15 * $(Input) * Property(ScrappedElement, @../ClassEmpire, GameSpeedMultiplier)) * Property(ScrappedElement, @../ClassEmpire,ImprovementScrapValueModifier)</InterpreterModifier>
+            <InterpreterModifier>Property(ScrappedElement, @../ClassEmpire, CanSellImprovements) * (0.20 * $(Input) * Property(ScrappedElement, @../ClassEmpire, GameSpeedMultiplier)) * Property(ScrappedElement, @../ClassEmpire,ImprovementScrapValueModifier) * Property(StockLocation, @../ClassEmpire, DustInflation)</InterpreterModifier>
         </ToConverter>
         <ToConverter To="MoneyGainOnConstructionComplete">
             <InterpreterModifier>$(Input) * Property(StockLocation, @../ClassEmpire, RatioOfProductionSpentGainedAsMoney)</InterpreterModifier>

@@ -7,6 +7,7 @@
     <!--PIRATE POWER 1-->
     <SimulationDescriptor Name="PiratePowerLevel1Effect" Type="PiratePowerLevel">
         <!--Add effects here-->
+        <Property Name="ManpowerGivenPerLair" BaseValue="50"/>
         <Modifier TargetProperty="MaximumLairsByEmpire"         Operation="Addition"    Value="1"   Path="ClassEmpire,EmpireTypePirate"/>
         <Modifier TargetProperty="PowerPointBonusFromRaid"      Operation="Force"       Value="3"   Path="ClassEmpire" />
         <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="300"    Path="ClassEmpire/ClassColonizedStarSystem" />
@@ -15,35 +16,36 @@
     <!--PIRATE POWER 2-->
     <SimulationDescriptor Name="PiratePowerLevel2Effect" Type="PiratePowerLevel">
         <!--Add effects here-->
+        <Property Name="ManpowerGivenPerLair" BaseValue="100"/>
         <Modifier TargetProperty="MaximumMovement"              Operation="Addition"    Value="1"       Path="ClassEmpire/ClassGarrison/ClassShip" />
         <Modifier TargetProperty="PowerPointBonusFromRaid"      Operation="Force"       Value="5"       Path="ClassEmpire" />
-        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="500"     Path="ClassEmpire/ClassColonizedStarSystem" />
-        <Modifier TargetProperty="BaseTurnsBeforeFleetSpawn"    Operation="Subtraction" Value="1"       Path="ClassEmpire"/>
+        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="450"     Path="ClassEmpire/ClassColonizedStarSystem" />
     </SimulationDescriptor>
 
     <!--PIRATE POWER 3-->
+
     <SimulationDescriptor Name="PiratePowerLevel3Effect" Type="PiratePowerLevel">
+        <Property Name="ManpowerGivenPerLair" BaseValue="150"/>
         <Modifier TargetProperty="PowerPointBonusFromRaid"      Operation="Force"    Value="10"   Path="ClassEmpire" />
-        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="700"    Path="ClassEmpire/ClassColonizedStarSystem" />
-        <Modifier TargetProperty="BaseTurnsBeforeFleetSpawn"    Operation="Subtraction" Value="2"       Path="ClassEmpire"/>
+        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="600"    Path="ClassEmpire/ClassColonizedStarSystem" />
     </SimulationDescriptor>
 
     <!--PIRATE POWER 4-->
     <SimulationDescriptor Name="PiratePowerLevel4Effect" Type="PiratePowerLevel">
         <!--Add effects here-->
+        <Property Name="ManpowerGivenPerLair" BaseValue="200"/>
         <Modifier TargetProperty="MaximumLairsByEmpire"         Operation="Addition"    Value="1"       Path="ClassEmpire,EmpireTypePirate"/>
         <Modifier TargetProperty="PowerPointBonusFromRaid"      Operation="Force"       Value="20"      Path="ClassEmpire" />
-        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="900"     Path="ClassEmpire/ClassColonizedStarSystem" />
-        <Modifier TargetProperty="BaseTurnsBeforeFleetSpawn"    Operation="Subtraction" Value="3"       Path="ClassEmpire"/>
+        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="750"     Path="ClassEmpire/ClassColonizedStarSystem" />
     </SimulationDescriptor>
 
     <!--PIRATE POWER 5-->
     <SimulationDescriptor Name="PiratePowerLevel5Effect" Type="PiratePowerLevel">
         <!--Add effects here-->
+        <Property Name="ManpowerGivenPerLair" BaseValue="250"/>
         <Modifier TargetProperty="MaximumLairsByEmpire"         Operation="Addition"    Value="1"       Path="ClassEmpire,EmpireTypePirate"/>
         <Modifier TargetProperty="MaximumMovement"              Operation="Addition"    Value="1"       Path="ClassEmpire/ClassGarrison/ClassShip" />
-        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="1100"    Path="ClassEmpire/ClassColonizedStarSystem" />
-        <Modifier TargetProperty="BaseTurnsBeforeFleetSpawn"    Operation="Subtraction" Value="4"       Path="ClassEmpire"/>
+        <Modifier TargetProperty="MaximumSystemManpower"        Operation="Force"       Value="900"    Path="ClassEmpire/ClassColonizedStarSystem" />
     </SimulationDescriptor>
     
     <SimulationDescriptor Name="DisabledPiratesEffect" Type="DisabledPiratesEffect">
@@ -51,6 +53,7 @@
 
     <SimulationDescriptor Name="ClassPirateLair" Type="ClassPirateLair">
         <!-- Applied onto ColonizedStarSystems which are lairs. -->
+        <Modifier TargetProperty="EmpireManpower" Operation="Addition" Value="$(ManpowerGivenPerLair)" Path="../ClassEmpire" SearchValueFromPath="true"/>
     </SimulationDescriptor>
     
 </Datatable>

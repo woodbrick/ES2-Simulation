@@ -257,12 +257,12 @@
         <AIBattleSituations Situation="Bomber" Mode="Against" Value="0.25"/>
         <AIBattleSituations Situation="Fighter" Mode="Against" Value="0.25"/>
         <!-- Ranges -->
-        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Use" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Use" Value="0"/>
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.85"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
         <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
-        <AIBattleSituations Situation="Medium" Mode="Against" Value="0"/>
-        <AIBattleSituations Situation="Long" Mode="Against" Value="0"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
 		<!-- ** END AI DATA ** -->
         <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,CompletedQuestUnfallen03</PathPrerequisite>
         <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>

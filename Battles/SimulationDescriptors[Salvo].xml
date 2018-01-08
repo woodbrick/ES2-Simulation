@@ -136,35 +136,35 @@
         <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="60" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile2" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="75" Path="ClassSalvo"/>
-    </SimulationDescriptor>
-    <SimulationDescriptor Name="SalvoMissile3" Type="Salvo">
         <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="90" Path="ClassSalvo"/>
     </SimulationDescriptor>
+    <SimulationDescriptor Name="SalvoMissile3" Type="Salvo">
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="120" Path="ClassSalvo"/>
+    </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile4" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="100" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="150" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile5" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="115" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="180" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <!-- Missile Strategics -->
     <SimulationDescriptor Name="SalvoMissile1Strategic1" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="90" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="120" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile2Strategic1" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="90" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="120" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile3Strategic3" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="115" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="180" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile4Strategic3" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="115" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="180" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile4Strategic5" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="140" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="210" Path="ClassSalvo"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="SalvoMissile5Strategic5" Type="Salvo">
-        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="140" Path="ClassSalvo"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="210" Path="ClassSalvo"/>
     </SimulationDescriptor>
 
 

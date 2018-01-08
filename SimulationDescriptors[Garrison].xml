@@ -297,7 +297,9 @@
 
     <SimulationDescriptor Name="FleetActionRootColonize" Type="FleetAction"/>
 
-    <SimulationDescriptor Name="FleetActionPrivateer" Type="FleetActionPrivateer" IsSerializable="false"/>
+    <SimulationDescriptor Name="FleetActionPrivateer" Type="FleetActionPrivateer" IsSerializable="false">
+        <Modifier TargetProperty="GarrisonMoneyUpkeep" Operation="Percent" Value="0.25"	Path="ClassGarrisonFleet"/>
+    </SimulationDescriptor>
     
     <SimulationDescriptor Name="ReadOnlyGarrison" Type="ReadOnlyGarrison"/>
     <SimulationDescriptor Name="DisbandOnlyGarrison" Type="DisbandOnlyGarrison"/>

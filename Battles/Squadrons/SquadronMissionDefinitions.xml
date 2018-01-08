@@ -173,7 +173,7 @@
     </SquadronMissionDefinition>
 
 	<!-- Assault Ship -->
-    <SquadronMissionDefinition Name="AssaultShip" AssociatedMatchType="Assault">
+    <SquadronMissionDefinition Name="AssaultShipAsBomber" AssociatedMatchType="Assault">
         <TargetSelectionMethod_Scan TargetTags="Alive OtherGroup">
             <TargetSortingCriterion Name="Type">
                 <ScoreModifier Name="Ship">1</ScoreModifier>
@@ -184,6 +184,33 @@
                 <ScoreModifier Name="ShipSizeSmall">4</ScoreModifier>
                 <ScoreModifier Name="ShipSizeMothership">2</ScoreModifier>
 			</TargetSortingCriterion>
+            <TargetSortingCriterion Name="Role" IgnoredWhenCheckingTargetValidity="true">
+                <ScoreModifier Name="ShipRoleHero">-1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+                <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+                <ScoreModifier Name="TargetingWeightBonus">1</ScoreModifier>
+            </TargetSortingCriterion_PropertyMultiplier>
+        </TargetSelectionMethod_Scan>
+        <Task_ReachMatch>
+            <MotionDuration_SquadronSpeed/>
+        </Task_ReachMatch>
+        <Task_TakePartInMatch>
+            <MotionDuration_Unlimited/>
+        </Task_TakePartInMatch>
+    </SquadronMissionDefinition>
+    
+    <SquadronMissionDefinition Name="AssaultShipAsFighter" AssociatedMatchType="Assault">
+        <TargetSelectionMethod_Scan TargetTags="Alive OtherGroup">
+            <TargetSortingCriterion Name="Type">
+                <ScoreModifier Name="Ship">1</ScoreModifier>
+            </TargetSortingCriterion>
+            <TargetSortingCriterion Name="Size">
+                <ScoreModifier Name="ShipSizeLarge">2</ScoreModifier>
+                <ScoreModifier Name="ShipSizeMedium">4</ScoreModifier>
+                <ScoreModifier Name="ShipSizeSmall">6</ScoreModifier>
+                <ScoreModifier Name="ShipSizeMothership">8</ScoreModifier>
+            </TargetSortingCriterion>
             <TargetSortingCriterion Name="Role" IgnoredWhenCheckingTargetValidity="true">
                 <ScoreModifier Name="ShipRoleHero">-1</ScoreModifier>
             </TargetSortingCriterion>

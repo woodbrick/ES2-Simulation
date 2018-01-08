@@ -42,11 +42,12 @@
         <Property Name="WeaponTypePhysical"       BaseValue="0" MinValue="0" MaxValue="1"/>
         <Property Name="WeaponTypeEnergy"         BaseValue="0" MinValue="0" MaxValue="1"/>
         
-        <Property Name="FlakEfficiency"           BaseValue="0" /> <!-- Fake value for tooltip -->
         <Property Name="FlakDPSMissile"           BaseValue="0" /> <!-- Used for Tooltip -->
+        <Property Name="FlakDamage"               BaseValue="0"/> <!-- Used for Tooltip -->
         <Property Name="FlakDPSSquadron"          BaseValue="0" /> <!-- Used for Tooltip -->
         <Property Name="EfficiencyAgainstSquadron" BaseValue="0"/> <!-- Real value used in computations for Flak Damage -->
         <Property Name="FlakDPSSquadron"          BaseValue="0" /> <!-- Fake value for tooltip -->
+        <Property Name="FlakCooldown"               BaseValue="0.5"/> <!--Used for centralization of feedback purposes-->
         <Property Name="MissileHealth"            BaseValue="0"/>
         
         <Property Name="ShipManpowerKillPerHit"   BaseValue="0" />
@@ -75,7 +76,6 @@
         
         <!-- Multiplying damage for ship size -->
         <Modifier TargetProperty="Damage" Operation="Multiplication" Value="$(Multiplier)" TooltipHidden="true"/>
-		<Modifier TargetProperty="FlakEfficiency" Operation="Multiplication" Value="$(Multiplier)" TooltipHidden="true"/>
 
         <!-- Used to set the offensive power of the module -->
         <BinaryModifier TargetProperty="OffensiveMilitaryPower"  Operation="Addition"       Left="1"    BinaryOperation="Subtraction" Right="$(LongRangePenalty)"   Path="ClassModuleWeapon,!ClassModuleWeaponFlack" TooltipHidden="true" Priority="0"/>
@@ -135,6 +135,8 @@
         <Modifier TargetProperty="ShortRangePenalty"            Operation="Addition" Value="0.15"            Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="DeadZoneRangePenalty"         Operation="Addition" Value="1"            Path="ClassModuleWeapon" TooltipHidden="true"/>
 
+        <Modifier TargetProperty="EfficiencyAgainstSquadron"    Operation="Addition" Value="0.025" Path="ClassModule" TooltipHidden="true"/>
+
         <!--Every time a module is installed, the upkeep grows-->
         <Modifier TargetProperty="GarrisonMoneyUpkeep"          Operation="Addition" Value="$(UpkeepFromModules)"       Path="../ClassShip"/>
 
@@ -152,8 +154,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="20" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="60" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -163,8 +165,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="24" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="90" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -175,8 +177,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="36" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="120" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
     
@@ -186,33 +188,33 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="32" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="120" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponKinetic3Strategic1"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="115"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="122"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"         Operation="Addition"  Value="0.06"  TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                  Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="48" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="180" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponKinetic3Strategic3"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="125"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                    Operation="Addition" Value="122"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"         Operation="Addition"  Value="0.08"  TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                  Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
-        <Modifier TargetProperty="ShipManpowerKillPerHit"    Operation="Addition" Value="2"      TooltipHidden="true"/>
+        <Modifier TargetProperty="ShipManpowerKillPerHit"    Operation="Addition" Value="1"      TooltipHidden="true"/>
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="44" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="150" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -222,8 +224,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="44" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="150" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -232,8 +234,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="44" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="150" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -245,8 +247,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="44" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="150" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -259,8 +261,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="44" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="150" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -270,8 +272,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="60" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="180" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -284,8 +286,8 @@
         <BinaryModifier TargetProperty="DefensiveMilitaryPower"    Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Division" Right="2"      Path="ClassModule" TooltipHidden="true"/>
         
         <!--DPS against Missile / Squadrons-->
-        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="80" BinaryOperation="Division" Right="0.25"     Path="ClassModule" TooltipHidden="true"/>
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125"     Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="FlakDamage"           Operation="Addition" Value="210" Path="ClassModule" TooltipHidden="true"/>
+        <BinaryModifier TargetProperty="FlakDPSMissile"      Operation="Addition" Left="$(FlakDamage)" BinaryOperation="Division" Right="$(FlakCooldown)"     Path="ClassModule" TooltipHidden="true"/>
         <BinaryModifier TargetProperty="FlakDPSSquadron"      Operation="Addition" Left="$(FlakDPSMissile)" BinaryOperation="Multiplication" Right="$(EfficiencyAgainstSquadron)"     Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
     
@@ -326,7 +328,7 @@
     <!-- ******************** -->
     <!-- ERA 1-->
     <SimulationDescriptor Name="ModuleWeaponMissile1"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="180"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="250"      TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
         <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="60" TooltipHidden="true"/>
@@ -334,14 +336,14 @@
 
     <!-- ERA 2-->
     <SimulationDescriptor Name="ModuleWeaponMissile2"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="288"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="400"     TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
         <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="75" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile2Strategic1"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="407"    TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="565"    TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.05"   TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="2"      TooltipHidden="true"/>
         
@@ -351,14 +353,14 @@
 
     <!-- ERA 3-->
     <SimulationDescriptor Name="ModuleWeaponMissile3"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="396"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="550"     TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
         <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="90" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile3Strategic1"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="515"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="715"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.05"   TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="3"      TooltipHidden="true"/>
         
@@ -367,7 +369,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile3Strategic3"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="515"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="715"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.05"   TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="8"      TooltipHidden="true"/>
         
@@ -377,14 +379,14 @@
     
     <!-- ERA 4-->
     <SimulationDescriptor Name="ModuleWeaponMissile4"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="504"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="700"     TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
         <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="100" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile4Strategic3"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="623"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="865"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.05"   TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="10"      TooltipHidden="true"/>
 
@@ -393,7 +395,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile4Strategic5"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="623"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="865"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.05"   TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="7"      TooltipHidden="true"/>
         <Modifier TargetProperty="OpponentCooldownReductionPercent"     Operation="Addition"  Value="0.1"  TooltipHidden="true"/>
@@ -405,14 +407,14 @@
 
     <!-- ERA 5-->
     <SimulationDescriptor Name="ModuleWeaponMissile5"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="612"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="850"     TooltipHidden="true"/>
 
         <!-- Must be same value as Salvo Health-->
         <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="115" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile5Strategic5"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="731"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="1015"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.05"   TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="8"      TooltipHidden="true"/>
         <Modifier TargetProperty="OpponentCooldownReductionPercent"     Operation="Addition"  Value="0.1"  TooltipHidden="true"/>
@@ -439,7 +441,7 @@
         <Modifier TargetProperty="ShotsCountPerSalvo"            Operation="Addition" Value="1"          Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="ProjectileSpeed"               Operation="Addition" Value="125"        Path="ClassModuleWeapon" TooltipHidden="true"/>
                                                                  
-        <Modifier TargetProperty="CriticalHitChance"             Operation="Addition" Value="0.05"       Path="ClassModuleWeapon"/>
+        <Modifier TargetProperty="CriticalHitChance"             Operation="Addition" Value="0.1"       Path="ClassModuleWeapon"/>
         <Modifier TargetProperty="ShieldPenetrationFactor"       Operation="Addition" Value="0.1"        Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="HullPlatingPenetrationFactor"  Operation="Addition" Value="0.8"        Path="ClassModuleWeapon" TooltipHidden="true"/>
                                                                  
@@ -548,7 +550,7 @@
         <Modifier TargetProperty="ShotsCountPerSalvo"           Operation="Addition"        Value="1"          Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="ProjectileSpeed"              Operation="Addition"        Value="-1"         Path="ClassModuleWeapon" TooltipHidden="true"/>
 
-        <Modifier TargetProperty="CriticalHitChance"            Operation="Addition"        Value="0.1"        Path="ClassModuleWeapon"/>
+        <Modifier TargetProperty="CriticalHitChance"            Operation="Addition"        Value="0.05"        Path="ClassModuleWeapon"/>
         <Modifier TargetProperty="ShieldPenetrationFactor"      Operation="Addition"        Value="0.1"        Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="HullPlatingPenetrationFactor" Operation="Addition"        Value="0.9"        Path="ClassModuleWeapon" TooltipHidden="true"/>
 
@@ -653,10 +655,10 @@
         <Property Name="FlackType"              BaseValue="1"/>
 
 
-        <Modifier TargetProperty="Cooldown"                     Operation="Addition" Value="0.25"         Path="ClassModuleWeapon" TooltipHidden="true"/>
-        <Modifier TargetProperty="PreparationDuration"          Operation="Addition" Value="0"         Path="ClassModuleWeapon" TooltipHidden="true"/>
-        <Modifier TargetProperty="PreparationDurationFactorMin" Operation="Multiplication" Value="1"   Path="ClassModuleWeapon" TooltipHidden="true"/>
-        <Modifier TargetProperty="PreparationDurationFactorMax" Operation="Multiplication" Value="1"   Path="ClassModuleWeapon" TooltipHidden="true"/>
+        <Modifier TargetProperty="Cooldown"                     Operation="Addition" Value="0.5"         Path="ClassModuleWeapon" TooltipHidden="true"/>
+        <Modifier TargetProperty="PreparationDuration"          Operation="Addition" Value="0.1"         Path="ClassModuleWeapon" TooltipHidden="true"/>
+        <Modifier TargetProperty="PreparationDurationFactorMin" Operation="Multiplication" Value="1.5"   Path="ClassModuleWeapon" TooltipHidden="true"/>
+        <Modifier TargetProperty="PreparationDurationFactorMax" Operation="Multiplication" Value="0.5"   Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="ShootingDuration"             Operation="Addition" Value="0.15"      Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="ShotsCountPerSalvo"           Operation="Addition" Value="0"         Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="ProjectileSpeed"              Operation="Addition" Value="-1"        Path="ClassModuleWeapon" TooltipHidden="true"/>
@@ -666,58 +668,50 @@
 
         <Modifier TargetProperty="LongRangePenalty"             Operation="Addition" Value="1"         Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="MediumRangePenalty"           Operation="Addition" Value="1"         Path="ClassModuleWeapon" TooltipHidden="true"/>
-        <Modifier TargetProperty="ShortRangePenalty"            Operation="Addition" Value="0"         Path="ClassModuleWeapon" TooltipHidden="true"/>
+        <Modifier TargetProperty="ShortRangePenalty"            Operation="Addition" Value="0.2"       Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="DeadZoneRangePenalty"         Operation="Addition" Value="1"         Path="ClassModuleWeapon" TooltipHidden="true"/>
-        <Modifier TargetProperty="MaximumHealth"                Operation="Addition" Value="10"        Path="ClassModuleWeapon" TooltipHidden="true"/>
-
+        
+        <Modifier TargetProperty="EfficiencyAgainstSquadron"    Operation="Addition" Value="0.025" Path="ClassModule" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 01 -->
     <SimulationDescriptor Name="ModuleWeaponFlack1"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="20" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="60" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 02 -->
     <SimulationDescriptor Name="ModuleWeaponFlack2"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="24" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="90" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 02 Strat 1 -->
     <SimulationDescriptor Name="ModuleWeaponFlack2Strategic1"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="36" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="120" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 03 -->
     <SimulationDescriptor Name="ModuleWeaponFlack3"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="32" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="120" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 03 Strat 1 -->
     <SimulationDescriptor Name="ModuleWeaponFlack3Strategic1"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="48" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="180" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 04 -->
     <SimulationDescriptor Name="ModuleWeaponFlack4"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="44" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="150" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 05 -->
     <SimulationDescriptor Name="ModuleWeaponFlack5"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="60" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="180" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!--Flack 06 -->
     <SimulationDescriptor Name="ModuleWeaponFlack6"  Type="ModuleWeaponFlack">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="80" TooltipHidden="true"/><!-- Change also value on kinetic -->
-        <Modifier TargetProperty="EfficiencyAgainstSquadron" Operation="Addition" Value="0.125" Path="ClassModule" TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="210" TooltipHidden="true"/>
     </SimulationDescriptor>
 
 
@@ -729,11 +723,13 @@
 
 
     <SimulationDescriptor Name="ClassModuleDestruction"  Type="ClassModuleDestruction">
-        <Property Name="TurnsBeforeDestruction"                 BaseValue="5"/>
         <Property Name="StartChargeTurn" IsSealed="true"/>
+        <Property Name="TurnsBeforeDestruction"                 BaseValue="0"/>
     </SimulationDescriptor>
-    
-    <SimulationDescriptor Name="ModuleDestruction1"  Type="ModuleDestruction"/>
+
+    <SimulationDescriptor Name="ModuleDestruction1"  Type="ModuleDestruction">
+        <Modifier TargetProperty="TurnsBeforeDestruction" Operation="Addition" Value="5" Path="ClassModuleDestruction" TooltipHidden="true"/>
+    </SimulationDescriptor>
     
     <SimulationDescriptor Name="DamageTypePhysical" Type="DamageType"/>
     <SimulationDescriptor Name="DamageTypeEnergy" Type="DamageType"/>
