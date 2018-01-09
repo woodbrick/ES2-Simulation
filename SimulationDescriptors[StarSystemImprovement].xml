@@ -170,6 +170,7 @@
     <!-- Resource Factory -->
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory1" Type="StarSystemImprovement">
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 
 
@@ -248,6 +249,7 @@
     <!-- Resource Factory -->
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory2" Type="StarSystemImprovement">
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 
 
@@ -422,8 +424,8 @@
 
 	<!-- APPROVAL -->
 	<SimulationDescriptor Name="StarSystemImprovementApproval4" Type="StarSystemImprovement">
-		<BinaryModifier TargetProperty="Happiness" Operation="Addition"  Left="5"  BinaryOperation="Multiplication"    Right="$(PeaceCount)"       SearchValueFromPath="true"  Path="./ClassColonizedStarSystem"/>
-		<BinaryModifier TargetProperty="Happiness" Operation="Addition"  Left="10"  BinaryOperation="Multiplication"    Right="$(AllianceCount)"    SearchValueFromPath="true"  Path="./ClassColonizedStarSystem"/>
+		<BinaryModifier TargetProperty="Happiness" Operation="Addition"  Left="6"  BinaryOperation="Multiplication"    Right="$(PeaceCount)"       SearchValueFromPath="true"  Path="./ClassColonizedStarSystem"/>
+		<BinaryModifier TargetProperty="Happiness" Operation="Addition"  Left="12"  BinaryOperation="Multiplication"    Right="$(AllianceCount)"    SearchValueFromPath="true"  Path="./ClassColonizedStarSystem"/>
 	</SimulationDescriptor>
 
 	<!-- BUYOUT -->
@@ -512,12 +514,12 @@
     <!-- Resource Factory -->
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory3" Type="StarSystemImprovement">
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
-        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory3TimeLords" Type="StarSystemImprovement">
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="3" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
-        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 	
 	<!-- ########################################################################### -->
@@ -642,11 +644,11 @@
 	<!-- ########################################################################### -->
 	<!-- APPROVAL -->
 	<SimulationDescriptor Name="StarSystemImprovementApproval2" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness" Operation="Addition" Right="5" BinaryOperation="Multiplication" Left="$(SystemLevel)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem" />
+        <BinaryModifier TargetProperty="Happiness" Operation="Addition" Right="6" BinaryOperation="Multiplication" Left="$(SystemLevel)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementApproval5" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="Happiness"	       Operation="Addition"     Left="5"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="Happiness"	       Operation="Addition"     Left="6"     BinaryOperation="Multiplication" Right="$(OwnedLuxuryDeposits)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementApproval5Horatio" Type="StarSystemImprovement">
