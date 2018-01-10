@@ -307,11 +307,11 @@
 
     <SimulationDescriptor Name="FactionTraitBigFleets1" Type="FactionTrait">
         <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="1" Path="ClassEmpire"/>
-        <Modifier TargetProperty="GarrisonMoneyUpkeep"  Operation="Percent"  Value="-0.1" Path="ClassEmpire//ClassGarrison/ClassShip"/>
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"  Operation="Percent"  Value="-0.15" Path="ClassEmpire//ClassGarrison/ClassShip"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="FactionTraitBigFleets2" Type="FactionTrait">
         <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="2" Path="ClassEmpire"/>
-        <Modifier TargetProperty="GarrisonMoneyUpkeep"  Operation="Percent"  Value="-0.25" Path="ClassEmpire//ClassGarrison/ClassShip"/>
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"  Operation="Percent"  Value="-0.3" Path="ClassEmpire//ClassGarrison/ClassShip"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="FactionTraitDeadlyWeapons1" Type="FactionTrait">

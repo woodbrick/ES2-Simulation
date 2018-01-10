@@ -832,27 +832,27 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly12" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawIndustry" Value="1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawIndustry" Value="2" Operation="Addition" Path="ClassPlanet"/>
         <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
         <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly12Reduced" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawIndustry" Value="1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawIndustry" Value="2" Operation="Addition" Path="ClassPlanet"/>
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly13" Type="PlanetAnomaly" >
         <Modifier TargetProperty="PlanetRawScience" Value="2" Operation="Subtraction" Path="ClassPlanet" Priority="1"/>
-        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)"      />
-        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="1" TooltipHidden="true" />
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly13Reduced" Type="PlanetAnomaly" >
-        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)"      />
-        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="1" TooltipHidden="true" />
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -863,39 +863,38 @@
 
 
     <SimulationDescriptor Name="PlanetAnomaly15" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawScience" Value="-1" Operation="Addition" Path="ClassPlanet"/>
-        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)"      />
-        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="1" TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetRawScience" Value="-2" Operation="Addition" Path="ClassPlanet"/>
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly15Reduced" Type="PlanetAnomaly" >
-        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)"      />
-        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="1" TooltipHidden="true" />
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly16" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawIndustry" Value="1" Operation="Addition" Path="ClassPlanet"/>
-        <Modifier TargetProperty="PlanetRawScience" Value="-1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawIndustry" Value="2" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="-2" Operation="Addition" Path="ClassPlanet"/>
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly16Reduced" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawIndustry" Value="1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawIndustry" Value="2" Operation="Addition" Path="ClassPlanet"/>
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly17" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawDust" Value="-1" Operation="Addition" Path="ClassPlanet"/>
-        <Modifier TargetProperty="PlanetRawScience" Value="1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="2" Operation="Addition" Path="ClassPlanet"/>
         <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
         <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetAnomaly17Reduced" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawScience" Value="1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="2" Operation="Addition" Path="ClassPlanet"/>
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -912,7 +911,7 @@
 
     <SimulationDescriptor Name="PlanetAnomaly19" Type="PlanetAnomaly" >
         <Modifier TargetProperty="PlanetRawIndustry" Value="1" Operation="Addition" Path="ClassPlanet"/>
-        <Modifier TargetProperty="PlanetRawScience" Value="-1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="1" Operation="Addition" Path="ClassPlanet"/>
         <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
         <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
@@ -920,6 +919,7 @@
 
     <SimulationDescriptor Name="PlanetAnomaly19Reduced" Type="PlanetAnomaly" >
         <Modifier TargetProperty="PlanetRawIndustry" Value="1" Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="1" Operation="Addition" Path="ClassPlanet"/>
         <Modifier TargetProperty="AnomalyCount"                    Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
 
@@ -1108,7 +1108,7 @@
 
     <!-- Shattered Crust    -->
     <SimulationDescriptor Name="PlanetAnomaly39" Type="PlanetAnomaly" >
-        <Modifier TargetProperty="PlanetRawDust"                    Value="2"       Operation="Addition" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawDust"                    Value="3"       Operation="Addition" Path="ClassPlanet"/>
         <Modifier TargetProperty="PlanetRawIndustry"                Value="-1"       Operation="Addition" Path="ClassPlanet"/>
         <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
         <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />

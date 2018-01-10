@@ -380,7 +380,7 @@
 
     <!--Engine Level 2-->
     <SupportModule Name="ModuleSupportEngine2" Family="EngineBase" Level="2">
-        <Cost ResourceName="SystemProduction">30</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyStageScienceAndExploration2</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <CategorizedSimulationDescriptors Category="CategoryEngine">
@@ -391,7 +391,7 @@
     
     <!--Engine Level 4-->
     <SupportModule Name="ModuleSupportEngine4" Family="EngineBase" Level="3">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">80</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyEngine4</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <CategorizedSimulationDescriptors Category="CategoryEngine">
@@ -402,7 +402,7 @@
 
     <!-- Engine Hyperium level 2 -->
     <SupportModule Name="ModuleSupportEngine2Strategic2" Family="EngineStrategic2" Level="3">
-        <Cost ResourceName="SystemProduction">50</Cost>
+        <Cost ResourceName="SystemProduction">60</Cost>
         <Cost ResourceName="Strategic2" Instant="true">1</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration3</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -415,7 +415,7 @@
 
     <!-- Engine Anti Matter level 3 -->
     <SupportModule Name="ModuleSupportEngine3Strategic4" Family="EngineStrategic4" Level="4">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">80</Cost>
         <Cost ResourceName="Strategic4" Instant="true">1</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration5</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -871,7 +871,7 @@
     <!-- ** SHIELD RELOAD MODULES ** -->
     <!-- *************************** -->
     <SupportModule Name="ModuleSupportShieldReload1Strategic4" Family="ShieldReloadStrategic4" Level="1">
-        <Cost ResourceName="SystemProduction">80</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
         <Cost ResourceName="Strategic4" Instant="true">2</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologySupportModule1</TechnologyPrerequisite>
         <!--Descriptor used to apply effect-->
@@ -887,7 +887,7 @@
     </SupportModule>
 
     <SupportModule Name="ModuleSupportShieldReload2Strategic6" Family="ShieldReloadStrategic6" Level="2">
-        <Cost ResourceName="SystemProduction">100</Cost>
+        <Cost ResourceName="SystemProduction">60</Cost>
         <Cost ResourceName="Strategic6" Instant="true">2</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportShieldReload2Strategic6</TechnologyPrerequisite>
         <!--Descriptor used to apply effect-->
@@ -939,7 +939,7 @@
 	<!-- ********************************** -->
 	
 	<SupportModule Name="ModuleSupportSquadronOffenseEnhancer1Strategic4" Family="SquadronOffenseEnhancerStrategic4" Level="1">
-		<Cost ResourceName="SystemProduction">70</Cost>
+		<Cost ResourceName="SystemProduction">60</Cost>
 		<Cost ResourceName="Strategic4" Instant="true">2</Cost>
 		<TechnologyPrerequisite Flags="Edition">TechnologySupportModule5</TechnologyPrerequisite>
 		<SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -949,7 +949,7 @@
 	</SupportModule>
 	
 	<SupportModule Name="ModuleSupportSquadronDefenseEnhancer1Strategic3" Family="SquadronDefenseEnhancerStrategic3" Level="1">
-		<Cost ResourceName="SystemProduction">70</Cost>
+		<Cost ResourceName="SystemProduction">60</Cost>
 		<Cost ResourceName="Strategic3" Instant="true">2</Cost>
 		<TechnologyPrerequisite Flags="Edition">TechnologySupportModule1</TechnologyPrerequisite>
 		<SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -959,7 +959,7 @@
 	</SupportModule>
 	
 	<SupportModule Name="ModuleSupportFlakEnhancer1" Family="FlakEnhancer" Level="1">
-		<Cost ResourceName="SystemProduction">100</Cost>
+		<Cost ResourceName="SystemProduction">80</Cost>
 		<TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportFlakEnhancer1</TechnologyPrerequisite>
 		<SimulationDescriptorReference Name="ClassModuleSupport"/>
 		<SimulationDescriptorReference Name="ModuleSupportFlakEnhancer"/>
@@ -967,7 +967,7 @@
 	</SupportModule>
 	
 	<SupportModule Name="ModuleSupportFlakScrambler1" Family="FlakScrambler" Level="1">
-		<Cost ResourceName="SystemProduction">100</Cost>
+		<Cost ResourceName="SystemProduction">80</Cost>
 		<TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportFlakScrambler1</TechnologyPrerequisite>
 		<SimulationDescriptorReference Name="ClassModuleSupport"/>
 		<SimulationDescriptorReference Name="ModuleSupportFlakScrambler"/>
