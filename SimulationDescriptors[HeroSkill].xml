@@ -25,10 +25,10 @@
 	
 	<!--HeroSkill5-->
 	<SimulationDescriptor Name="HeroSkillSystem5_SystemManpower_Flat_2" Type="HeroSkillSystem" IsSerializable="false">
-		<Modifier TargetProperty="MaximumSystemManpower"									Operation="Addition"		Value="100" />
+		<Modifier TargetProperty="MaximumSystemManpower"									Operation="Addition"		Value="200" />
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="HeroSkillSystem5_SystemManpower_Flat_3" Type="HeroSkillSystem" IsSerializable="false">
-		<Modifier TargetProperty="MaximumSystemManpower"									Operation="Addition"		Value="200"	/>
+		<Modifier TargetProperty="MaximumSystemManpower"									Operation="Addition"		Value="400"	/>
 	</SimulationDescriptor>
 	
 	<!--HeroSkill15-->
