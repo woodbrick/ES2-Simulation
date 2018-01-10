@@ -380,7 +380,7 @@
 
     <!--Engine Level 2-->
     <SupportModule Name="ModuleSupportEngine2" Family="EngineBase" Level="2">
-        <Cost ResourceName="SystemProduction">30</Cost>
+        <Cost ResourceName="SystemProduction">40</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyStageScienceAndExploration2</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <CategorizedSimulationDescriptors Category="CategoryEngine">
@@ -391,7 +391,7 @@
     
     <!--Engine Level 4-->
     <SupportModule Name="ModuleSupportEngine4" Family="EngineBase" Level="3">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">80</Cost>
         <TechnologyPrerequisite  Flags="Edition">TechnologyEngine4</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
         <CategorizedSimulationDescriptors Category="CategoryEngine">
@@ -402,7 +402,7 @@
 
     <!-- Engine Hyperium level 2 -->
     <SupportModule Name="ModuleSupportEngine2Strategic2" Family="EngineStrategic2" Level="3">
-        <Cost ResourceName="SystemProduction">50</Cost>
+        <Cost ResourceName="SystemProduction">60</Cost>
         <Cost ResourceName="Strategic2" Instant="true">1</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration3</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>
@@ -415,7 +415,7 @@
 
     <!-- Engine Anti Matter level 3 -->
     <SupportModule Name="ModuleSupportEngine3Strategic4" Family="EngineStrategic4" Level="4">
-        <Cost ResourceName="SystemProduction">60</Cost>
+        <Cost ResourceName="SystemProduction">80</Cost>
         <Cost ResourceName="Strategic4" Instant="true">1</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration5</TechnologyPrerequisite>
         <SimulationDescriptorReference Name="ClassModuleSupport"/>

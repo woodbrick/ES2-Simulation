@@ -52,7 +52,7 @@
 
         <!--!-Movement/Base Parameters -->
         <!-- CAN BE MODIFIED INDIVIDUALLY -->
-        <Property Name="MaximumMovement"                BaseValue="2" MinValue="1"/>
+        <Property Name="MaximumMovement"                BaseValue="3" MinValue="2"/>
         <Property Name="Movement"                       MinValue="0"    IsSerializable="true"/>
         <Property Name="SpentMovement"                  IsSerializable="true"   IsSealed="true"/> <!-- Do not modify -->
 
