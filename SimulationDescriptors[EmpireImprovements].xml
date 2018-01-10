@@ -571,7 +571,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementArmyCap6"      Type="EmpireImprovement">
-        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="3" Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="4" Path="ClassEmpire" />
     </SimulationDescriptor>
 
 
