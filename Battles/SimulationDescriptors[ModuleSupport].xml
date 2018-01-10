@@ -39,11 +39,11 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportAnalyzer1"                Type="ModuleSupportAnalyzer">
-		<Modifier TargetProperty="OpponentRecyclingSciencePerCP" Operation="Addition" Value="20" Path="ModuleSupportAnalyzer"/>
+		<Modifier TargetProperty="OpponentRecyclingSciencePerCP" Operation="Addition" Value="100" Path="ModuleSupportAnalyzer"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportAnalyzer2Strategic2"      Type="ModuleSupportAnalyzer">
-		<Modifier TargetProperty="OpponentRecyclingSciencePerCP" Operation="Addition" Value="40" Path="ModuleSupportAnalyzer"/>
+		<Modifier TargetProperty="OpponentRecyclingSciencePerCP" Operation="Addition" Value="200" Path="ModuleSupportAnalyzer"/>
 	</SimulationDescriptor>
 
 
@@ -280,7 +280,7 @@
 		<Modifier TargetProperty="VisionRange"           Operation="Addition" Value="1"         Path="ModuleSupportExploration"/>
 
 		<Modifier TargetProperty="MaximumShipProbeStock"    Operation="Addition" Value="2"      Path="ModuleSupportExploration"/>
-		<Modifier TargetProperty="NetShipProbe"             Operation="Addition" Value="0.25"   Path="ModuleSupportExploration"/>
+		<Modifier TargetProperty="NetShipProbe"             Operation="Addition" Value="0.34"   Path="ModuleSupportExploration"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportExploration2Strategic1" Type="ModuleSupportExploration">
@@ -405,11 +405,11 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportJournalist1"                  Type="ModuleSupportJournalist">
-		<Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP" Operation="Addition" Value="10" Path="ModuleSupportJournalist"/>
+		<Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP" Operation="Addition" Value="40" Path="ModuleSupportJournalist"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportJournalist2Strategic5"        Type="ModuleSupportJournalist">
-		<Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP" Operation="Addition" Value="20" Path="ModuleSupportJournalist"/>
+		<Modifier TargetProperty="OpponentRecyclingEmpirePointPerCP" Operation="Addition" Value="80" Path="ModuleSupportJournalist"/>
 	</SimulationDescriptor>
 
 
@@ -458,11 +458,11 @@
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportRecycling1"                Type="ModuleSupportRecycling">
-		<Modifier TargetProperty="OpponentRecyclingDustPerCP" Operation="Addition" Value="10" Path="ModuleSupportRecycling"/>
+		<Modifier TargetProperty="OpponentRecyclingDustPerCP" Operation="Addition" Value="100" Path="ModuleSupportRecycling"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportRecycling2Strategic3"      Type="ModuleSupportRecycling">
-		<Modifier TargetProperty="OpponentRecyclingDustPerCP" Operation="Addition" Value="20" Path="ModuleSupportRecycling"/>
+		<Modifier TargetProperty="OpponentRecyclingDustPerCP" Operation="Addition" Value="200" Path="ModuleSupportRecycling"/>
 	</SimulationDescriptor>
 
 	<!-- ********************************** -->
