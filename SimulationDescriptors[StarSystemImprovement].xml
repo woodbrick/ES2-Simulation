@@ -94,7 +94,7 @@
 
     <!-- DUST -->
     <SimulationDescriptor Name="StarSystemImprovementDust1" Type="StarSystemImprovement">
-        <Modifier       TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="SystemMoney"       Operation="Addition"      Value="30" Path="./ClassColonizedStarSystem" />
         <BinaryModifier TargetProperty="PlanetRawDust"        Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(PlanetHasLuxury)" Path="./ClassColonizedStarSystem/ClassColonizedPlanet" SearchValueFromPath="true" />
     </SimulationDescriptor>
 
@@ -271,20 +271,21 @@
 
     <!--DUST-->
     <SimulationDescriptor Name="StarSystemImprovementDust2" Type="StarSystemImprovement">
-        <BinaryModifier TargetProperty="SystemMoney"       Operation="Addition"      Left="30" BinaryOperation="Multiplication" Right="$(SystemLevel)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <Modifier       TargetProperty="PlanetRawDust"        Operation="Addition" Value="3" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <BinaryModifier TargetProperty="SystemMoney"       Operation="Addition"      Left="20" BinaryOperation="Multiplication" Right="$(SystemLevel)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="StarSystemImprovementDust3" Type="StarSystemImprovement">
-        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition"      Value="4"  Path="./ClassColonizedStarSystem/PlanetGameplayTypeTemperate" />
-        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition"      Value="4"  Path="./ClassColonizedStarSystem/PlanetGameplayTypeTeeming" />
+        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition"      Value="5"  Path="./ClassColonizedStarSystem/PlanetGameplayTypeTemperate" />
+        <Modifier TargetProperty="PlanetRawDust"       Operation="Addition"      Value="5"  Path="./ClassColonizedStarSystem/PlanetGameplayTypeTeeming" />
     </SimulationDescriptor>
     <SimulationDescriptor Name="StarSystemImprovementDust4" Type="StarSystemImprovement">
-        <Modifier       TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="SystemMoney"       Operation="Addition"      Value="50" Path="./ClassColonizedStarSystem" />
         <Modifier TargetProperty="SystemMoney"       Operation="Percent"      Value="0.25" Path="./ClassColonizedStarSystem" />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementDust6" Type="StarSystemImprovement">
-        <Modifier       TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <BinaryModifier TargetProperty="SystemMoney"       Operation="Percent"      Left="0.2" BinaryOperation="Multiplication" Right="$(PeacefulRelationshipCount)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <Modifier       TargetProperty="PlanetRawDust"        Operation="Addition" Value="5" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <BinaryModifier TargetProperty="SystemMoney"       Operation="Percent"      Left="0.15" BinaryOperation="Multiplication" Right="$(PeacefulRelationshipCount)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
     </SimulationDescriptor>    
 
     <!-- TRADE -->
