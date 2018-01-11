@@ -321,7 +321,7 @@
         <Property Name="OwnedPlanets"                           BaseValue="0" Composition="Sum" />
         
 
-        <Property Name="OverColonizationThreshold"              BaseValue="0"   RoundingFunction="Floor"/>        
+        <Property Name="OverColonizationThreshold"              BaseValue="2"   RoundingFunction="Floor"/>        
         <Property Name="OverColonizationMalus"                  BaseValue="0" MinValue="Negative" MaxValue="0"/>
         <Property Name="OverColonizationConstant"               BaseValue="0"/>
         <Property Name="OverColonizationPenaltiesReduction"     BaseValue="0" MinValue="Negative" />

@@ -18,7 +18,7 @@
     <!-- STARTING IMPROVEMENT -->
     <SimulationDescriptor Name="StarSystemImprovementHomeSystem" Type="StarSystemImprovement">
         <Modifier TargetProperty="SystemEmpirePoint"    Operation="Addition" Value="5"    Path="./ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="SystemResearch"       Operation="Addition" Value="10"   Path="./ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"       Operation="Addition" Value="20"   Path="./ClassColonizedStarSystem"/>
         <Modifier TargetProperty="SystemMoney"          Operation="Addition" Value="40"   Path="./ClassColonizedStarSystem"/>
     </SimulationDescriptor>
 
@@ -33,7 +33,7 @@
 
     <SimulationDescriptor Name="StarSystemImprovementHomeSystemTimeLords" Type="StarSystemImprovement">
         <Modifier TargetProperty="SystemEmpirePoint"            Operation="Addition" Value="5"      Path="./ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="SystemResearch"               Operation="Addition" Value="10"     Path="./ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"               Operation="Addition" Value="20"     Path="./ClassColonizedStarSystem"/>
         <Modifier TargetProperty="SystemMoney"                  Operation="Addition" Value="40"     Path="./ClassColonizedStarSystem"/>
     </SimulationDescriptor>
 
@@ -46,7 +46,7 @@
 
     <SimulationDescriptor Name="StarSystemImprovementHomeSystemUnfallen" Type="StarSystemImprovement">
         <Modifier TargetProperty="SystemEmpirePoint"            Operation="Addition" Value="5"      Path="./ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="SystemResearch"               Operation="Addition" Value="10"     Path="./ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"               Operation="Addition" Value="20"     Path="./ClassColonizedStarSystem"/>
         <Modifier TargetProperty="SystemMoney"                  Operation="Addition" Value="40"     Path="./ClassColonizedStarSystem"/>
         <Modifier TargetProperty="MaximumSystemManpower"        Operation="Addition" Value="1000"   Path="./ClassColonizedStarSystem"/>
     </SimulationDescriptor>

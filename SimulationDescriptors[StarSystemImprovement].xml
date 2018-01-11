@@ -343,7 +343,7 @@
 	</SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementOverExpansion1" Type="StarSystemImprovement">
-        <Modifier TargetProperty="OverColonizationThreshold"    Operation="Addition"    Value="1"   Path="../ClassEmpire"  TooltipHidden="false" />
+        <Modifier TargetProperty="OverColonizationThreshold"    Operation="Addition"    Value="2"   Path="../ClassEmpire"  TooltipHidden="false" />
     </SimulationDescriptor>
 
 	<!-- TRADING -->
