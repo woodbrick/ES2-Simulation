@@ -547,43 +547,52 @@
     <!-- ******************** -->
     <SimulationDescriptor Name="ShipLevel01" Type="ShipLevel" IsSerializable="false">
     </SimulationDescriptor>
-
+    
     <SimulationDescriptor Name="ShipLevel02" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.24" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.2" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.02" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel03" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.45" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.4" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.04" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel04" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.65" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.59" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.06" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel05" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.83" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.77" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.08" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel06" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.00" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.94" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.1" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel07" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.15" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.1" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.11" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel08" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.30" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.25" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.13" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel09" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.43" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.39" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.14" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ShipLevel10" Type="ShipLevel" IsSerializable="false">
-        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.55" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="1.52" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="Accuracy" Operation="Addition" Value="0.16" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
     </SimulationDescriptor>
-
+  
     <SimulationDescriptor Name="ShipLevelUpRule" Type="ShipLevelUpRule">
         <BinaryModifier TargetProperty="NextLevelRequestedExperience" Operation="Addition" Left="$(Level)" BinaryOperation="Multiplication" Right="20" Path="ClassShip"/>
     </SimulationDescriptor>

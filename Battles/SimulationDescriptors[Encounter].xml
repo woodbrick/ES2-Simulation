@@ -111,7 +111,7 @@
         <!-- Compute Morale Bonus Effect -->
         <BinaryModifier TargetProperty="MoraleBonus" Operation="Addition" Left="$(EffectiveFlotillasCount)" BinaryOperation="Subtraction" Right="$(OpponentEffectiveFlotillasCount)" TooltipHidden="true"/>
         <Modifier       TargetProperty="MoraleBonusDamage" Operation="Addition" Value="0.1" Path="ClassGroup"/>
-        <Modifier       TargetProperty="MoraleBonusAccuracy" Operation="Addition" Value="0.1" Path="ClassGroup"/>
+        <Modifier       TargetProperty="MoraleBonusAccuracy" Operation="Addition" Value="0.15" Path="ClassGroup"/>
         <BinaryModifier TargetProperty="Damage"     Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusDamage)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleWeapon" TooltipHidden="true" />
         <BinaryModifier TargetProperty="Accuracy"   Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusAccuracy)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleWeapon" TooltipHidden="true" />
 		<BinaryModifier TargetProperty="Damage"     Operation="Percent" Left="$(MoraleBonus)" BinaryOperation="Multiplication" Right="$(MoraleBonusDamage)" Path="ClassGroup/ClassFlotilla/ClassShip/ClassSection/ClassModuleSquadron" TooltipHidden="true" />
