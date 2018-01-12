@@ -13,7 +13,7 @@
     
     <!-- SHIP ROLES -->   
     
-    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMilitaryShip" Category="PoliticalEventShip" Scale="System" Duration="20" Power="1">
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMilitaryShip" Category="PoliticalEventShip" Scale="System" Duration="5" Power="1">
         <Tags></Tags>
         <Politics Name="Politics06"/>
     </PopulationPoliticalEventDefinition>
