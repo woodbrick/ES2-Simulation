@@ -223,8 +223,8 @@
 		<Modifier TargetProperty="SystemResearch"       Operation="Percent" Value="0.25" Path="./HappinessStatusStarSystem4" TooltipHidden="true"/>
 	</SimulationDescriptor>
 	<SimulationDescriptor Name="StarSystemImprovementScience4" Type="StarSystemImprovement">
-		<Modifier TargetProperty="SystemResearch" Operation="Addition" Value="30" Path="./ClassColonizedStarSystem"/>
-		<Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="2"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+		<Modifier TargetProperty="SystemResearch" Operation="Addition" Value="20" Path="./ClassColonizedStarSystem"/>
+        <BinaryModifier TargetProperty="SystemResearch" Operation="Addition" Left="20" BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
 	</SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementScience4Sophons" Type="StarSystemImprovement">
@@ -343,7 +343,7 @@
 	</SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementOverExpansion1" Type="StarSystemImprovement">
-        <Modifier TargetProperty="OverColonizationThreshold"    Operation="Addition"    Value="2"   Path="../ClassEmpire"  TooltipHidden="false" />
+        <Modifier TargetProperty="OverColonizationThreshold"    Operation="Addition"    Value="1"   Path="../ClassEmpire"  TooltipHidden="false" />
     </SimulationDescriptor>
 
 	<!-- TRADING -->
@@ -823,7 +823,7 @@
             <!-- Trading v2 -->
     <SimulationDescriptor Name="StarSystemImprovementTradingCompanyHeadquarters" Type="StarSystemImprovement">
         <Modifier TargetProperty="TradingCompanyHeaquarterCount"                Operation="Addition"        Value="1"         Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
-        <Modifier TargetProperty="TradingRouteSystemBaseIncome"                 Operation="Addition"        Value="30"                               Priority="3" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="TradingRouteSystemBaseIncome"                 Operation="Addition"        Value="20"                               Priority="3" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
         <!-- Default 10 -->
       <!-- target property is sealed, updated by code, because the star system improvement might not always be linked to the simulation -->
       <!--<Modifier TargetProperty="NumberOfTradingCompanyHeadquarters" Operation="Addition" Value="1" Path="../ClassEmpire,EmpireTypeMajor"/>-->
@@ -831,7 +831,7 @@
 
     <!-- Trading v2.2 -->
     <SimulationDescriptor Name="StarSystemImprovementTradingCompanySubsidiary" Type="StarSystemImprovement">
-        <Modifier TargetProperty="TradingRouteSystemBaseIncome"                  Operation="Addition"        Value="20"                               Priority="3" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="TradingRouteSystemBaseIncome"                  Operation="Addition"        Value="15"                               Priority="3" Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
       <!-- target property is sealed, updated by code, because the star system improvement might not always be linked to the simulation -->
       <!--<Modifier TargetProperty="NumberOfTradingCompanySubsidiaries" Operation="Addition" Value="1" Path="../ClassEmpire,EmpireTypeMajor"/>-->
     </SimulationDescriptor>
