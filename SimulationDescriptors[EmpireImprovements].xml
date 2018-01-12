@@ -250,16 +250,6 @@
     <SimulationDescriptor Name="EmpireImprovementDiplomacyBonus2"       Type="EmpireImprovement"/>
 
     <SimulationDescriptor Name="EmpireImprovementExpansionDisapproval1"                Type="EmpireImprovement">
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeTiny,ClassEmpire"       TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeSmall,ClassEmpire"      TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeMedium,ClassEmpire"     TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeLarge,ClassEmpire"      TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeHuge,ClassEmpire"       TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeColossal,ClassEmpire"   TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeGigantic,ClassEmpire"   TooltipHiddenIfPathInvalid="true"/>
-    </SimulationDescriptor>
-
-    <SimulationDescriptor Name="EmpireImprovementExpansionDisapproval1Terrans"                Type="EmpireImprovement">
         <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeTiny,ClassEmpire"       TooltipHiddenIfPathInvalid="true"/>
         <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeSmall,ClassEmpire"      TooltipHiddenIfPathInvalid="true"/>
         <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeMedium,ClassEmpire"     TooltipHiddenIfPathInvalid="true"/>
@@ -269,6 +259,16 @@
         <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeGigantic,ClassEmpire"   TooltipHiddenIfPathInvalid="true"/>
     </SimulationDescriptor>
 
+    <SimulationDescriptor Name="EmpireImprovementExpansionDisapproval1Terrans"                Type="EmpireImprovement">
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeTiny,ClassEmpire"       TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeSmall,ClassEmpire"      TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeMedium,ClassEmpire"     TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeLarge,ClassEmpire"      TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeHuge,ClassEmpire"       TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="4"    Path="GalaxySizeColossal,ClassEmpire"   TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="4"    Path="GalaxySizeGigantic,ClassEmpire"   TooltipHiddenIfPathInvalid="true"/>
+    </SimulationDescriptor>
+
     <SimulationDescriptor Name="EmpireImprovementGovernment"     Type="EmpireImprovement">
         <Modifier TargetProperty="GovernmentGameplayUnlocked" Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="true"/>
     </SimulationDescriptor>
@@ -276,13 +276,13 @@
 
     <SimulationDescriptor Name="EmpireImprovementGovernmentTerrans"     Type="EmpireImprovement">
         <Modifier TargetProperty="GovernmentGameplayUnlocked" Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeTiny,ClassEmpire,GovernmentEmpire"       TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeSmall,ClassEmpire,GovernmentEmpire"      TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeMedium,ClassEmpire,GovernmentEmpire"     TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeLarge,ClassEmpire,GovernmentEmpire"      TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="1"    Path="GalaxySizeHuge,ClassEmpire,GovernmentEmpire"       TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeColossal,ClassEmpire,GovernmentEmpire"   TooltipHiddenIfPathInvalid="true"/>
-        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeGigantic,ClassEmpire,GovernmentEmpire"   TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeTiny,ClassEmpire,GovernmentEmpire"       TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeSmall,ClassEmpire,GovernmentEmpire"      TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeMedium,ClassEmpire,GovernmentEmpire"     TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeLarge,ClassEmpire,GovernmentEmpire"      TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="2"    Path="GalaxySizeHuge,ClassEmpire,GovernmentEmpire"       TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeColossal,ClassEmpire,GovernmentEmpire"   TooltipHiddenIfPathInvalid="true"/>
+        <Modifier TargetProperty="OverColonizationThreshold"            Operation="Addition"     Value="3"    Path="GalaxySizeGigantic,ClassEmpire,GovernmentEmpire"   TooltipHiddenIfPathInvalid="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="EmpireImprovementElectionAction" Type="EmpireImprovement"/>
