@@ -328,13 +328,13 @@
 	</SimulationDescriptor>
     
     <SimulationDescriptor Name="StarSystemImprovementScience6" Type="StarSystemImprovement">
-        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeCold"/>
-        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="4" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeTeeming"/>
+        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="4" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeCold"/>
+        <Modifier TargetProperty="PlanetRawScience"        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementScience7" Type="StarSystemImprovement">
 		<Modifier TargetProperty="PlanetRawScience" Operation="Addition" Value="2"  Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <Modifier       TargetProperty="SystemResearch"     Operation="Percent"     Value="0.4"  Path="./ClassColonizedStarSystem"/>
+        <Modifier       TargetProperty="SystemResearch"     Operation="Percent"     Value="0.3"  Path="./ClassColonizedStarSystem"/>
     </SimulationDescriptor>
 
     <!-- APPROVAL -->
