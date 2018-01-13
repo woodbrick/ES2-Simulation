@@ -402,19 +402,19 @@
         <Property Name="MaximumManpowerPerGroundBattleTurn" BaseValue="500"/>
 		<Property Name="ManpowerCostReduction"  BaseValue="1"/>
         <Property Name="InfantryManpowerCost"	BaseValue="5"	MinValue="1"/>
-        <Property Name="TankManpowerCost"		BaseValue="15"	MinValue="1"/>
-        <Property Name="PlaneManpowerCost"		BaseValue="20"	MinValue="1"/>
+        <Property Name="TankManpowerCost"		BaseValue="12"	MinValue="1"/>
+        <Property Name="PlaneManpowerCost"		BaseValue="18"	MinValue="1"/>
 
         <Property Name="TroopHealthBonuses" MinValue="Negative"/>
         <Property Name="InfantryMaxHealth"	BaseValue="50" />
-        <Property Name="TankMaxHealth"		BaseValue="240" />
+        <Property Name="TankMaxHealth"		BaseValue="220" />
         <Property Name="PlaneMaxHealth"		BaseValue="200" />
 
         <Property Name="TroopDamageBonuses"/>
         <Property Name="InfantryMinDamages"	BaseValue="12" />
         <Property Name="InfantryMaxDamages"	BaseValue="22" />
         <Property Name="InfantryDamagesBonus"/>
-		<Property Name="TankMinDamages"		BaseValue="25" />
+		<Property Name="TankMinDamages"		BaseValue="35" />
 		<Property Name="TankMaxDamages"		BaseValue="60" />
         <Property Name="TankDamagesBonus"/>
         <Property Name="PlaneMinDamages"	BaseValue="95" />
