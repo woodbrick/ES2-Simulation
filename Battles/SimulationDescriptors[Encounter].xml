@@ -776,7 +776,7 @@
 
     <SimulationDescriptor Name="PlayEffectManpowerAgainstDamage"   Type="PlayEffect">
         <Modifier TargetProperty="ManpowerPercentKillPerPhase"  Operation="Addition"   Value="0.1"  Path="ClassGroup//ClassShip"/>
-        <Modifier TargetProperty="MaximumDamageBonusFromManpower" Operation="Addition"   Value="0.3"  Path="ClassGroup//ClassShip"/>
+        <Modifier TargetProperty="MaximumDamageBonusFromManpower" Operation="Addition"   Value="0.5"  Path="ClassGroup//ClassShip"/>
 
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.7" Path="ClassGroup" TooltipHidden="true"/>

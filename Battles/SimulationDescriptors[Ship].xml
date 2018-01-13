@@ -129,7 +129,7 @@
 
         <!--!-Offensive Parameters -->
         <Property Name="DamageBonusFromManpower"        BaseValue="0"/>
-        <Property Name="MaximumDamageBonusFromManpower" BaseValue="0.2"/>
+        <Property Name="MaximumDamageBonusFromManpower" BaseValue="0.5"/>
         
         <Property Name="Damage"                         BaseValue="0" MinValue="-0.95"/>
 

@@ -612,7 +612,7 @@
 	</SimulationDescriptor>
     
 	<SimulationDescriptor Name="ModuleSupportFlakEnhancer1"              Type="ModuleSupportFlakEnhancer">
-		<Modifier TargetProperty="FlakDamageModifier"            Operation="Addition"	Value="0.25"      Path="ClassModule" TooltipHidden="true"/>
+		<Modifier TargetProperty="FlakDamageModifier"            Operation="Addition"	Value="0.5"      Path="ClassModule" TooltipHidden="true"/>
 	</SimulationDescriptor>
 
 	<!-- Flak scrambler-->
