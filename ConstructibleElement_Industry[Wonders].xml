@@ -31,7 +31,7 @@
         <QueuedSimulationDescriptorReference Name="BuildingStarSystemImprovementWonder1"/>
 		<CostReductionReference Name="CategoryWonderImprovement"/>
         
-        <Cost ResourceName="SystemProduction">2340</Cost>
+        <Cost ResourceName="SystemProduction">1500</Cost>
         <Cost ResourceName="Strategic1" Instant="true">10</Cost>
         <Cost ResourceName="Strategic2" Instant="true">10</Cost>
         <InterpreterPrerequisite Inverted="true" Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,BuildingStarSystemImprovementWonder1') and not(Path(Context,@'ClassStarSystem,BuildingStarSystemImprovementWonder1'))</InterpreterPrerequisite>
@@ -50,7 +50,7 @@
         <Tags>Indestructible, Eternal</Tags>
         <QueuedSimulationDescriptorReference Name="BuildingStarSystemImprovementWonder2"/>
 		<CostReductionReference Name="CategoryWonderImprovement"/>
-        <Cost ResourceName="SystemProduction">4680</Cost>
+        <Cost ResourceName="SystemProduction">2400</Cost>
         <Cost ResourceName="Strategic1" Instant="true">25</Cost>
         <Cost ResourceName="Strategic2" Instant="true">25</Cost>
         <InterpreterPrerequisite Inverted="true" Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,BuildingStarSystemImprovementWonder2') and not(Path(Context,@'ClassStarSystem,BuildingStarSystemImprovementWonder2'))</InterpreterPrerequisite>
@@ -68,7 +68,7 @@
         <Tags>Indestructible, Eternal</Tags>
         <QueuedSimulationDescriptorReference Name="BuildingStarSystemImprovementWonder3"/>
 		<CostReductionReference Name="CategoryWonderImprovement"/>
-        <Cost ResourceName="SystemProduction">9360</Cost>
+        <Cost ResourceName="SystemProduction">4500</Cost>
         <Cost ResourceName="Strategic3" Instant="true">125</Cost>
         <Cost ResourceName="Strategic4" Instant="true">125</Cost>
         <InterpreterPrerequisite Inverted="true" Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,BuildingStarSystemImprovementWonder3') and not(Path(Context,@'ClassStarSystem,BuildingStarSystemImprovementWonder3'))</InterpreterPrerequisite>
@@ -86,7 +86,7 @@
         <Tags>Indestructible, Eternal</Tags>
         <QueuedSimulationDescriptorReference Name="BuildingStarSystemImprovementWonder4"/>
 		<CostReductionReference Name="CategoryWonderImprovement"/>
-        <Cost ResourceName="SystemProduction">18720</Cost>
+        <Cost ResourceName="SystemProduction">10000</Cost>
         <Cost ResourceName="Strategic5" Instant="true">150</Cost>
         <Cost ResourceName="Strategic6" Instant="true">150</Cost>
         <InterpreterPrerequisite Inverted="true" Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,BuildingStarSystemImprovementWonder4') and not(Path(Context,@'ClassStarSystem,BuildingStarSystemImprovementWonder4'))</InterpreterPrerequisite>
