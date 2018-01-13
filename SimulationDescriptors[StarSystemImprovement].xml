@@ -1201,7 +1201,7 @@
     <SimulationDescriptor Name="BuildingStarSystemImprovementWonder2"   Type="BuildingStarSystemImprovement"/>
     <SimulationDescriptor Name="StarSystemImprovementWonder2" Type="StarSystemImprovement">
         <BinaryModifier TargetProperty="SystemResearch"           Operation="Percent"     Left="0.1"       BinaryOperation="Multiplication" Right="$(SystemLevel)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
-        <Modifier       TargetProperty="TechnologyCostReduction"  Operation="Addition"    Value="-0.1"      Path="../ClassEmpire/ClassResearch" />
+        <Modifier       TargetProperty="TechnologyCostReduction"  Operation="Addition"    Value="-0.15"      Path="../ClassEmpire/ClassResearch" />
         <Modifier       TargetProperty="WonderBuiltCount"         Operation="Addition"    Value="1"        Path="../ClassEmpire"            TooltipHidden="true"/>
         <Modifier       TargetProperty="WonderAmount"             Operation="Addition" Value="1"      Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
     </SimulationDescriptor>
@@ -1211,7 +1211,7 @@
     <SimulationDescriptor Name="BuildingStarSystemImprovementWonder3"   Type="BuildingStarSystemImprovement"/>
     <SimulationDescriptor Name="StarSystemImprovementWonder3" Type="StarSystemImprovement">
         <Modifier TargetProperty="WonderBuiltCount"               Operation="Addition"		Value="1"		Path="../ClassEmpire" TooltipHidden="true"/>
-        <Modifier TargetProperty="SystemMoney"                    Operation="Addition"		Value="50"		Path="./ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoney"                    Operation="Addition"		Value="200"		Path="./ClassColonizedStarSystem"/>
 		<Modifier TargetProperty="TradingRouteIncomeModifier"	  Operation="Percent"		Value="1"		Path="./ClassColonizedStarSystem"/>
         <Modifier TargetProperty="HoldsMarketplace"               Operation="Addition"		Value="1"		Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
         <Modifier TargetProperty="WonderAmount"                   Operation="Addition"		Value="1"		Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
@@ -1224,8 +1224,8 @@
     <SimulationDescriptor Name="BuildingStarSystemImprovementWonder4"   Type="BuildingStarSystemImprovement"/>
     <SimulationDescriptor Name="StarSystemImprovementWonder4" Type="StarSystemImprovement">
         <Modifier       TargetProperty="WonderBuiltCount"         Operation="Addition"        Value="1"       Path="../ClassEmpire"            TooltipHidden="true"/>
-        <BinaryModifier TargetProperty="SystemProduction"         Operation="Addition"        Left="50"       BinaryOperation="Multiplication" Right="$(WarCount)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
-        <Modifier       TargetProperty="GarrisonMoneyUpkeep"      Operation="Percent"         Value="-.25"    Path="../ClassEmpire"/>
+        <BinaryModifier TargetProperty="SystemProduction"         Operation="Addition"        Left="100"       BinaryOperation="Multiplication" Right="$(WarCount)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+        <Modifier       TargetProperty="GarrisonMoneyUpkeep"      Operation="Percent"         Value="-.33"    Path="../ClassEmpire"/>
         <Modifier TargetProperty="WonderAmount"                   Operation="Addition"        Value="1"       Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="StarSystemImprovementUnlockedWonder4" Type="StarSystemImprovementUnlocked"/>
@@ -1235,7 +1235,7 @@
         <Modifier       TargetProperty="WonderBuiltCount"               Operation="Addition"        Value="1"       Path="../ClassEmpire"               TooltipHidden="true"/>
         <Modifier       TargetProperty="VictoryWonderBuiltCount"        Operation="Addition"        Value="1"       Path="../ClassEmpire"               TooltipHidden="true"/>
         <Modifier       TargetProperty="WonderAmount"                   Operation="Addition"        Value="1"       Path="./ClassColonizedStarSystem"   TooltipHidden="true"/>
-        <Modifier       TargetProperty="MaximumSystemManpower"          Operation="Addition"        Value="500"     Path="./ClassColonizedStarSystem"/>
+        <Modifier       TargetProperty="MaximumSystemManpower"          Operation="Addition"        Value="1500"     Path="./ClassColonizedStarSystem"/>
         <Modifier       TargetProperty="VisionRange"                    Operation="Addition"        Value="8"       Path="./ClassColonizedStarSystem"/>
         <Modifier       TargetProperty="PlanetRawFIDSI"                 Operation="Addition"        Value="5"       Path="./ClassColonizedStarSystem"/>
         <Modifier       TargetProperty="TradingRouteIncomeModifier"     Operation="Percent"         Value="0.50"    Path="./ClassColonizedStarSystem"/>
@@ -1254,12 +1254,12 @@
 	
 	<!-- HONEYCOMB SCOPE -->
 	<SimulationDescriptor Name="StarSystemImprovementCuriosity1" Type="StarSystemImprovement">
-		<Modifier TargetProperty="VisionRange"	Operation="Addition" Value="5" Path="./ClassColonizedStarSystem"/> 
+		<Modifier TargetProperty="VisionRange"	Operation="Addition" Value="8" Path="./ClassColonizedStarSystem"/> 
 	</SimulationDescriptor>
 	
 	<!-- THE ANALYTICAL ENGINE -->
 	<SimulationDescriptor Name="StarSystemImprovementUniqueCuriosity1" Type="StarSystemImprovement"><!--Feedback is done by GuiElement EffectOverride-->
-		<BinaryModifier TargetProperty="SystemMoney" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(CuriositiesDiscovered)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
+		<BinaryModifier TargetProperty="SystemMoney" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(CuriositiesDiscovered)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true"/>
 	</SimulationDescriptor>
 	
 	<!-- SIM CAMP -->
