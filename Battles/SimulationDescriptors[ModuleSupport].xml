@@ -92,12 +92,12 @@
 
 	<SimulationDescriptor Name="ModuleSupportBait1Strategic4"      Type="ModuleSupportBait">
 		<Modifier TargetProperty="TargetingWeightBonus" Operation="Addition" Value="10" Path="ModuleSupportBait"/>
-		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.05"   Path="ModuleSupportEngine"/>
+		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.05"   Path="ModuleSupportBait"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportBait2Strategic6"      Type="ModuleSupportBait">
 		<Modifier TargetProperty="TargetingWeightBonus" Operation="Addition" Value="20" Path="ModuleSupportBait"/>
-		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.1"   Path="ModuleSupportEngine"/>
+		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.1"   Path="ModuleSupportBait"/>
 	</SimulationDescriptor>
 
 	<!-- ********************* -->
@@ -386,12 +386,12 @@
 
 	<SimulationDescriptor Name="ModuleSupportJammer1Strategic3"      Type="ModuleSupportJammer">
 		<Modifier TargetProperty="TargetingWeightPenalty" Operation="Addition" Value="10" Path="ModuleSupportJammer"/>
-		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.05"   Path="ModuleSupportEngine"/>
+		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.05"   Path="ModuleSupportJammer"/>
 	</SimulationDescriptor>
 
 	<SimulationDescriptor Name="ModuleSupportJammer2Strategic5"      Type="ModuleSupportJammer">
 		<Modifier TargetProperty="TargetingWeightPenalty" Operation="Addition" Value="20" Path="ModuleSupportJammer"/>
-		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.1"   Path="ModuleSupportEngine"/>
+		<Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.1"   Path="ModuleSupportJammer"/>
 	</SimulationDescriptor>
 
 	<!-- ********************* -->

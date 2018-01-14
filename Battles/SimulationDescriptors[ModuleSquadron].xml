@@ -67,7 +67,7 @@
     <SimulationDescriptor Name="SquadronTypeFighter" Type="SquadronType">
         <Modifier TargetProperty="WeaponTypePhysical"           Operation="Addition"        Value="1"        Path="ClassModuleSquadron" TooltipHidden="true"/>
         
-		<Modifier TargetProperty="Speed" Operation="Addition" Value="20" Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="Speed" Operation="Addition" Value="30" Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="HullPlatingPenetrationFactor" Operation="Addition" Value="0.1"/>
 		<Modifier TargetProperty="ShieldPenetrationFactor"		Operation="Addition" Value="0.3"/>
 
@@ -96,7 +96,7 @@
     <SimulationDescriptor Name="SquadronTypeBomber" Type="SquadronType">
         <Modifier TargetProperty="WeaponTypePhysical"           Operation="Addition"        Value="1"        Path="ClassModuleSquadron" TooltipHidden="true"/>
         
-		<Modifier TargetProperty="Speed" Operation="Addition" Value="10" Path="ClassModuleSquadron"/>
+		<Modifier TargetProperty="Speed" Operation="Addition" Value="20" Path="ClassModuleSquadron"/>
 		<Modifier TargetProperty="HullPlatingPenetrationFactor" Operation="Addition" Value="0.5"/>
 		<Modifier TargetProperty="ShieldPenetrationFactor"		Operation="Addition" Value="0.9"/>
 
