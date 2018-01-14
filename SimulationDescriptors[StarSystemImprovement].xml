@@ -169,7 +169,7 @@
     
     <!-- Resource Factory -->
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory1" Type="StarSystemImprovement">
-        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1.5" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 
@@ -250,7 +250,7 @@
     
     <!-- Resource Factory -->
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory2" Type="StarSystemImprovement">
-        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2.5" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="1" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 
@@ -519,12 +519,12 @@
 
     <!-- Resource Factory -->
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory3" Type="StarSystemImprovement">
-        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="3" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="StarSystemImprovementResourceFactory3TimeLords" Type="StarSystemImprovement">
-        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="3" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
+        <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="4" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeStrategic"/>
         <Modifier TargetProperty="ResourceBonus"         Operation="Addition" Value="2" Path="./ClassColonizedStarSystem/ClassColonizedPlanet/ResourceTypeLuxury"/>
     </SimulationDescriptor>
 	
