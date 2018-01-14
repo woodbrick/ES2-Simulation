@@ -270,7 +270,7 @@
 
         <Property Name="HeroCount" Composition="Sum"/>
         <Property Name="HeroLevelCount" />
-        <Property Name="HeroUnlockThresholdModifier"    BaseValue="1"  MinValue="0"/>
+        <Property Name="HeroUnlockThresholdModifier"    BaseValue="0.7"  MinValue="0"/>
         <Property Name="HeroHealingBonus" BaseValue="1" MaxValue="1" MinValue="0" />
         
         <Property Name="OutpostsSold"/>
