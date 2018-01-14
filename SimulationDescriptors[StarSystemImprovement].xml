@@ -290,7 +290,7 @@
 
     <!-- TRADE -->
 	<SimulationDescriptor Name="StarSystemImprovementTrade1" Type="StarSystemImprovement">
-		<Modifier TargetProperty="TradingRouteIncomeModifier" Operation="Percent"  Value="0.25" Path="./ClassColonizedStarSystem"/>
+		<Modifier TargetProperty="TradingRouteIncomeModifier" Operation="Percent"  Value="0.33" Path="./ClassColonizedStarSystem"/>
 	</SimulationDescriptor>
     
     <!-- FOOD -->

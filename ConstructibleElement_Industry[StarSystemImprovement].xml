@@ -1121,7 +1121,7 @@
     <StarSystemImprovementDefinition Name="StarSystemImprovementScience7" SubCategory="SubCategoryScience" ScoreProvider="StarSystemImprovementBuilt">
         <SupervisorGain   Name="Science"     />
         <Cost ResourceName="SystemProduction">2240</Cost>
-        <Cost ResourceName="Strategic4" Instant="true">25</Cost>
+        <Cost ResourceName="Strategic3" Instant="true">25</Cost>
         <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementScience7,!FastForwardedImprovement</PathPrerequisite>
         <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyScience7</TechnologyPrerequisite>
