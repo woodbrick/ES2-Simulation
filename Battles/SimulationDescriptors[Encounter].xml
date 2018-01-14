@@ -921,16 +921,16 @@
 
 	<!--Squadron Repairs: +5% Health repaired on Ship with surviving Squadron Modules-->
 	<SimulationDescriptor Name="PlayEffectShipRepairWithSquadron"   Type="PlayEffect">
-		<Modifier TargetProperty="RepairAfterBattleIfSurvivingSquadron" Operation="Addition" Value="0.5" Path="ClassGroup//ClassShip"/>
+		<Modifier TargetProperty="RepairAfterBattleIfSurvivingSquadron" Operation="Addition" Value="0.6" Path="ClassGroup//ClassShip"/>
 		
 		<!--CARRIER AIR SUPPORT - CAS %-->
-		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.5" Path="ClassGroup" TooltipHidden="true"/>
-		<Modifier TargetProperty="FightersWithDefensiveStanceRatio" Operation="Addition" Value="0.5" Path="ClassGroup" TooltipHidden="true"/>
+		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0.6" Path="ClassGroup" TooltipHidden="true"/>
+		<Modifier TargetProperty="FightersWithDefensiveStanceRatio" Operation="Addition" Value="0.6" Path="ClassGroup" TooltipHidden="true"/>
 	</SimulationDescriptor>
 
 	<!--Strafing Run: All Fighters escort bombers, +10% Critical Attack Chance on Squadrons-->
 	<SimulationDescriptor Name="PlayEffectSquadronOffenseBoost"   Type="PlayEffect">
-		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.1" Path="ClassGroup//ClassModuleSquadron"/>
+		<Modifier TargetProperty="CriticalAttackChance" Operation="Addition" Value="0.15" Path="ClassGroup//ClassModuleSquadron"/>
 		
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="1" Path="ClassGroup" TooltipOverride="%PlayEffectSquadronOffenseBoostTooltipEffect"/>
@@ -939,7 +939,7 @@
 
 	<!--Close Air Defense	All Fighters escort Ships, +10% Dodge on Squadrons-->
 	<SimulationDescriptor Name="PlayEffectSquadronDefenseBoost"   Type="PlayEffect">
-		<Modifier TargetProperty="DodgeChance" Operation="Addition" Value="0.1" Path="ClassGroup//ClassModuleSquadron"/>
+		<Modifier TargetProperty="DodgeChance" Operation="Addition" Value="0.15" Path="ClassGroup//ClassModuleSquadron"/>
 		
 		<!--CARRIER AIR SUPPORT - CAS %-->
 		<Modifier TargetProperty="FightersWithOffensiveStanceRatio" Operation="Addition" Value="0" Path="ClassGroup" TooltipHidden="true"/>
